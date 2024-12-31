@@ -284,8 +284,48 @@
 # for i in range(1,11):
 #  print(i)
 
-userInput = int(input("Please enter your number: "))
-x = 0
-for i in range(1, userInput+1):
-    x+=i
+# userInput = int(input("Please enter your number: "))
+# x = 0
+# for i in range(1, userInput+1):
+#     x+=i
+# print(x)
+
+# string1 = "I love Programming"
+# vowels = "aeiouAEIOU"
+# i =1
+# vlist = []
+# for char in string1:
+#     if char in vowels:
+#         i += 1
+#         vlist.append(char)
+# print(vlist)
+
+# numbers= [23, 56, 12, 89, 45, 67]
+# x = numbers[0]
+# for i in numbers:
+#   if i > x:
+#     x = i  
+# print(x)
+
+
+# string1 = "hello"
+# rev = []
+# for str in reversed(string1):
+#     rev.append(str)
+# print(rev)
+
+
+# string1 = ["apple", "banana", "orange", "banana", "apple", "banana"]
+# lst = input("Enter the fruit: ")
+# count = 0
+# for fruit in string1:
+#     if fruit == lst:
+#         count +=1
+#         print(count)
+
+numbers = [23, 56, 12, 89, 45 , 67]
+x = numbers[0]
+for largest in numbers:
+    if largest > x:
+        x = largest
 print(x)
