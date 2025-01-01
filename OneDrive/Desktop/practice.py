@@ -323,9 +323,26 @@
 #         count +=1
 #         print(count)
 
-numbers = [23, 56, 12, 89, 45 , 67]
-x = numbers[0]
-for largest in numbers:
-    if largest > x:
-        x = largest
-print(x)
+# numbers = [23, 56, 12, 89, 45 , 67]
+# x = numbers[0]
+# for largest in numbers:
+#     if largest > x:
+#         x = largest
+# print(x)
+
+# nums = [1,2,3,4,5,6]
+# for val in nums:
+#     print(val)
+
+
+# lst = [1,4,9,16,25,36,49,64,81,100]
+# num = int(input("Enter your number: "))
+# idx = 0
+# for val in lst:
+#     if(num == val):
+#         print("Found ", val)
+#     idx += 1
+
+
+for i in range(2,100,50):
+    print(i)
