@@ -365,8 +365,21 @@
 #     i+=1
 # print("factorial", factorial)
 
-i = 1
-n = int(input("Please enter your number: "))
-for factorial in range (1, n + 1):
-    i*= factorial
-print(i) 
+# i = 1
+# n = int(input("Please enter your number: "))
+# for factorial in range (1, n + 1):
+#     i*= factorial
+# print(i) 
+
+info = {
+    "name": "Apurwa Bhattarai",
+    "age": 21,
+    "major": "Computer Science"
+}
+
+info["grade"] = "A"
+info["gpa"] = 3.8
+
+info.update({"age": 35})
+print(info)
+
