@@ -371,15 +371,82 @@
 #     i*= factorial
 # print(i) 
 
-info = {
-    "name": "Apurwa Bhattarai",
-    "age": 21,
-    "major": "Computer Science"
+# info = {
+#     "name": "Apurwa Bhattarai",
+#     "age": 21,
+#     "major": "Computer Science"
+# }
+
+# info["grade"] = "A"
+# info["gpa"] = 3.8
+
+# info.update({"age": 35})
+# print(info)
+
+# del info["age"]
+
+# print(info)
+
+# info = {
+#     "name": "Apurwa Bhattarai",
+#     "age": 21,
+#     "major": "Computer Science"
+# }
+
+# if("major" in info):
+#     print("Exists")
+# else:
+#     print("Don't Exist")
+
+# contacts = {
+#     "John": "1234",
+#     "Alice": "5678",
+#     "Bob": "91011"
+# }
+# for output in contacts.items():
+#     print(output)
+
+# fruits = {"apple", "banana", "orange", "apple", "grape"}
+
+# if "orange" in fruits:
+#     print("exists")
+# else:
+#     print("don't exists")
+# print(fruits)
+
+# set1 = {1,2,3,4}
+# set2 = {3,4,5,6,}
+
+# print(set2.difference(set1))
+
+# colors = {"red", "blue", "green", "yellow"}
+# for results in colors:
+#     print(results)
+
+# fruits = {"apple", "banana", "orange", "apple", "grape"}
+# unique_items = len(fruits)
+# print(unique_items)
+
+# empDict = {}
+# x = int(input("Phy "))
+# empDict.update({"phy" : x})
+# y = int(input("Chem "))
+# empDict.update({"Chem" : y})
+# z = int(input("Bio "))
+# empDict.update({"Bio" : z})
+
+# print(empDict)
+
+student_courses = {
+    "John": {"Math", "English", "History"},
+    "Alice": {"Math", "Science", "History"},
+    "Bob": {"English", "Art"}
 }
 
-info["grade"] = "A"
-info["gpa"] = 3.8
+student_courses["Bob"].add("Physics")
 
-info.update({"age": 35})
-print(info)
+inter = student_courses["John"].intersection(student_courses["Alice"])
+unique = student_courses["Bob"].union (student_courses["Alice"], student_courses["John"])
+
+print(unique)
 
