@@ -344,5 +344,29 @@
 #     idx += 1
 
 
-for i in range(2,100,50):
-    print(i)
+# for i in range(2,100,50):
+#     print(i)
+
+# for val in range(100, 0, -1):
+#     print(val)
+
+# userInput = int(input("Please enter your number: "))
+# X = 0
+# for val in range(1,11):
+#     X = userInput * val
+#     print("5 X ", val, "= ", X)
+
+
+# i = 1
+# factorial = 1
+# n  = int(input("Enter your number: "))
+# while(i<=n):
+#     factorial *= i 
+#     i+=1
+# print("factorial", factorial)
+
+i = 1
+n = int(input("Please enter your number: "))
+for factorial in range (1, n + 1):
+    i*= factorial
+print(i) 
