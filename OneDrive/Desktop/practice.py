@@ -460,15 +460,32 @@
 # fruits[1] = "blueberry"
 # print(fruits)
 
-numbers = [1,3,2,7]
-numbers.append(15)
-numbers[1] = 2
-numbers.sort(reverse=True)
-numbers.pop(1)
-numbers.reverse
-numbers.remove(2)
-print(numbers)
+# numbers = [1,3,2,7]
+# numbers.append(15)
+# numbers[1] = 2
+# numbers.sort(reverse=True)
+# numbers.pop(1)
+# numbers.reverse
+# numbers.remove(2)
+# print(numbers)
 
-numbers.insert(2,9)
-print(numbers)
+# numbers.insert(2,9)
+# print(numbers)
 
+
+# numbers1 = [10,20,30,40,50,60]
+# numbers2 = [70,80,90,100]
+# concatenate = numbers1 + numbers2
+# print(concatenate)
+
+
+# square= [x**2 for x in range(1,6)]
+# print(square)
+
+userInput = input("Please enter your fruit's name: ")
+
+fruits = ['apple', 'banana', 'cherry', 'banana', 'apple']
+if (userInput in fruits):
+    print("Exists")
+else:
+    print("Don't Exist")
