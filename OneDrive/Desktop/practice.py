@@ -437,16 +437,38 @@
 
 # print(empDict)
 
-student_courses = {
-    "John": {"Math", "English", "History"},
-    "Alice": {"Math", "Science", "History"},
-    "Bob": {"English", "Art"}
-}
+# student_courses = {
+#     "John": {"Math", "English", "History"},
+#     "Alice": {"Math", "Science", "History"},
+#     "Bob": {"English", "Art"}
+# }
 
-student_courses["Bob"].add("Physics")
+# student_courses["Bob"].add("Physics")
 
-inter = student_courses["John"].intersection(student_courses["Alice"])
-unique = student_courses["Bob"].union (student_courses["Alice"], student_courses["John"])
+# inter = student_courses["John"].intersection(student_courses["Alice"])
+# unique = student_courses["Bob"].union (student_courses["Alice"], student_courses["John"])
 
-print(unique)
+# print(unique)
+
+# lst = [1,2,3,4,5,6,7,8,9,10]
+# print(lst)
+
+# print(lst[1])
+# print(lst[3])
+
+# fruits = ["apple", "banana", "cherry"]
+# fruits[1] = "blueberry"
+# print(fruits)
+
+numbers = [1,3,2,7]
+numbers.append(15)
+numbers[1] = 2
+numbers.sort(reverse=True)
+numbers.pop(1)
+numbers.reverse
+numbers.remove(2)
+print(numbers)
+
+numbers.insert(2,9)
+print(numbers)
 
