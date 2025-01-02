@@ -482,10 +482,64 @@
 # square= [x**2 for x in range(1,6)]
 # print(square)
 
-userInput = input("Please enter your fruit's name: ")
+# userInput = input("Please enter your fruit's name: ")
 
-fruits = ['apple', 'banana', 'cherry', 'banana', 'apple']
-if (userInput in fruits):
-    print("Exists")
+# fruits = ['apple', 'banana', 'cherry', 'banana', 'apple']
+# if (userInput in fruits):
+#     print("Exists")
+# else:
+#     print("Don't Exist")
+
+# nested = [[1,2],[3,4],[5,6]]
+# print(nested[1][1])
+
+# numbers = [1,2,3]
+# result = [x * 3 for x in numbers]
+# print(result)
+
+# numbers = tuple(range(10, 20))
+# print(numbers)
+
+# fruits1 = ('apple', 'banana', 'cherry')
+
+# print(len(fruits1))
+
+# userInput = input("Please enter the name of animal: ")
+# animals = ('dog', 'cat', 'rabbit')
+# if userInput in animals:
+#     print("exist")
+# else:
+#     print("don't exist")
+
+# coordinates = (4,5)
+# x, y = coordinates
+
+# print("x", x)
+# print("y" , y)
+
+# nested = ((1,2), (3,4), (5,6))
+# print(nested[1][0])
+
+# nested = (1,2,3,2,1,2)
+
+# print(nested.count(2))
+
+# alphabet = ('a', 'b', 'c', 'd', 'e')
+# change = list[alphabet]
+
+# alphabet = ('a', 'b', 'c', 'd', 'e')
+# print(alphabet[1:3])
+
+
+# tuple = "Hello"
+
+# multiply = [x * 3 for x in tuple]
+# print(multiply)
+
+t1 = (1,2,3)
+t2 = (3,2,1)
+
+if(t1 == t2):
+    print("Equal")
 else:
-    print("Don't Exist")
+    print("Not Equal")
