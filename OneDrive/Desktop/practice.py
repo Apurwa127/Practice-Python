@@ -536,10 +536,62 @@
 # multiply = [x * 3 for x in tuple]
 # print(multiply)
 
-t1 = (1,2,3)
-t2 = (3,2,1)
+# t1 = (1,2,3)
+# t2 = (3,2,1)
 
-if(t1 == t2):
-    print("Equal")
-else:
-    print("Not Equal")
+# if(t1 == t2):
+#     print("Equal")
+# else:
+#     print("Not Equal")
+
+
+#     Swap Elements: Swap the first and last elements of the list my_list = [1, 2, 3, 4].
+
+# Convert List to Tuple: Convert a given list my_list = ['apple', 'banana', 'cherry'] into a tuple.
+
+# Create a Tuple with List Elements: Given a list numbers = [10, 20, 30], create a tuple where each element of the list is a separate element of the tuple.
+
+# Filter Even Numbers from List: Given the list numbers = [1, 2, 3, 4, 5, 6], use a list comprehension to create a new list with only even numbers.
+
+# List and Tuple Comparison: Given a list my_list = [1, 2, 3] and a tuple my_tuple = (1, 2, 3), compare them. Do they have the same values?
+
+
+# def cal_sum(a ,b):
+#     sum = a +b
+#     return sum
+
+# result = cal_sum(5,10)
+# print(result)
+
+
+# def average(a,b,c):
+#     return (a + b+ c) /3
+
+# ave = average(5,7,9)
+# print(ave)
+
+
+# def len_list():
+#     numbers = [1,2,3,4,5,6,7,8,9]
+#     return len(numbers)
+
+# print(len_list())
+
+
+# lst1 = [1,2,3,4,5]
+# def element_list(list):
+#     for item in list:
+#         print(item, end = "")
+
+# print(element_list(lst1))
+  
+
+def fac1():
+    fac = 1
+    userInput  = int (input("please enter your number: "))
+    for i in range(1, userInput + 1):
+        fac *= i 
+    
+    return fac
+print(fac1())
+
