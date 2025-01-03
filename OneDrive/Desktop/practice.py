@@ -586,12 +586,22 @@
 # print(element_list(lst1))
   
 
-def fac1():
-    fac = 1
-    userInput  = int (input("please enter your number: "))
-    for i in range(1, userInput + 1):
-        fac *= i 
+# def fac1():
+#     fac = 1
+#     userInput  = int (input("please enter your number: "))
+#     for i in range(1, userInput + 1):
+#         fac *= i 
     
-    return fac
-print(fac1())
+#     return fac
+# print(fac1())
 
+
+def rev():
+    userInput = input("Please enter your word: ")
+    var = list(userInput)
+
+    var.reverse()
+    return ''.join(var)
+
+
+print(rev())
