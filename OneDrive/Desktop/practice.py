@@ -596,12 +596,47 @@
 # print(fac1())
 
 
-def rev():
-    userInput = input("Please enter your word: ")
-    var = list(userInput)
+# def rev():
+#     userInput = input("Please enter your word: ")
+#     var = list(userInput)
 
-    var.reverse()
-    return ''.join(var)
+#     var.reverse()
+#     return ''.join(var)
 
 
-print(rev())
+# print(rev())
+
+
+# def factorial():
+#     userInput = (int(input("Please enter your number: ")))
+#     fact =1
+#     for items in range(1, userInput +1):
+#         fact *= items
+#     return fact
+
+# print(factorial())
+
+
+# def converter(usd):
+#     inr = usd * 83
+#     print(inr)
+
+# converter("h")
+
+# def userOutput(userInput):
+#     if userInput % 2 == 1:
+#         print("your number is odd")
+#     else:
+#         print("your number is even")
+
+# userInput = int(input("Please enter your number: "))
+# userOutput(userInput)
+
+
+def for_loop(userInput):
+    for i in range( userInput, 0, -1):
+        i-=1
+        print(i)
+
+userInput = int(input("enter your number: "))
+for_loop(userInput)
