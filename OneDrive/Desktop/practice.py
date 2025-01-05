@@ -665,8 +665,17 @@
  
 # print(squared)
 
-set1 = {1,2,3}
-set2 = {2,3}
+# set1 = {1,2,3}
+# set2 = {2,3}
 
-print(set1.issubset(set2))
-print(set1.issuperset(set2))
+# print(set1.issubset(set2))
+# print(set1.issuperset(set2))
+
+
+# i = 0
+for i in range(1,20 +1):
+    if(i % 2 == 0):
+        print(i ,"even")
+    else:
+        print(i, "odd")
+    # print(i)
