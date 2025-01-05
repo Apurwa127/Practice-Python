@@ -703,6 +703,32 @@
 #         print(i, "not vowel")
     
 
-word = "hello"
-for i in reversed(word):
-   print(i)
+# word = "hello"
+# for i in reversed(word):
+#    print(i)
+
+# word = "banana"
+# letter_count = {}  # Dictionary to store letter counts
+
+# # Iterate through each letter in the word
+# for letter in word:
+#     if letter in letter_count:
+#         letter_count[letter] += 1  # Increment count if the letter is already in the dictionary
+#     else:
+#         letter_count[letter] = 1  # Initialize count to 1 if the letter is not in the dictionary
+
+# Print the results
+# for letter, count in letter_count.items():
+#     print(f"{letter} is repeated {count} times")
+
+
+word = "banana"
+count1 = {}
+
+for i in word:
+    if i in count1:
+        count1[i] += 1
+    else: 
+        count1[i] = 1
+
+print(count1) 
