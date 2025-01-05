@@ -672,10 +672,37 @@
 # print(set1.issuperset(set2))
 
 
-# i = 0
-for i in range(1,20 +1):
-    if(i % 2 == 0):
-        print(i ,"even")
-    else:
-        print(i, "odd")
-    # print(i)
+# for i in range(1,20 +1):
+#     if(i % 2 == 0):
+#         print(i ,"even")
+#     else:
+#         print(i, "odd")
+    
+# number = [1,2,3,4,5,6]
+
+# for i in number:
+#     square = i ** 2
+#     print(square)
+
+
+# number = [10,5,30,15,25]
+
+# max_num = number[0]
+
+# for num in number:
+#     if num>max_num:
+#         max_num=num
+# print(max_num)
+
+# word = "education"
+
+# for i in word:
+#     if i in "aeiou":
+#      print(i, "vowel")
+#     else:
+#         print(i, "not vowel")
+    
+
+word = "hello"
+for i in reversed(word):
+   print(i)
