@@ -633,10 +633,40 @@
 # userOutput(userInput)
 
 
-def for_loop(userInput):
-    for i in range( userInput, 0, -1):
-        i-=1
-        print(i)
+# def for_loop(userInput):
+#     for i in range( userInput, 0, -1):
+#         i-=1
+#         print(i)
 
-userInput = int(input("enter your number: "))
-for_loop(userInput)
+# userInput = int(input("enter your number: "))
+# for_loop(userInput)
+
+
+# def calc_sum(n):
+#     if(n==0):
+#         return 0
+#     return calc_sum(n-1) + n
+
+# sum = calc_sum(10)
+# print(sum)
+
+# def show(n):
+#     if(n==0):
+#         return
+#     print(n)
+#     print(n-1)
+#     print("END")
+
+# show(5)
+
+# numbers = [1,2,2,3,4,4,5]
+
+# squared = [x ** 2 for x in numbers]
+ 
+# print(squared)
+
+set1 = {1,2,3}
+set2 = {2,3}
+
+print(set1.issubset(set2))
+print(set1.issuperset(set2))
