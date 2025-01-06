@@ -722,13 +722,25 @@
 #     print(f"{letter} is repeated {count} times")
 
 
-word = "banana"
-count1 = {}
+# word = "banana"
+# vowel = {}
 
-for i in word:
-    if i in count1:
-        count1[i] += 1
-    else: 
-        count1[i] = 1
+# for i in word:
+#     if i in 'aeiou':
+#         print(i, " is vowel")
+#     else:
+#         print(i, " not vowel")
 
-print(count1) 
+# f = open("demo.txt", "a")
+# f = open("sample.txt", "w")
+# f.close()
+
+# data = f.write("This is a test2")
+ 
+# print(data)
+# print(type(data))
+# f.close()
+
+import os
+
+os.remove("sample.txt")
