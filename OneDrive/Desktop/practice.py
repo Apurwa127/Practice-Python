@@ -743,4 +743,11 @@
 
 import os
 
-os.remove("sample.txt")
+
+os.remove("demo.txt")
+f = open("demo.txt", 'r+')
+data = f.read()
+print("This is an update1")
+print(data)
+
+f.close()
