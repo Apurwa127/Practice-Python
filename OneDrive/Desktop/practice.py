@@ -759,17 +759,22 @@
 
 # print(file_no())
 
-with open("numbers.txt", "w") as f:
-    print(f.write("1,2,3,4,5,6,7,8,9"))
+with open("file.txt", "w") as f:
+    print(f.write("Hello! my name is Apurwa Bhattarai \n I am awesome. \n I live in Dallas"))
 
-with open("numbers.txt", "r") as f:
-    number = f.read().split(',')
+with open("file.txt", "r") as f:
+    content = f.read()
+
+    find = content.find("name")
+
+    print(find)
     
-    for data in number:
-        if int(data) % 2 == 0:
-            print("Even")
+    # word = "name"
+    # line_no = 1
+    # for word1 in f:
+    #     if word in word1:
+    #         print(line_no)
+    #     line_no += 1
 
-print(f)
-            
  
 
