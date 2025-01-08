@@ -741,13 +741,35 @@
 # print(type(data))
 # f.close()
 
-import os
 
 
-os.remove("demo.txt")
-f = open("demo.txt", 'r+')
-data = f.read()
-print("This is an update1")
-print(data)
+# def file_no():
+#     word = "learning"
+#     data = True
+#     line_no =1
+#     with open("file.txt", "r") as f:
+#      while data:
+#         data = f.readline()
+#         if word in data:
+#            print(line_no)
+           
+#         line_no += 1
 
-f.close()
+#     return -1
+
+# print(file_no())
+
+with open("numbers.txt", "w") as f:
+    print(f.write("1,2,3,4,5,6,7,8,9"))
+
+with open("numbers.txt", "r") as f:
+    number = f.read().split(',')
+    
+    for data in number:
+        if int(data) % 2 == 0:
+            print("Even")
+
+print(f)
+            
+ 
+
