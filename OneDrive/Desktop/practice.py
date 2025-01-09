@@ -790,11 +790,24 @@
 #         line_no+=1
     
 
-with open("abc.txt", "r") as source_file:
-    with open("file8.txt", "w") as destination_file:
-        content = source_file.read()
-        destination_file.write(content)
-    print("The file has been successfully transferred")
-    
+# word = "awesome"
+# line = 1
 
-    
+# with open("file2.txt", "r") as source_file:
+#    for wrd in source_file:
+#       if word in wrd:
+#          print("found ", line)
+#       line +=1
+      
+# count = 0
+# with open("file2.txt", "r") as count_line:
+#     for cou in count_line:
+#         count+=1
+# print(count)
+
+with open("file2.txt", "r") as count_line1:
+    with open("file.txt", "w") as count_line2:
+
+        data = count_line1.read()
+        count_line2.write(data)
+print("success")
