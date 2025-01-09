@@ -759,15 +759,15 @@
 
 # print(file_no())
 
-with open("file.txt", "w") as f:
-    print(f.write("Hello! my name is Apurwa Bhattarai \n I am awesome. \n I live in Dallas"))
+# with open("file.txt", "w") as f:
+#     print(f.write("Hello! my name is Apurwa Bhattarai \n I am awesome. \n I live in Dallas"))
 
-with open("file.txt", "r") as f:
-    content = f.read()
+# with open("file.txt", "r") as f:
+#     content = f.read()
 
-    find = content.find("name")
+#     find = content.find("name")
 
-    print(find)
+#     print(find)
     
     # word = "name"
     # line_no = 1
@@ -777,4 +777,24 @@ with open("file.txt", "r") as f:
     #     line_no += 1
 
  
+# import os
 
+# word = "Dallas"
+# line_no = 1
+
+# with open("abc.txt", "r") as f:
+#     for wrd in f:
+#         wrd = wrd.replace("\\n", "\n")
+#         if word in wrd: 
+#             print("Dallas foun in line ", line_no)
+#         line_no+=1
+    
+
+with open("abc.txt", "r") as source_file:
+    with open("file8.txt", "w") as destination_file:
+        content = source_file.read()
+        destination_file.write(content)
+    print("The file has been successfully transferred")
+    
+
+    
