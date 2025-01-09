@@ -805,9 +805,19 @@
 #         count+=1
 # print(count)
 
-with open("file2.txt", "r") as count_line1:
-    with open("file.txt", "w") as count_line2:
+# with open("file2.txt", "r") as count_line1:
+#     with open("file.txt", "w") as count_line2:
 
-        data = count_line1.read()
-        count_line2.write(data)
-print("success")
+#         data = count_line1.read()
+#         count_line2.write(data)
+# print("success")  
+
+
+class student():
+    def __init__(self, name):
+        self.name = name
+        print("Hello world")
+
+s1 = student("Apurwa")
+print(s1.name)
+
