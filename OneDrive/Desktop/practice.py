@@ -813,11 +813,29 @@
 # print("success")  
 
 
+# class student():
+#     def __init__(self, name):
+#         self.name = name
+
+#     def hello(self):
+#         print("Hi", self.name)
+
+# s1 = student("apu")
+
+# s1.hello()
+
 class student():
-    def __init__(self, name):
+    def __init__(self, name, marks):
         self.name = name
-        print("Hello world")
+        self.marks = marks
 
-s1 = student("Apurwa")
-print(s1.name)
+    def methCall(self):
+        total = 0
+        for mark in self.marks:
+            total += mark
+        
+        print("Hi ", self.name, "your marks is ", total/3)
 
+student1 = student("Apurwa", [8,9,10]) 
+
+student1.methCall()
