@@ -769,12 +769,12 @@
 
 #     print(find)
     
-    # word = "name"
-    # line_no = 1
-    # for word1 in f:
-    #     if word in word1:
-    #         print(line_no)
-    #     line_no += 1
+#     word = "name"
+#     line_no = 1
+#     for word1 in f:
+#         if word in word1:
+#             print(line_no)
+#         line_no += 1
 
  
 # import os
@@ -824,18 +824,32 @@
 
 # s1.hello()
 
-class student():
-    def __init__(self, name, marks):
-        self.name = name
-        self.marks = marks
+# class student():
+#     def __init__(self, name, marks):
+#         self.name = name
+#         self.marks = marks
 
-    def methCall(self):
-        total = 0
-        for mark in self.marks:
-            total += mark
+#     def methCall(self):
+#         total = 0
+#         for mark in self.marks:
+#             total += mark
         
-        print("Hi ", self.name, "your marks is ", total/3)
+#         print("Hi ", self.name, "your marks is ", total/3)
 
-student1 = student("Apurwa", [8,9,10]) 
+# student1 = student("Apurwa", [8,9,10]) 
 
-student1.methCall()
+# student1.methCall()
+
+class Account:
+    def __init__(self, bal, acc):
+        self.balance = bal
+        self.account = acc
+
+    def debit(self, amount):
+        self.balance -= amount
+        print(amount, " is") 
+
+bal1 = Account(1000, 1234)
+print(bal1.account, bal1.balance)
+
+bal1.debit(5000)
