@@ -840,16 +840,31 @@
 
 # student1.methCall()
 
-class Account:
-    def __init__(self, bal, acc):
-        self.balance = bal
-        self.account = acc
+# class Account:
+#     def __init__(self, bal, acc):
+#         self.balance = bal
+#         self.account = acc
 
-    def debit(self, amount):
-        self.balance -= amount
-        print(amount, " is") 
+#     def debit(self, amount):
+#         self.balance -= amount
+#         print(amount, " is") 
 
-bal1 = Account(1000, 1234)
-print(bal1.account, bal1.balance)
+# bal1 = Account(1000, 1234)
+# print(bal1.account, bal1.balance)
 
-bal1.debit(5000)
+# bal1.debit(5000)
+
+
+class Student():
+    def __init__(self, name, grades):
+        self.name = name
+        self.grades = grades
+
+    def stu_Info(self):
+        i =0
+        for mark in self.grades:
+            i += mark
+        print("result", i/3)
+
+s1 = Student("Apu", [98, 99, 100])
+s1.stu_Info()
