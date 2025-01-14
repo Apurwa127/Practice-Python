@@ -973,19 +973,31 @@
 
 # per1.new_attribute("11393917")
 
-class Person():
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+# class Person():
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
 
 
-class Student(Person):
-    def __init__(self, name, age, student_Id):
-        super().__init__( name, age)
-        self.student_Id = student_Id
+# class Student(Person):
+#     def __init__(self, name, age, student_Id):
+#         super().__init__( name, age)
+#         self.student_Id = student_Id
 
-    def output(self):
-        print("name ", self.name, "age ", self.age, "student id ", self.student_Id)
+#     def output(self):
+#         print("name ", self.name, "age ", self.age, "student id ", self.student_Id)
 
-per1 = Student("Apu", "27", "11393917")
-per1.output()
+# per1 = Student("Apu", "27", "11393917")
+# per1.output()
+
+
+class Animal():
+    def speak(self):
+        print("Animal makes a sound")
+
+class Dog(Animal):
+    def speak(self):
+        print("Bark")
+
+animal1 = Dog()
+animal1.speak()
