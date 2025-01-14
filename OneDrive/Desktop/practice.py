@@ -991,13 +991,37 @@
 # per1.output()
 
 
-class Animal():
-    def speak(self):
-        print("Animal makes a sound")
+# class Animal():
+#     def speak(self):
+#         print("Animal makes a sound")
 
-class Dog(Animal):
-    def speak(self):
-        print("Bark")
+# class Dog(Animal):
+#     def speak(self):
+#         print("Bark")
 
-animal1 = Dog()
-animal1.speak()
+# animal1 = Dog()
+# animal1.speak()
+
+
+class Person():
+    def __init__(self, name, age, address):
+        self.name = name
+        self.age = age
+        self.address = address
+    
+    def greet(self):
+        print("Hello, my name is ", self.name)
+        print("your age and address is ", self.age,", ", self.address, "respectively.")
+    
+class Student(Person):
+    def __init__(self, name, age, address, student_id):
+        super(). __init__(name, age, address)
+        self.student_id = student_id
+
+    def study(self):
+        print("I am studying")
+
+person1 = Student("Apurwa", "27", "Denton", "11393917")
+
+person1.greet()
+person1.study()
