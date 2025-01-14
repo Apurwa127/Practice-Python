@@ -939,22 +939,37 @@
 # emp = Employee("account", "Finance", "80000")
 # emp.showDetails()
 
-class vehicle():
-    def __init__(self, make, model, year):
-        self.make = make
-        self.model = model
-        self.year = year
+# class vehicle():
+#     def __init__(self, make, model, year):
+#         self.make = make
+#         self.model = model
+#         self.year = year
 
-    def display_info(self):
-        print("make ", self.make)
-        print("model ", self.model)
-        print("year ", self.year)
+#     def display_info(self):
+#         print("make ", self.make)
+#         print("model ", self.model)
+#         print("year ", self.year)
 
-class Car(vehicle):
-    def start_engine(self):
-        print("Engine started")
+# class Car(vehicle):
+#     def start_engine(self):
+#         print("Engine started")
 
 
-car1 = Car("Toyota", "Camry", "2022")
-car1.display_info()
-car1.start_engine()
+# car1 = Car("Toyota", "Camry", "2022")
+# car1.display_info()
+# car1.start_engine()
+
+class Person():
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+class Student(Person):
+    def new_attribute(self, student_id):
+        self.student_id = student_id
+        print("name ",self.name, "age ", self.age, "student_id ", self.student_id  )
+
+per1 = Student("apu", "27")
+
+per1.new_attribute("11393917")
+
