@@ -855,16 +855,106 @@
 # bal1.debit(5000)
 
 
-class Student():
-    def __init__(self, name, grades):
-        self.name = name
-        self.grades = grades
+# class Student():
+#     def __init__(self, name, grades):
+#         self.name = name
+#         self.grades = grades
 
-    def stu_Info(self):
-        i =0
-        for mark in self.grades:
-            i += mark
-        print("result", i/3)
+#     def stu_Info(self):
+#         i =0
+#         for mark in self.grades:
+#             i += mark
+#         print("result", i/3)
 
-s1 = Student("Apu", [98, 99, 100])
-s1.stu_Info()
+# s1 = Student("Apu", [98, 99, 100])
+# s1.stu_Info()
+
+
+# class A:
+#     print("Welcome to A")
+
+# class B:
+#     print("Welcome to B")
+
+# class C(A,B):
+#     print("Welcome to C")
+
+# C1 = A()
+
+# print(C1)
+
+# class Person():
+#     def __init__(self, name = "", age=0):
+#         self.name = name
+#         self.age = age
+
+#     def set_name(self, name):
+#         self._name = name
+
+#     def set_age(self, age):
+#         self._age = age
+
+#     def get_name(self):
+#         return self._name
+
+#     def get_age(self):
+#         return self._age
+
+
+# s1 = Person()
+
+# s1.set_name("apu")
+# s1.set_age(27)
+
+# print(s1.get_name())
+# print(s1.get_age())
+
+
+# class Circle():
+#     def __init__(self, radius):
+#         self.radius = radius
+
+#     def area(self):
+#         return  22/7 * self.radius ** 2
+
+#     def perimeter(self):
+#         return  2 * 22/7 * self.radius 
+
+# c1 = Circle(21)
+# print(c1.area())
+# print(c1.perimeter())
+
+# class Employee():
+#     def __init__(self, role, dept, salary):
+#         self.role = role
+#         self.dept = dept
+#         self.salary = salary
+
+#     def showDetails(self):
+#         print("role = ", self.role)
+#         print("dept = ", self.dept)
+#         print("salary = ", self.salary)
+
+
+# emp = Employee("account", "Finance", "80000")
+# emp.showDetails()
+
+class vehicle():
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+
+    def display_info(self):
+        print("make ", self.make)
+        print("model ", self.model)
+        print("year ", self.year)
+
+class Car(vehicle):
+    def start_engine(self):
+        print("Engine started")
+
+
+car1 = Car("Toyota", "Camry", "2022")
+car1.display_info()
+car1.start_engine()
