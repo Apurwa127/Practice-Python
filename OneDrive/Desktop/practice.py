@@ -959,17 +959,33 @@
 # car1.display_info()
 # car1.start_engine()
 
+# class Person():
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+
+# class Student(Person):
+#     def new_attribute(self, student_id):
+#         self.student_id = student_id
+#         print("name ",self.name, "age ", self.age, "student_id ", self.student_id  )
+
+# per1 = Student("apu", "27")
+
+# per1.new_attribute("11393917")
+
 class Person():
     def __init__(self, name, age):
         self.name = name
         self.age = age
 
+
 class Student(Person):
-    def new_attribute(self, student_id):
-        self.student_id = student_id
-        print("name ",self.name, "age ", self.age, "student_id ", self.student_id  )
+    def __init__(self, name, age, student_Id):
+        super().__init__( name, age)
+        self.student_Id = student_Id
 
-per1 = Student("apu", "27")
+    def output(self):
+        print("name ", self.name, "age ", self.age, "student id ", self.student_Id)
 
-per1.new_attribute("11393917")
-
+per1 = Student("Apu", "27", "11393917")
+per1.output()
