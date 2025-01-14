@@ -1003,25 +1003,40 @@
 # animal1.speak()
 
 
-class Person():
-    def __init__(self, name, age, address):
+# class Person():
+#     def __init__(self, name, age, address):
+#         self.name = name
+#         self.age = age
+#         self.address = address
+    
+#     def greet(self):
+#         print("Hello, my name is ", self.name)
+#         print("your age and address is ", self.age,", ", self.address, "respectively.")
+    
+# class Student(Person):
+#     def __init__(self, name, age, address, student_id):
+#         super(). __init__(name, age, address)
+#         self.student_id = student_id
+
+#     def study(self):
+#         print("I am studying")
+
+# person1 = Student("Apurwa", "27", "Denton", "11393917")
+
+# person1.greet()
+# person1.study()
+
+
+class Animal():
+    def __init__(self, name, species):
         self.name = name
-        self.age = age
-        self.address = address
-    
-    def greet(self):
-        print("Hello, my name is ", self.name)
-        print("your age and address is ", self.age,", ", self.address, "respectively.")
-    
-class Student(Person):
-    def __init__(self, name, age, address, student_id):
-        super(). __init__(name, age, address)
-        self.student_id = student_id
+        self.species = species
 
-    def study(self):
-        print("I am studying")
+class Dog(Animal):
+    def __init__(self, name, species, breed):
+        super().__init__(name, species)
+        self.breed = breed
 
-person1 = Student("Apurwa", "27", "Denton", "11393917")
+d1 = Dog("bunny", "canine", "chihuahua")
 
-person1.greet()
-person1.study()
+print("name: ", d1.name, "--species: ", d1.species, "--breed: ", d1.breed)
