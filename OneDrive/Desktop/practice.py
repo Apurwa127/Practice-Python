@@ -1027,16 +1027,61 @@
 # person1.study()
 
 
-class Animal():
-    def __init__(self, name, species):
+# class Animal():
+#     def __init__(self, name, species):
+#         self.name = name
+#         self.species = species
+
+# class Dog(Animal):
+#     def __init__(self, name, species, breed):
+#         super().__init__(name, species)
+#         self.breed = breed
+
+# d1 = Dog("bunny", "canine", "chihuahua")
+
+# print("name: ", d1.name, "--species: ", d1.species, "--breed: ", d1.breed)
+
+# class Vehicle():
+#     def start_engine(self):
+#         print("engine started")
+
+# class Car(Vehicle):
+#     def start_engine(self):
+#         print("Car engine started")
+
+# car1 = Car()
+# car1.start_engine()
+    
+class Person():
+    def __init__(self, name, age):
         self.name = name
-        self.species = species
+        self.age = age
 
-class Dog(Animal):
-    def __init__(self, name, species, breed):
-        super().__init__(name, species)
-        self.breed = breed
+class Teacher(Person):
+    def __init__(self, name, age, subject):
+        super().__init__(name, age)
+        self.subject = subject
 
-d1 = Dog("bunny", "canine", "chihuahua")
+    def teach(self):
+        print(self.name, " is teaching", self.subject)
 
-print("name: ", d1.name, "--species: ", d1.species, "--breed: ", d1.breed)
+class Student(Person):
+    def __init__(self, name, age, student_id):
+        super().__init__(name, age)
+        self.student_ID = student_id
+
+    def study(self):
+        print(self.student_ID, " is studying class taught by ", self.name)
+
+class TeachingAssistant(Teacher, Student):
+    def __init__(self, name, age, subject, student_id):
+        Teacher.__init__(self, name, age, subject)
+        Student.__init__(self, name, age, student_id)
+
+
+    def help_student(self):
+        print("Helping the student")
+
+
+c1 = TeachingAssistant("apu", 27,"Phy", "11393917")
+c1.help_student()
