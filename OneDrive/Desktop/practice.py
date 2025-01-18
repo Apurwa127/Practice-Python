@@ -1087,10 +1087,11 @@
 # c1.help_student()
 
 
-#file check
-a = 5
-b = 6
+f = open("demo.txt", "a+")
 
-sum = a + b
+data = f.write("this1234")
+print(data)
 
-print(sum)
+
+f.close()
+
