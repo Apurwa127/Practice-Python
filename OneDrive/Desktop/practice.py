@@ -1052,36 +1052,45 @@
 # car1 = Car()
 # car1.start_engine()
     
-class Person():
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+# class Person():
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
 
-class Teacher(Person):
-    def __init__(self, name, age, subject):
-        super().__init__(name, age)
-        self.subject = subject
+# class Teacher(Person):
+#     def __init__(self, name, age, subject):
+#         super().__init__(name, age)
+#         self.subject = subject
 
-    def teach(self):
-        print(self.name, " is teaching", self.subject)
+#     def teach(self):
+#         print(self.name, " is teaching", self.subject)
 
-class Student(Person):
-    def __init__(self, name, age, student_id):
-        super().__init__(name, age)
-        self.student_ID = student_id
+# class Student(Person):
+#     def __init__(self, name, age, student_id):
+#         super().__init__(name, age)
+#         self.student_ID = student_id
 
-    def study(self):
-        print(self.student_ID, " is studying class taught by ", self.name)
+#     def study(self):
+#         print(self.student_ID, " is studying class taught by ", self.name)
 
-class TeachingAssistant(Teacher, Student):
-    def __init__(self, name, age, subject, student_id):
-        Teacher.__init__(self, name, age, subject)
-        Student.__init__(self, name, age, student_id)
-
-
-    def help_student(self):
-        print("Helping the student")
+# class TeachingAssistant(Teacher, Student):
+#     def __init__(self, name, age, subject, student_id):
+#         Teacher.__init__(self, name, age, subject)
+#         Student.__init__(self, name, age, student_id)
 
 
-c1 = TeachingAssistant("apu", 27,"Phy", "11393917")
-c1.help_student()
+#     def help_student(self):
+#         print("Helping the student")
+
+
+# c1 = TeachingAssistant("apu", 27,"Phy", "11393917")
+# c1.help_student()
+
+
+#file check
+a = 5
+b = 6
+
+sum = a + b
+
+print(sum)
