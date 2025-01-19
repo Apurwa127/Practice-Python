@@ -1096,14 +1096,30 @@
 # f.close()
 
 
-with open("demo1.txt", "r") as f:
-    data = f.read()
-    new_line = data.splitlines()
-    result = len(new_line)
-    result2 = len(data.split())
-    result3 = len(data) 
+# with open("demo1.txt", "r") as f:
+#     data = f.read()
+#     new_line = data.splitlines()
+#     result = len(new_line)
+#     result2 = len(data.split())
+#     result3 = len(data) 
 
-print("line: ", result)
-print("word", result2)
-print("character: ", result3)
+# print("line: ", result)
+# print("word", result2)
+# print("character: ", result3)
+
+# Open the input file in read mode
+with open("test.txt", "r") as f:
+    # Read the lines from the file
+    lines = f.readlines()
+
+# Open the output file in write mode
+with open("output.txt", "w") as output:
+    # Iterate over each line in the input file
+    for line in lines:
+        # If the line is not empty after stripping whitespace
+        if line.strip() != "":
+            # Write the non-empty line to the output file
+            output.write(line)
+
+print("Empty lines have been removed and content has been saved to 'output.txt'.")
 
