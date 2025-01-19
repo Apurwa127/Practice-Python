@@ -1087,11 +1087,23 @@
 # c1.help_student()
 
 
-f = open("demo.txt", "a+")
+# f = open("demo.txt", "a+")
 
-data = f.write("this1234")
-print(data)
+# data = f.write("this1234")
+# print(data)
 
 
-f.close()
+# f.close()
+
+
+with open("demo1.txt", "r") as f:
+    data = f.read()
+    new_line = data.splitlines()
+    result = len(new_line)
+    result2 = len(data.split())
+    result3 = len(data) 
+
+print("line: ", result)
+print("word", result2)
+print("character: ", result3)
 
