@@ -1108,15 +1108,45 @@
 # print("character: ", result3)
 
 
-info = {
-    "Name" : "Alice",
-    "Age" : 25,
-    "Country" : "USA"
+# info = {
+#     "Name" : "Alice",
+#     "Age" : 25,
+#     "Country" : "USA"
+# }
+
+# print(info)
+# print(info["Name"])
+# print(info["Age"])
+# print(info["Country"])
+
+# book = {
+#     "Title" : "The Great Gatsby",
+#     "Author" :  "F.Scott Fitzgerald",
+#     "Year" : 1925
+# }
+
+# book["ISBN"] = 1234
+
+# print(book["Author"])
+# print(book)
+
+
+# travel = {
+#     "city" : "Paris",
+#     "population" : 2148000,
+#     "country" : "France"
+# }
+
+# print(travel["population"])
+
+
+person = {
+    "name" : "Sarah",
+    "age" : 30,
+    "city" : "New York"
 }
 
-print(info)
-print(info["Name"])
-print(info["Age"])
-print(info["Country"])
+person["age"] = 31
+person["job"] = "Engineer"
 
-
+print(person)
