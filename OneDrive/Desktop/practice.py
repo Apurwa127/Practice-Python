@@ -1107,19 +1107,16 @@
 # print("word", result2)
 # print("character: ", result3)
 
-# Open the input file in read mode
-with open("test.txt", "r") as f:
-    # Read the lines from the file
-    lines = f.readlines()
 
-# Open the output file in write mode
-with open("output.txt", "w") as output:
-    # Iterate over each line in the input file
-    for line in lines:
-        # If the line is not empty after stripping whitespace
-        if line.strip() != "":
-            # Write the non-empty line to the output file
-            output.write(line)
+info = {
+    "Name" : "Alice",
+    "Age" : 25,
+    "Country" : "USA"
+}
 
-print("Empty lines have been removed and content has been saved to 'output.txt'.")
+print(info)
+print(info["Name"])
+print(info["Age"])
+print(info["Country"])
+
 
