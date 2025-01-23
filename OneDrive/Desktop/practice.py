@@ -1140,13 +1140,96 @@
 # print(travel["population"])
 
 
-person = {
-    "name" : "Sarah",
-    "age" : 30,
-    "city" : "New York"
+# person = {
+#     "name" : "Sarah",
+#     "age" : 30,
+#     "city" : "New York"
+# }
+
+# person["age"] = 31
+# person["job"] = "Engineer"
+
+# print(person)
+
+
+# car = {
+#     "make" : "Toyota",
+#     "model" : "Corolla",
+#     "year" : 2020
+# }
+
+# print(car["model"],", ", car["year"])
+
+# grades = {
+#     "Math" : 90,
+#     "English" : 85,
+#     "History" : 88
+# }
+
+# grades["subject"] = 90
+# print(grades["English"])
+# print(grades)
+
+# person={
+#     "first_name" : "Emma",
+#     "last_name" : "Brown",
+#     "age" : 27
+# }
+
+# del person["age"]
+
+# print(person)
+
+# contacts = {
+#     "name" : "Jake", 
+#     "phone" : "555-1234",
+#     "email" : "jake@example.com"
+# }
+
+# if "email" in contacts:
+#     print("Exist")
+# else:
+#     print("don't exist")
+
+# product = {
+#     "name" : "Laptop",
+#     "price" : 800,
+#     "stock" : 25
+# }
+
+# product["stock"] = 30
+# product["price"] = 750
+
+# print(product)
+
+# students_grades = {
+#     "Alice" : [88,92,79],
+#     "Bob" : [75,85,90],
+#     "Charlie" : [95, 100, 98]
+# }
+
+# def average_grade():
+#     name = input("please enter student's name: ")
+#     if name in students_grades:
+#         scores1 = students_grades[name]
+#         average = sum(scores1)/ len(scores1)
+#         print(average)
+
+# average_grade()
+
+inventory = {
+    "apple" : (30, 1.2),
+    "banana" : (45, 0.5),
+    "orange" : (20, 0.8)
 }
 
-person["age"] = 31
-person["job"] = "Engineer"
 
-print(person)
+def total_value():
+    val = input("Please enter your value: "). lower()
+    if val in inventory:
+        quantity, price = inventory[val]
+        result = quantity * price
+        print(result)
+
+
+total_value()
