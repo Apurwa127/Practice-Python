@@ -1339,7 +1339,43 @@
 # sum_of_numbers(5,9)
 
 
-def personal_info(name, age, city):
-    print("Name: ", name, "Age:", age, "City: ", city)
+# def personal_info(name, age, city):
+#     print("Name: ", name, "Age:", age, "City: ", city)
 
-personal_info("apu", 27, "Dallas")
+# personal_info("apu", 27, "Dallas")
+
+# def multiplt(a, b=1):
+#     multiply_number = a * b
+#     return multiply_number
+
+# print(multiplt(2))
+
+# def average_number(*args):
+#  if args == 0:
+#     return 0
+#  return sum(args) / len(args)
+    
+
+# print(average_number(8))
+
+# numbers = [1,2,3,4,5]
+# squared = map(lambda x: x **2, numbers)
+# print(list(squared))
+
+# multiplt = lambda a, b: a *b
+
+# print(multiplt(4,5))
+
+# def outer():
+#     def inner():
+#         print("This is inner function. ")
+#     inner()
+
+# outer()
+
+def add_n(n):
+    def add(x):
+        return n + x
+    return add
+
+print(add_n(4)(7))
