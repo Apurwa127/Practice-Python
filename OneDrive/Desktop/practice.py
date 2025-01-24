@@ -1323,10 +1323,23 @@
 
 # greet()
 
-def square():
-    userInput = int(input("Please enter your number: "))
-    result = userInput ** 2
-    print("the square of your number is: ", result)
+# def square():
+#     userInput = int(input("Please enter your number: "))
+#     result = userInput ** 2
+#     print("the square of your number is: ", result)
 
-square() 
+# square() 
 
+
+# def sum_of_numbers(a, b):
+
+#     sum = a+b
+#     print(sum)
+
+# sum_of_numbers(5,9)
+
+
+def personal_info(name, age, city):
+    print("Name: ", name, "Age:", age, "City: ", city)
+
+personal_info("apu", 27, "Dallas")
