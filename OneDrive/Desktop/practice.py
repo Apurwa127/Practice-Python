@@ -1306,12 +1306,27 @@
 #     print(store[squ])
 # print(store)
 
-grades = {
-    "John" : 85,
-    "Emily" : 92,
-    "Michael" : 78,
-    "Sarah"  :89
-}
+# grades = {
+#     "John" : 85,
+#     "Emily" : 92,
+#     "Michael" : 78,
+#     "Sarah"  :89
+# }
 
-sort = dict(sorted(grades.items(), key = lambda ite: ite[1], reverse = True))
-print(sort)
+# sort = dict(sorted(grades.items(), key = lambda ite: ite[1], reverse = True))
+# print(sort)
+
+
+# def greet():
+#     name = input("Please enter your name: ")
+#     print("Hello,", name)
+
+# greet()
+
+def square():
+    userInput = int(input("Please enter your number: "))
+    result = userInput ** 2
+    print("the square of your number is: ", result)
+
+square() 
+
