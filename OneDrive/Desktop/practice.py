@@ -1273,13 +1273,45 @@
 # value = fruits.get("banana", 0)
 # print(value)
 
-colors = ["red", "blue", "red", "green", "blue", "blue"]
-store = {}
+# colors = ["red", "blue", "red", "green", "blue", "blue"]
+# store = {}
 
-for frequency in colors:
-    if frequency in store:
-     store[frequency] +=1
-else:
-    store[frequency] = 1
+# for frequency in colors:
+#     if frequency in store:
+#      store[frequency] +=1
+# else:
+#     store[frequency] = 1
 
-print(store)    
+# print(store)    
+
+# classroom = {
+#     "John" : {"math": 85, "science":92},
+#     "Emily" : {"math": 78, "science":88},
+#     "Michael" : {"math": 90, "science":85}
+
+# }
+# classroom["Sarah"] = {"math" : 95, "science" : 89}
+
+# print(classroom)
+
+# print(classroom["Emily"])
+
+# numbers = {1,2,3,4,5}
+# store = {}
+
+# for squ in numbers:
+#     val = squ ** 2
+#     store[squ] = val
+
+#     print(store[squ])
+# print(store)
+
+grades = {
+    "John" : 85,
+    "Emily" : 92,
+    "Michael" : 78,
+    "Sarah"  :89
+}
+
+sort = dict(sorted(grades.items(), key = lambda ite: ite[1], reverse = True))
+print(sort)
