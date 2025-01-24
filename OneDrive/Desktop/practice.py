@@ -1217,19 +1217,40 @@
 
 # average_grade()
 
-inventory = {
-    "apple" : (30, 1.2),
-    "banana" : (45, 0.5),
-    "orange" : (20, 0.8)
+# inventory = {
+#     "apple" : (30, 1.2),
+#     "banana" : (45, 0.5),
+#     "orange" : (20, 0.8)
+# }
+
+
+# def total_value():
+#     val = input("Please enter your value: "). lower()
+#     if val in inventory:
+#         quantity, price = inventory[val]
+#         result = quantity * price
+#         print(result)
+
+
+# total_value()
+
+# student = {
+#     "name" : "Alex",
+#     "age" : 21,
+#     "grade" : "A"
+# }
+
+# print(student)
+
+car = {
+    "brand" : "Tesla",
+    "model" : "Model 3",
+    "year" : 2022
 }
 
+car["color"] = "red"
+car["year"] = 2023
 
-def total_value():
-    val = input("Please enter your value: "). lower()
-    if val in inventory:
-        quantity, price = inventory[val]
-        result = quantity * price
-        print(result)
-
-
-total_value()
+del car["brand"]
+print(car)
+print(car["model"])
