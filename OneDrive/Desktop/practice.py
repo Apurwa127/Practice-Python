@@ -1242,15 +1242,44 @@
 
 # print(student)
 
-car = {
-    "brand" : "Tesla",
-    "model" : "Model 3",
-    "year" : 2022
-}
+# car = {
+#     "brand" : "Tesla",
+#     "model" : "Model 3",
+#     "year" : 2022
+# }
 
-car["color"] = "red"
-car["year"] = 2023
+# car["color"] = "red"
+# car["year"] = 2023
 
-del car["brand"]
-print(car)
-print(car["model"])
+# del car["brand"]
+# print(car)
+# print(car["model"])
+
+
+# fruits = {
+#     "apple" : 5,
+#     "banana" : 3,
+#     "orange" : 2
+# }
+
+# for ele in fruits:
+#     print({ele}, ":", {fruits[ele]})
+
+# if "banana" in fruits:
+#     print("Exist")
+# else:
+#     print("Don't Exist")
+
+# value = fruits.get("banana", 0)
+# print(value)
+
+colors = ["red", "blue", "red", "green", "blue", "blue"]
+store = {}
+
+for frequency in colors:
+    if frequency in store:
+     store[frequency] +=1
+else:
+    store[frequency] = 1
+
+print(store)    
