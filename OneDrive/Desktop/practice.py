@@ -1373,9 +1373,17 @@
 
 # outer()
 
-def add_n(n):
-    def add(x):
-        return n + x
-    return add
+# def add_n(n):
+#     def add(x):
+#         return n + x
+#     return add
 
-print(add_n(4)(7))
+# print(add_n(4)(7))
+
+a = 5
+b = 6
+sum = a + b
+print(sum)
+print("Sum, ", sum)
+
+
