@@ -1373,9 +1373,58 @@
 
 # outer()
 
-def add_n(n):
-    def add(x):
-        return n + x
-    return add
+# def add_n(n):
+#     def add(x):
+#         return n + x
+#     return add
 
-print(add_n(4)(7))
+# print(add_n(4)(7))
+
+
+# class Book:
+#     def __init__(self, title, author, price):
+#         self.title = title
+#         self.author = author
+#         self.price = price
+
+#     def display_info(self):
+#         print("Title", self.title)
+#         print("Author", self.author)
+#         print("Price", self.price)
+
+
+# book1 =Book("The Great Gatsby", "Mark", "29.99")
+# book1.display_info() 
+
+# class Car:
+#     def __init__(self, make, model, year):
+#         self.make = make
+#         self.model = model
+#         self.year = year
+
+#     def car_details(self):
+#         print("Make: ", self.make)
+#         print("Model: ", self.model)
+#         print("year: ", self.year)
+
+# car1 = Car("Toyota", "Camry", "2022")
+# car1.car_details()
+
+class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def area(self):
+        answer =self.length * self.width
+        print(answer)
+
+    def perimeter(self):
+        per= 2 * (self.length + self.width)
+        print(per)
+
+ob1 = Rectangle(5, 6)
+ob1.area()
+ob1.perimeter()
+
+    
