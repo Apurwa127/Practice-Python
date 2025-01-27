@@ -1378,6 +1378,7 @@
 #         return n + x
 #     return add
 
+<<<<<<< HEAD
 # print(add_n(4)(7))
 
 
@@ -1428,3 +1429,7 @@ ob1.area()
 ob1.perimeter()
 
     
+=======
+print(add_n(4)(7))
+print("This is a test")
+>>>>>>> 4876fb5f9b143cc8b9944ba3c7541dea158a5ca7
