@@ -924,17 +924,4 @@
 # print(c1.area())
 # print(c1.perimeter())
 
-class Employee():
-    def __init__(self, role, dept, salary):
-        self.role = role
-        self.dept = dept
-        self.salary = salary
-
-    def showDetails(self):
-        print("role = ", self.role)
-        print("dept = ", self.dept)
-        print("salary = ", self.salary)
-
-
-emp = Employee("account", "Finance", "80000")
-emp.showDetails()
+print("test")
