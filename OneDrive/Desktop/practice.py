@@ -1378,7 +1378,7 @@
 #         return n + x
 #     return add
 
-<<<<<<< HEAD
+
 # print(add_n(4)(7))
 
 
@@ -1411,25 +1411,45 @@
 # car1 = Car("Toyota", "Camry", "2022")
 # car1.car_details()
 
-class Rectangle:
-    def __init__(self, length, width):
-        self.length = length
-        self.width = width
+# class Rectangle:
+#     def __init__(self, length, width):
+#         self.length = length
+#         self.width = width
 
-    def area(self):
-        answer =self.length * self.width
-        print(answer)
+#     def area(self):
+#         answer =self.length * self.width
+#         print(answer)
 
-    def perimeter(self):
-        per= 2 * (self.length + self.width)
-        print(per)
+#     def perimeter(self):
+#         per= 2 * (self.length + self.width)
+#         print(per)
 
-ob1 = Rectangle(5, 6)
-ob1.area()
-ob1.perimeter()
+# ob1 = Rectangle(5, 6)
+# ob1.area()
+# ob1.perimeter()
+
+class Vehicle:
+    def __init__(self, brand, model, year):
+        self.brand = brand
+        self.model = model
+        self.year = year
+
+    def vehicle_info(self):
+        print("Brand", self.brand)
+        print("Model", self.model)
+        print("year", self.year)
+
+class Car(Vehicle):
+    def __init__(self, brand, model, year, fuel_type):
+        super().__init__(brand, model, year)
+        self.fuel_type = fuel_type
+    
+    def car_info(self):
+        print("Fuel_type", self.fuel_type)
+
+Car1 = Vehicle("Toyota", "Camry", "2022")
+Car1.vehicle_info()
+Car2 = Car("Toyota", "Camry", "2022","Highlander")
+Car2.car_info()
 
     
-=======
-print(add_n(4)(7))
-print("This is a test")
->>>>>>> 4876fb5f9b143cc8b9944ba3c7541dea158a5ca7
