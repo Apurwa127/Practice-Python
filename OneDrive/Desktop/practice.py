@@ -1428,28 +1428,97 @@
 # ob1.area()
 # ob1.perimeter()
 
-class Vehicle:
-    def __init__(self, brand, model, year):
-        self.brand = brand
-        self.model = model
-        self.year = year
+# class Vehicle:
+#     def __init__(self, brand, model, year):
+#         self.brand = brand
+#         self.model = model
+#         self.year = year
 
-    def vehicle_info(self):
-        print("Brand", self.brand)
-        print("Model", self.model)
-        print("year", self.year)
+#     def vehicle_info(self):
+#         print("Brand", self.brand)
+#         print("Model", self.model)
+#         print("year", self.year)
 
-class Car(Vehicle):
-    def __init__(self, brand, model, year, fuel_type):
-        super().__init__(brand, model, year)
-        self.fuel_type = fuel_type
+# class Car(Vehicle):
+#     def __init__(self, brand, model, year, fuel_type):
+#         super().__init__(brand, model, year)
+#         self.fuel_type = fuel_type
     
-    def car_info(self):
-        print("Fuel_type", self.fuel_type)
+#     def car_info(self):
+#         print("Fuel_type", self.fuel_type)
 
-Car1 = Vehicle("Toyota", "Camry", "2022")
-Car1.vehicle_info()
-Car2 = Car("Toyota", "Camry", "2022","Highlander")
-Car2.car_info()
+# Car1 = Vehicle("Toyota", "Camry", "2022")
+# Car1.vehicle_info()
+# Car2 = Car("Toyota", "Camry", "2022","Highlander")
+# Car2.car_info()
 
+# class Employee:
+#     def __init__(self, name, emp_id, salary):
+#         self.name = name
+#         self.emp_id = emp_id
+#         self.salary = salary
     
+#     def show_details1(self):
+#         print("name", self.name)
+#         print("emp_id", self.emp_id)
+#         print("salary", self.salary)
+
+# class Manager(Employee):
+#     def __init__(self, name, emp_id, salary, management):
+#         super().__init__(name, emp_id, salary)
+#         self.management = management
+
+#     def show_details(self):
+#         super().show_details1()
+#         print("management", self.management)
+
+# s1 = Manager("Apurwa", "11230", "165000", "Manager")
+
+# s1.show_details()
+
+# class A:
+#     def show(self):
+#         print("Class A")
+
+# class B:
+#     def show(self):
+#         print("Class B")
+
+# class C(A,B):
+#     def show(self):
+#         print("Class C")
+
+# OBJ1 = C()
+# OBJ1.show()
+
+
+store = []
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def sound(self):
+        pass
+
+class Dog(Animal):
+    def __init__(self, name):
+        super().__init__(name)
+
+    def sound(self):
+        return "bark"
+
+class Cat(Animal):
+    def __init__(self, name):
+        super().__init__(name)
+
+    def sound(self):
+        return "meow"
+
+Animal = [Dog("Honey"), Cat("Minny"), Dog("Husky"), Cat("sandra")]
+
+for animals in Animal:
+    print([animals.name], [animals.sound()])
+
+
+
+
