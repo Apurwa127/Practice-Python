@@ -1492,33 +1492,76 @@
 # OBJ1.show()
 
 
-store = []
-class Animal:
+# store = []
+# class Animal:
+#     def __init__(self, name):
+#         self.name = name
+
+#     def sound(self):
+#         pass
+
+# class Dog(Animal):
+#     def __init__(self, name):
+#         super().__init__(name)
+
+#     def sound(self):
+#         return "bark"
+
+# class Cat(Animal):
+#     def __init__(self, name):
+#         super().__init__(name)
+
+#     def sound(self):
+#         return "meow"
+
+# Animal = [Dog("Honey"), Cat("Minny"), Dog("Husky"), Cat("sandra")]
+
+# for animals in Animal:
+#     print([animals.name], [animals.sound()])
+
+
+
+class User:
     def __init__(self, name):
         self.name = name
+        self.borrowed_books = []
+    
+    def borrow_books(self, book_name):
+        if len(self.borrowed_books)< self.borrowing_limit:
+            print(self.name, "has borrowed ", book_name)
+        else:
+            print(self.name, "hasn't borrowed anything ")
+    
+    def return_book(self, book_name):
+        if book_name in self.borrowed_books:
+            print(self.name, "has returned ", book_name)
+        else:
+            print(self.name, "hasn't returned anything yet")
+    
+    def display_book(self):
+        if self.borrow_books:
+            print(self.name, "has checked out these books".join(self.borrowed_books) )
+        else:
+            print("nothing is checked out")
+    
+    def regularuser(User):
+        def __init__(self, name):
+            super().__init__(name)
+            self.borrowing_limit = 3
 
-    def sound(self):
-        pass
+    def Premiumuser(User):
+        def __init__(self, name):
+            super().__init__(name)
+            self.borrowing_limit = 5
 
-class Dog(Animal):
-    def __init__(self, name):
-        super().__init__(name)
+    books_list = ["book1", "book2", "book3", "book4", "book5", "book6"]
+    regularUser = regularuser("Alice")
+    premium_user = Premiumuser("Mike")
 
-    def sound(self):
-        return "bark"
+    for book in books_list:
+        regularUser.borrow_books(book)
 
-class Cat(Animal):
-    def __init__(self, name):
-        super().__init__(name)
-
-    def sound(self):
-        return "meow"
-
-Animal = [Dog("Honey"), Cat("Minny"), Dog("Husky"), Cat("sandra")]
-
-for animals in Animal:
-    print([animals.name], [animals.sound()])
-
-
-
+    regularUser.display_books()
+    print("Hello")
+            
 
