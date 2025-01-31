@@ -1521,47 +1521,110 @@
 
 
 
-class User:
-    def __init__(self, name):
-        self.name = name
-        self.borrowed_books = []
+# class User:
+#     def __init__(self, name):
+#         self.name = name
+#         self.borrowed_books = []
     
-    def borrow_books(self, book_name):
-        if len(self.borrowed_books)< self.borrowing_limit:
-            print(self.name, "has borrowed ", book_name)
-        else:
-            print(self.name, "hasn't borrowed anything ")
+#     def borrow_books(self, book_name):
+#         if len(self.borrowed_books)< self.borrowing_limit:
+#             print(self.name, "has borrowed ", book_name)
+#         else:
+#             print(self.name, "hasn't borrowed anything ")
     
-    def return_book(self, book_name):
-        if book_name in self.borrowed_books:
-            print(self.name, "has returned ", book_name)
-        else:
-            print(self.name, "hasn't returned anything yet")
+#     def return_book(self, book_name):
+#         if book_name in self.borrowed_books:
+#             print(self.name, "has returned ", book_name)
+#         else:
+#             print(self.name, "hasn't returned anything yet")
     
-    def display_book(self):
-        if self.borrow_books:
-            print(self.name, "has checked out these books".join(self.borrowed_books) )
-        else:
-            print("nothing is checked out")
+#     def display_book(self):
+#         if self.borrow_books:
+#             print(self.name, "has checked out these books".join(self.borrowed_books) )
+#         else:
+#             print("nothing is checked out")
     
-    def regularuser(User):
-        def __init__(self, name):
-            super().__init__(name)
-            self.borrowing_limit = 3
+#     def regularuser(User):
+#         def __init__(self, name):
+#             super().__init__(name)
+#             self.borrowing_limit = 3
 
-    def Premiumuser(User):
-        def __init__(self, name):
-            super().__init__(name)
-            self.borrowing_limit = 5
+#     def Premiumuser(User):
+#         def __init__(self, name):
+#             super().__init__(name)
+#             self.borrowing_limit = 5
 
-    books_list = ["book1", "book2", "book3", "book4", "book5", "book6"]
-    regularUser = regularuser("Alice")
-    premium_user = Premiumuser("Mike")
+#     books_list = ["book1", "book2", "book3", "book4", "book5", "book6"]
+#     regularUser = regularuser("Alice")
+#     premium_user = Premiumuser("Mike")
 
-    for book in books_list:
-        regularUser.borrow_books(book)
+#     for book in books_list:
+#         regularUser.borrow_books(book)
 
-    regularUser.display_books()
-    print("Hello")
+#     regularUser.display_books()
+#     print("Hello")
             
 
+class Employee:
+    def __init__(self, name, employee_id, salary):
+        self.name = name
+        self.employee_id = employee_id
+        self.salary = salary
+
+    def calculate_bonus(self):
+        bonus = (10/100) * self.salary
+        total = bonus + self.salary
+        print("Your salary is increased by 10% " , bonus, "Your total salary is ", total)
+
+    def display_info(self):
+        print("name", self.name, " employee_id" ,self.employee_id," salary", self.salary)
+
+class Manager(Employee):
+        def __init__(self, name, employee_id, salary, team_size):
+            super().__init__( name, employee_id, salary)
+            self.team_size = team_size
+            
+        def manager_bonus(self):    
+            if self.team_size > 10:
+                bonus = (15 /100) * self.salary
+            else:
+                self.team_size < 10
+                bonus = (10 / 100) * self.salary
+            total = self.salary + bonus
+            print("Your bonus is " , bonus, "your total is", total)
+
+class Developer(Employee):
+        def __init__(self, name, employee_id, salary, programming_language):
+            super().__init__( name, employee_id, salary)
+            self.programming_language = programming_language
+            
+        def developer_bonus(self):    
+            bonus = (12/100) * self.salary
+            total = bonus + self.salary
+            print("Your salary is increased by 12% " , bonus, "Your total salary is ", total)
+
+class Intern(Employee):
+        def __init__(self, name, employee_id, salary, duration):
+            super().__init__( name, employee_id, salary)
+            self.duration = duration
+            
+        def intern_bonus(self):    
+            if self.duration > 3:
+              bonus = (5/100) * self.salary
+              print("Bonus awarded", bonus)
+            else:
+             print("No bonus")
+
+
+obj1 = Employee("Apu", 1111, 102000)
+obj1.display_info()
+obj1.calculate_bonus()
+
+obj2 = Manager("mike", 2222, 105000, 9)
+obj2.manager_bonus()
+
+obj3 = Developer("Ashley", 333, 120000, "Python")
+obj3.developer_bonus()
+
+obj4 = Intern("Henry", 444, 55000, 2)
+obj4.intern_bonus()
