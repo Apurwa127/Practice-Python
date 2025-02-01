@@ -1565,66 +1565,119 @@
 #     print("Hello")
             
 
-class Employee:
-    def __init__(self, name, employee_id, salary):
-        self.name = name
-        self.employee_id = employee_id
-        self.salary = salary
+# class Employee:
+#     def __init__(self, name, employee_id, salary):
+#         self.name = name
+#         self.employee_id = employee_id
+#         self.salary = salary
 
-    def calculate_bonus(self):
-        bonus = (10/100) * self.salary
-        total = bonus + self.salary
-        print("Your salary is increased by 10% " , bonus, "Your total salary is ", total)
+#     def calculate_bonus(self):
+#         bonus = (10/100) * self.salary
+#         total = bonus + self.salary
+#         print("Your salary is increased by 10% " , bonus, "Your total salary is ", total)
 
-    def display_info(self):
-        print("name", self.name, " employee_id" ,self.employee_id," salary", self.salary)
+#     def display_info(self):
+#         print("name", self.name, " employee_id" ,self.employee_id," salary", self.salary)
 
-class Manager(Employee):
-        def __init__(self, name, employee_id, salary, team_size):
-            super().__init__( name, employee_id, salary)
-            self.team_size = team_size
+# class Manager(Employee):
+#         def __init__(self, name, employee_id, salary, team_size):
+#             super().__init__( name, employee_id, salary)
+#             self.team_size = team_size
             
-        def manager_bonus(self):    
-            if self.team_size > 10:
-                bonus = (15 /100) * self.salary
-            else:
-                self.team_size < 10
-                bonus = (10 / 100) * self.salary
-            total = self.salary + bonus
-            print("Your bonus is " , bonus, "your total is", total)
+#         def manager_bonus(self):    
+#             if self.team_size > 10:
+#                 bonus = (15 /100) * self.salary
+#             else:
+#                 self.team_size < 10
+#                 bonus = (10 / 100) * self.salary
+#             total = self.salary + bonus
+#             print("Your bonus is " , bonus, "your total is", total)
 
-class Developer(Employee):
-        def __init__(self, name, employee_id, salary, programming_language):
-            super().__init__( name, employee_id, salary)
-            self.programming_language = programming_language
+# class Developer(Employee):
+#         def __init__(self, name, employee_id, salary, programming_language):
+#             super().__init__( name, employee_id, salary)
+#             self.programming_language = programming_language
             
-        def developer_bonus(self):    
-            bonus = (12/100) * self.salary
-            total = bonus + self.salary
-            print("Your salary is increased by 12% " , bonus, "Your total salary is ", total)
+#         def developer_bonus(self):    
+#             bonus = (12/100) * self.salary
+#             total = bonus + self.salary
+#             print("Your salary is increased by 12% " , bonus, "Your total salary is ", total)
 
-class Intern(Employee):
-        def __init__(self, name, employee_id, salary, duration):
-            super().__init__( name, employee_id, salary)
-            self.duration = duration
+# class Intern(Employee):
+#         def __init__(self, name, employee_id, salary, duration):
+#             super().__init__( name, employee_id, salary)
+#             self.duration = duration
             
-        def intern_bonus(self):    
-            if self.duration > 3:
-              bonus = (5/100) * self.salary
-              print("Bonus awarded", bonus)
-            else:
-             print("No bonus")
+#         def intern_bonus(self):    
+#             if self.duration > 3:
+#               bonus = (5/100) * self.salary
+#               print("Bonus awarded", bonus)
+#             else:
+#              print("No bonus")
 
 
-obj1 = Employee("Apu", 1111, 102000)
-obj1.display_info()
-obj1.calculate_bonus()
+# obj1 = Employee("Apu", 1111, 102000)
+# obj1.display_info()
+# obj1.calculate_bonus()
 
-obj2 = Manager("mike", 2222, 105000, 9)
-obj2.manager_bonus()
+# obj2 = Manager("mike", 2222, 105000, 9)
+# obj2.manager_bonus()
 
-obj3 = Developer("Ashley", 333, 120000, "Python")
-obj3.developer_bonus()
+# obj3 = Developer("Ashley", 333, 120000, "Python")
+# obj3.developer_bonus()
 
-obj4 = Intern("Henry", 444, 55000, 2)
-obj4.intern_bonus()
+# obj4 = Intern("Henry", 444, 55000, 2)
+# obj4.intern_bonus()
+
+class LibraryItem:
+    def __init__(self, title, author, item_id, available):
+        self.title = title
+        self.author = author
+        self.item_id = item_id
+        self.available = available
+
+    def borrow(self):
+        if self.title in items_available:
+            print(self.title, "is Available")
+        else:
+            print(self.title, "is not Available")
+
+
+class Book(LibraryItem):
+    def __init__(self, title, author, item_id, available, num_pages):
+        super().__init__(title, author, item_id, available)
+        self.num_pages = num_pages
+
+    def get_summary(self):
+        if self.title in items_available:
+            print("Title:", self.title, "Author:", self.author, "Item ID:", self.item_id, "Available:", self.available)
+
+
+class DVD(LibraryItem):
+    def __init__(self, title, author, item_id, available, duration, region_code):
+        super().__init__(title, author, item_id, available)
+        self.duration = duration
+        self.region_code = region_code
+
+    def get_summary(self):
+        print("Title:", self.title, "Author:", self.author, "Duration:", self.duration)
+
+
+class SpecialCollection(Book, DVD):
+    def __init__(self, title, author, item_id, available, num_pages, duration, region_code, old):
+        Book.__init__(self, title, author, item_id, available, num_pages)  # Initialize Book part
+        DVD.__init__(self, title, author, item_id, available, duration, region_code)  # Initialize DVD part
+        self.old = old
+
+    def borrow(self):
+        print("Please check at the front desk")
+
+
+# Test
+obj2 = SpecialCollection("Chemistry", "Mike", 235, True, 58, 120, 5, 8)
+obj2.borrow()
+
+
+
+
+        
