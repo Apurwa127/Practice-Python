@@ -1629,55 +1629,86 @@
 # obj4 = Intern("Henry", 444, 55000, 2)
 # obj4.intern_bonus()
 
-class LibraryItem:
-    def __init__(self, title, author, item_id, available):
-        self.title = title
-        self.author = author
-        self.item_id = item_id
-        self.available = available
+# items_available = []
+# books = ("Harry Potter", "The Power of Now", "Money Mind", "Start with a Why?", "Quantum Physics", "Chemistry")
+# item_available = items_available.extend(books)
+# class LibraryItem:
+#     def __init__(self, title, author, item_id, available):
+#         self. title = title
+#         self.author = author
+#         self.item_id = item_id
+#         self.available = available
 
-    def borrow(self):
-        if self.title in items_available:
-            print(self.title, "is Available")
-        else:
-            print(self.title, "is not Available")
+#     def borrow(self):
+#         if self.title in items_available:
+#             print(self.title, " is Available")
+#         else:
+#             print(self.title, "is not Available")
+
+# class Book(LibraryItem):
+#     def __init__(self, title, author, item_id, available, num_pages):
+#         super().__init__(title, author, item_id, available)
+#         self.num_pages = num_pages
+
+#     def get_summary(self):
+#         if books in items_available:
+#             print("title: ", self.title, "Author: ", self.author, "item_id", self.item_id, "available", self.available)
+
+# class DVD(LibraryItem):
+#     def __init__(self, title, author, item_id, available, duration, region_code):
+#         super().__init__(title, author, item_id, available, duration)
+#         self.duration = duration
+#         self.region_code = region_code
+
+#     def get_summary(self):
+#         print("Title", self.title, "Author", self.author, "Duration", self.duration)
+
+# class E_Book(LibraryItem):
+#     def __init__(self, title, author, item_id, available, file_size):
+#         super().__init__(title, author, item_id, available)
+#         self.file_size = file_size
+
+#     def borrow(self):
+#         return("You have borrowed", self.title, " of file size", self.file_size)
+
+# class SpecialCollection(Book, DVD):
+#         def __init__(self, title, author, item_id, available, num_pages, duration, region_code, old):
+#             Book. __init__(self, title, author, item_id, available, num_pages)
+#             DVD.__init__(self, title, author, item_id, available, duration, region_code)
+#             self.old = old
+    
+#         def borrow(self):
+#                 print("Please check at the front desk")
 
 
-class Book(LibraryItem):
-    def __init__(self, title, author, item_id, available, num_pages):
-        super().__init__(title, author, item_id, available)
-        self.num_pages = num_pages
+# obj1 = Book("Biology", "JK ROWLING", 123, True, 25)
+# obj1. borrow()
 
-    def get_summary(self):
-        if self.title in items_available:
-            print("Title:", self.title, "Author:", self.author, "Item ID:", self.item_id, "Available:", self.available)
+# obj2 = SpecialCollection("Chemistry", "mike", 235, True, 58, 5, 5 ,8)
+# obj2.borrow()
 
+class Wallet:
+    def __init__(self, balance, pin):
+        self.balance = balance
+        self.pin = pin
 
-class DVD(LibraryItem):
-    def __init__(self, title, author, item_id, available, duration, region_code):
-        super().__init__(title, author, item_id, available)
-        self.duration = duration
-        self.region_code = region_code
+    def deposit(self, amount):
 
-    def get_summary(self):
-        print("Title:", self.title, "Author:", self.author, "Duration:", self.duration)
+        self.balance += amount
+        print("you have deposited ", amount, " .Your total balance is " , self.balance)
 
+    def Withdraw(self, withdraw_amount):
+       if withdraw_amount > self.balance:
+         print("Please enter a valid number")
+       else:
+        self.balance -= withdraw_amount
+        print("Your balance after withdrawing", withdraw_amount, " is", self.balance) 
 
-class SpecialCollection(Book, DVD):
-    def __init__(self, title, author, item_id, available, num_pages, duration, region_code, old):
-        Book.__init__(self, title, author, item_id, available, num_pages)  # Initialize Book part
-        DVD.__init__(self, title, author, item_id, available, duration, region_code)  # Initialize DVD part
-        self.old = old
+    def check_balance(self):
+        print("Your balance is ", self.balance)
 
-    def borrow(self):
-        print("Please check at the front desk")
-
-
-# Test
-obj2 = SpecialCollection("Chemistry", "Mike", 235, True, 58, 120, 5, 8)
-obj2.borrow()
-
-
-
-
+obj1 = Wallet(102000, 5120)
+obj1.deposit(5000)
+obj1.Withdraw(10000)
+obj1.check_balance()
         
