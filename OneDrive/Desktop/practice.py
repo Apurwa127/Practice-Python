@@ -1711,26 +1711,57 @@
 # obj1.Withdraw(10000)
 # obj1.check_balance()
         
-class Person:
-    def __init__(self, name, age):
-        self._name = name
-        self._age = age
+# class Person:
+#     def __init__(self, name, age):
+#         self._name = name
+#         self._age = age
+
+#     @property
+#     def name(self):
+#         return self._name
+
+
+#     @property
+#     def age(self):
+#         return self._age
+
+#     @age.setter
+#     def age (self, value):
+#         if value < 0:
+#             raise ValueError("not a valid age")
+#         self._age = value
+
+# p = Person("Apu", 27)
+# p.age = -5
+# print(p.age)
+
+class Car:
+    def __init__(self, fuwl_level, engine_status):
+        self._fuwl_level = fuwl_level
+        self._engine_status = engine_status
 
     @property
-    def name(self):
-        return self._name
+    def fuwl_level(self):
+        return self._fuwl_level
 
+    @fuwl_level.setter
+    def fuwl_level(self, value):
+        if value > 50:
+            raise ValueError("Error")
+        else:
+            self.fuwl_level = value
 
     @property
-    def age(self):
-        return self._age
+    def engine_status(self):
+        return "On" if self._engine_status else "Off"
 
-    @age.setter
-    def age (self, value):
-        if value < 0:
-            raise ValueError("not a valid age")
-        self._age = value
+    @engine_status.setter
+    def engine_sytatus(self, state):
+        if state not in [True, False]:
+            raise ValueError("Error") 
+        else:
+            self._engine_status = state
 
-p = Person("Apu", 27)
-p.age = -5
-print(p.age)
+ob = Car(51, True)
+print(Car.fuwl_level)
+print(Car.engine_status)
