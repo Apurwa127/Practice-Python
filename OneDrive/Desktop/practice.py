@@ -1373,10 +1373,311 @@
 
 # outer()
 
-def add_n(n):
-    def add(x):
-        return n + x
-    return add
+# def add_n(n):
+#     def add(x):
+#         return n + x
+#     return add
 
-print(add_n(4)(7))
-print("This is a test")
+
+# print(add_n(4)(7))
+
+
+# class Book:
+#     def __init__(self, title, author, price):
+#         self.title = title
+#         self.author = author
+#         self.price = price
+
+#     def display_info(self):
+#         print("Title", self.title)
+#         print("Author", self.author)
+#         print("Price", self.price)
+
+
+# book1 =Book("The Great Gatsby", "Mark", "29.99")
+# book1.display_info() 
+
+# class Car:
+#     def __init__(self, make, model, year):
+#         self.make = make
+#         self.model = model
+#         self.year = year
+
+#     def car_details(self):
+#         print("Make: ", self.make)
+#         print("Model: ", self.model)
+#         print("year: ", self.year)
+
+# car1 = Car("Toyota", "Camry", "2022")
+# car1.car_details()
+
+# class Rectangle:
+#     def __init__(self, length, width):
+#         self.length = length
+#         self.width = width
+
+#     def area(self):
+#         answer =self.length * self.width
+#         print(answer)
+
+#     def perimeter(self):
+#         per= 2 * (self.length + self.width)
+#         print(per)
+
+# ob1 = Rectangle(5, 6)
+# ob1.area()
+# ob1.perimeter()
+
+# class Vehicle:
+#     def __init__(self, brand, model, year):
+#         self.brand = brand
+#         self.model = model
+#         self.year = year
+
+#     def vehicle_info(self):
+#         print("Brand", self.brand)
+#         print("Model", self.model)
+#         print("year", self.year)
+
+# class Car(Vehicle):
+#     def __init__(self, brand, model, year, fuel_type):
+#         super().__init__(brand, model, year)
+#         self.fuel_type = fuel_type
+    
+#     def car_info(self):
+#         print("Fuel_type", self.fuel_type)
+
+# Car1 = Vehicle("Toyota", "Camry", "2022")
+# Car1.vehicle_info()
+# Car2 = Car("Toyota", "Camry", "2022","Highlander")
+# Car2.car_info()
+
+# class Employee:
+#     def __init__(self, name, emp_id, salary):
+#         self.name = name
+#         self.emp_id = emp_id
+#         self.salary = salary
+    
+#     def show_details1(self):
+#         print("name", self.name)
+#         print("emp_id", self.emp_id)
+#         print("salary", self.salary)
+
+# class Manager(Employee):
+#     def __init__(self, name, emp_id, salary, management):
+#         super().__init__(name, emp_id, salary)
+#         self.management = management
+
+#     def show_details(self):
+#         super().show_details1()
+#         print("management", self.management)
+
+# s1 = Manager("Apurwa", "11230", "165000", "Manager")
+
+# s1.show_details()
+
+# class A:
+#     def show(self):
+#         print("Class A")
+
+# class B:
+#     def show(self):
+#         print("Class B")
+
+# class C(A,B):
+#     def show(self):
+#         print("Class C")
+
+# OBJ1 = C()
+# OBJ1.show()
+
+
+# store = []
+# class Animal:
+#     def __init__(self, name):
+#         self.name = name
+
+#     def sound(self):
+#         pass
+
+# class Dog(Animal):
+#     def __init__(self, name):
+#         super().__init__(name)
+
+#     def sound(self):
+#         return "bark"
+
+# class Cat(Animal):
+#     def __init__(self, name):
+#         super().__init__(name)
+
+#     def sound(self):
+#         return "meow"
+
+# Animal = [Dog("Honey"), Cat("Minny"), Dog("Husky"), Cat("sandra")]
+
+# for animals in Animal:
+#     print([animals.name], [animals.sound()])
+
+
+
+# class User:
+#     def __init__(self, name):
+#         self.name = name
+#         self.borrowed_books = []
+    
+#     def borrow_books(self, book_name):
+#         if len(self.borrowed_books)< self.borrowing_limit:
+#             print(self.name, "has borrowed ", book_name)
+#         else:
+#             print(self.name, "hasn't borrowed anything ")
+    
+#     def return_book(self, book_name):
+#         if book_name in self.borrowed_books:
+#             print(self.name, "has returned ", book_name)
+#         else:
+#             print(self.name, "hasn't returned anything yet")
+    
+#     def display_book(self):
+#         if self.borrow_books:
+#             print(self.name, "has checked out these books".join(self.borrowed_books) )
+#         else:
+#             print("nothing is checked out")
+    
+#     def regularuser(User):
+#         def __init__(self, name):
+#             super().__init__(name)
+#             self.borrowing_limit = 3
+
+#     def Premiumuser(User):
+#         def __init__(self, name):
+#             super().__init__(name)
+#             self.borrowing_limit = 5
+
+#     books_list = ["book1", "book2", "book3", "book4", "book5", "book6"]
+#     regularUser = regularuser("Alice")
+#     premium_user = Premiumuser("Mike")
+
+#     for book in books_list:
+#         regularUser.borrow_books(book)
+
+#     regularUser.display_books()
+#     print("Hello")
+            
+
+# class Employee:
+#     def __init__(self, name, employee_id, salary):
+#         self.name = name
+#         self.employee_id = employee_id
+#         self.salary = salary
+
+#     def calculate_bonus(self):
+#         bonus = (10/100) * self.salary
+#         total = bonus + self.salary
+#         print("Your salary is increased by 10% " , bonus, "Your total salary is ", total)
+
+#     def display_info(self):
+#         print("name", self.name, " employee_id" ,self.employee_id," salary", self.salary)
+
+# class Manager(Employee):
+#         def __init__(self, name, employee_id, salary, team_size):
+#             super().__init__( name, employee_id, salary)
+#             self.team_size = team_size
+            
+#         def manager_bonus(self):    
+#             if self.team_size > 10:
+#                 bonus = (15 /100) * self.salary
+#             else:
+#                 self.team_size < 10
+#                 bonus = (10 / 100) * self.salary
+#             total = self.salary + bonus
+#             print("Your bonus is " , bonus, "your total is", total)
+
+# class Developer(Employee):
+#         def __init__(self, name, employee_id, salary, programming_language):
+#             super().__init__( name, employee_id, salary)
+#             self.programming_language = programming_language
+            
+#         def developer_bonus(self):    
+#             bonus = (12/100) * self.salary
+#             total = bonus + self.salary
+#             print("Your salary is increased by 12% " , bonus, "Your total salary is ", total)
+
+# class Intern(Employee):
+#         def __init__(self, name, employee_id, salary, duration):
+#             super().__init__( name, employee_id, salary)
+#             self.duration = duration
+            
+#         def intern_bonus(self):    
+#             if self.duration > 3:
+#               bonus = (5/100) * self.salary
+#               print("Bonus awarded", bonus)
+#             else:
+#              print("No bonus")
+
+
+# obj1 = Employee("Apu", 1111, 102000)
+# obj1.display_info()
+# obj1.calculate_bonus()
+
+# obj2 = Manager("mike", 2222, 105000, 9)
+# obj2.manager_bonus()
+
+# obj3 = Developer("Ashley", 333, 120000, "Python")
+# obj3.developer_bonus()
+
+# obj4 = Intern("Henry", 444, 55000, 2)
+# obj4.intern_bonus()
+
+class LibraryItem:
+    def __init__(self, title, author, item_id, available):
+        self.title = title
+        self.author = author
+        self.item_id = item_id
+        self.available = available
+
+    def borrow(self):
+        if self.title in items_available:
+            print(self.title, "is Available")
+        else:
+            print(self.title, "is not Available")
+
+
+class Book(LibraryItem):
+    def __init__(self, title, author, item_id, available, num_pages):
+        super().__init__(title, author, item_id, available)
+        self.num_pages = num_pages
+
+    def get_summary(self):
+        if self.title in items_available:
+            print("Title:", self.title, "Author:", self.author, "Item ID:", self.item_id, "Available:", self.available)
+
+
+class DVD(LibraryItem):
+    def __init__(self, title, author, item_id, available, duration, region_code):
+        super().__init__(title, author, item_id, available)
+        self.duration = duration
+        self.region_code = region_code
+
+    def get_summary(self):
+        print("Title:", self.title, "Author:", self.author, "Duration:", self.duration)
+
+
+class SpecialCollection(Book, DVD):
+    def __init__(self, title, author, item_id, available, num_pages, duration, region_code, old):
+        Book.__init__(self, title, author, item_id, available, num_pages)  # Initialize Book part
+        DVD.__init__(self, title, author, item_id, available, duration, region_code)  # Initialize DVD part
+        self.old = old
+
+    def borrow(self):
+        print("Please check at the front desk")
+
+
+# Test
+obj2 = SpecialCollection("Chemistry", "Mike", 235, True, 58, 120, 5, 8)
+obj2.borrow()
+
+
+
+
+        
