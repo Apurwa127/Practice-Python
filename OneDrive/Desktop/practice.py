@@ -1687,28 +1687,50 @@
 # obj2 = SpecialCollection("Chemistry", "mike", 235, True, 58, 5, 5 ,8)
 # obj2.borrow()
 
-class Wallet:
-    def __init__(self, balance, pin):
-        self.balance = balance
-        self.pin = pin
+# class Wallet:
+#     def __init__(self, balance, pin):
+#         self.balance = balance
+#         self.pin = pin
 
-    def deposit(self, amount):
+#     def deposit(self, amount):
+#         self.balance += amount
+#         print("you have deposited ", amount, " .Your total balance is " , self.balance)
 
-        self.balance += amount
-        print("you have deposited ", amount, " .Your total balance is " , self.balance)
+#     def Withdraw(self, withdraw_amount):
+#        if withdraw_amount > self.balance:
+#          print("Please enter a valid number")
+#        else:
+#         self.balance -= withdraw_amount
+#         print("Your balance after withdrawing", withdraw_amount, " is", self.balance) 
 
-    def Withdraw(self, withdraw_amount):
-       if withdraw_amount > self.balance:
-         print("Please enter a valid number")
-       else:
-        self.balance -= withdraw_amount
-        print("Your balance after withdrawing", withdraw_amount, " is", self.balance) 
+#     def check_balance(self):
+#         print("Your balance is ", self.balance)
 
-    def check_balance(self):
-        print("Your balance is ", self.balance)
-
-obj1 = Wallet(102000, 5120)
-obj1.deposit(5000)
-obj1.Withdraw(10000)
-obj1.check_balance()
+# obj1 = Wallet(102000, 5120)
+# obj1.deposit(5000)
+# obj1.Withdraw(10000)
+# obj1.check_balance()
         
+class Person:
+    def __init__(self, name, age):
+        self._name = name
+        self._age = age
+
+    @property
+    def name(self):
+        return self._name
+
+
+    @property
+    def age(self):
+        return self._age
+
+    @age.setter
+    def age (self, value):
+        if value < 0:
+            raise ValueError("not a valid age")
+        self._age = value
+
+p = Person("Apu", 27)
+p.age = -5
+print(p.age)
