@@ -1735,33 +1735,100 @@
 # p.age = -5
 # print(p.age)
 
-class Car:
-    def __init__(self, fuwl_level, engine_status):
-        self._fuwl_level = fuwl_level
-        self._engine_status = engine_status
+# class Car:
+#     def __init__(self, fuwl_level, engine_status):
+#         self._fuwl_level = fuwl_level
+#         self._engine_status = engine_status
 
-    @property
-    def fuwl_level(self):
-        return self._fuwl_level
+#     @property
+#     def fuwl_level(self):
+#         return self._fuwl_level
 
-    @fuwl_level.setter
-    def fuwl_level(self, value):
-        if value > 50:
-            raise ValueError("Error")
-        else:
-            self.fuwl_level = value
+#     @fuwl_level.setter
+#     def fuwl_level(self, value):
+#         if value > 50:
+#             raise ValueError("Error")
+#         else:
+#             self.fuwl_level = value
 
-    @property
-    def engine_status(self):
-        return "On" if self._engine_status else "Off"
+#     @property
+#     def engine_status(self):
+#         return "On" if self._engine_status else "Off"
 
-    @engine_status.setter
-    def engine_sytatus(self, state):
-        if state not in [True, False]:
-            raise ValueError("Error") 
-        else:
-            self._engine_status = state
+#     @engine_status.setter
+#     def engine_sytatus(self, state):
+#         if state not in [True, False]:
+#             raise ValueError("Error") 
+#         else:
+#             self._engine_status = state
 
-ob = Car(51, True)
-print(Car.fuwl_level)
-print(Car.engine_status)
+# ob = Car(51, True)
+# print(Car.fuwl_level)
+# print(Car.engine_status)
+
+
+# student = {
+#     "name" : "John Doe",
+#     "age" : 21,
+#     "major" : "Computer Science"
+# }
+
+# student["GPA"] = 3.8
+# student["age"] = 22
+# if "GPA" in student:
+#     print("Exist")
+# else:
+#     print("don't exist")
+
+# print(student)
+
+# dict1 = {"name":"Alice", "age":25}
+# dict2 = {"gpa":3.8, "major":"cs"}
+
+# merge = dict1.update(dict2)
+# print(dict1)
+
+# dict1 = []
+# dict2 = ["a", "b", "c"]
+
+# dict1.extend(dict2)
+
+# print(dict1)
+
+
+student= {}
+
+def add_user():
+    name = input("Please enter your name: ")
+    grade = float(input("Please enter your grade: "))
+    student[name] = grade
+    print(name, " has been added") 
+
+while True:
+    add_user()
+    more = input("Do you want to add more. Press (y/n)". strip().lower())
+
+    if more != "y":
+        break
+
+
+def average():
+    name = input("Please enter the name to calculate the average: ")
+    if name not in student:
+        print("name is not available")
+    else:
+        average1 = sum(student.values())/len(student)
+        print(average1)
+
+def display_all():
+    name = input("Please enter the name of the person you want to check: ")
+    if name in student:
+        print(name, "found" in student[:1])
+    else:
+        print("not in the system")
+
+
+# average()
+# print(student)
+display_all()
+
