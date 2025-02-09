@@ -1378,6 +1378,7 @@
 #         return n + x
 #     return add
 
+<<<<<<< HEAD
 
 # print(add_n(4)(7))
 
@@ -1678,5 +1679,14 @@ obj2 = SpecialCollection("Chemistry", "Mike", 235, True, 58, 120, 5, 8)
 obj2.borrow()
 
 
+=======
+# print(add_n(4)(7))
+
+a = 5
+b = 6
+sum = a + b
+print(sum)
+print("Sum, ", sum)
+>>>>>>> work
 
 
