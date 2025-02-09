@@ -1629,76 +1629,54 @@
 # obj4 = Intern("Henry", 444, 55000, 2)
 # obj4.intern_bonus()
 
-# class LibraryItem:
-#     def __init__(self, title, author, item_id, available):
-#         self.title = title
-#         self.author = author
-#         self.item_id = item_id
-#         self.available = available
+class LibraryItem:
+    def __init__(self, title, author, item_id, available):
+        self.title = title
+        self.author = author
+        self.item_id = item_id
+        self.available = available
 
-#     def borrow(self):
-#         if self.title in items_available:
-#             print(self.title, "is Available")
-#         else:
-#             print(self.title, "is not Available")
-
-
-# class Book(LibraryItem):
-#     def __init__(self, title, author, item_id, available, num_pages):
-#         super().__init__(title, author, item_id, available)
-#         self.num_pages = num_pages
-
-#     def get_summary(self):
-#         if self.title in items_available:
-#             print("Title:", self.title, "Author:", self.author, "Item ID:", self.item_id, "Available:", self.available)
+    def borrow(self):
+        if self.title in items_available:
+            print(self.title, "is Available")
+        else:
+            print(self.title, "is not Available")
 
 
-# class DVD(LibraryItem):
-#     def __init__(self, title, author, item_id, available, duration, region_code):
-#         super().__init__(title, author, item_id, available)
-#         self.duration = duration
-#         self.region_code = region_code
+class Book(LibraryItem):
+    def __init__(self, title, author, item_id, available, num_pages):
+        super().__init__(title, author, item_id, available)
+        self.num_pages = num_pages
 
-#     def get_summary(self):
-#         print("Title:", self.title, "Author:", self.author, "Duration:", self.duration)
-
-
-# class SpecialCollection(Book, DVD):
-#     def __init__(self, title, author, item_id, available, num_pages, duration, region_code, old):
-#         Book.__init__(self, title, author, item_id, available, num_pages)  # Initialize Book part
-#         DVD.__init__(self, title, author, item_id, available, duration, region_code)  # Initialize DVD part
-#         self.old = old
-
-#     def borrow(self):
-#         print("Please check at the front desk")
+    def get_summary(self):
+        if self.title in items_available:
+            print("Title:", self.title, "Author:", self.author, "Item ID:", self.item_id, "Available:", self.available)
 
 
-# # Test
-# obj2 = SpecialCollection("Chemistry", "Mike", 235, True, 58, 120, 5, 8)
-# obj2.borrow()
+class DVD(LibraryItem):
+    def __init__(self, title, author, item_id, available, duration, region_code):
+        super().__init__(title, author, item_id, available)
+        self.duration = duration
+        self.region_code = region_code
+
+    def get_summary(self):
+        print("Title:", self.title, "Author:", self.author, "Duration:", self.duration)
 
 
-class BankAccount:
-    def __init__(self, account_number, balance):
-        self.account_number = account_number
-        self.balance = balance
+class SpecialCollection(Book, DVD):
+    def __init__(self, title, author, item_id, available, num_pages, duration, region_code, old):
+        Book.__init__(self, title, author, item_id, available, num_pages)  # Initialize Book part
+        DVD.__init__(self, title, author, item_id, available, duration, region_code)  # Initialize DVD part
+        self.old = old
 
-    def deposit(self, amount):
-        amount += self.balance
-        print(amount)
-
-    def withdraw(self, withdraw_amount):
-        self.balance = self.balance - withdraw_amount
-        print(self.balance)
-
-    def get_balance(self):
-        print("Your current balance is: ", self.balance, "Thank You for visiting." )
-
-obj1 = BankAccount(112, 51000)
-
-obj1.deposit(5)
-obj1.withdraw(5)
-obj1.get_balance()
+    def borrow(self):
+        print("Please check at the front desk")
 
 
-        
+# Test
+obj2 = SpecialCollection("Chemistry", "Mike", 235, True, 58, 120, 5, 8)
+obj2.borrow()
+
+
+
+
