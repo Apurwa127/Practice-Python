@@ -1378,7 +1378,7 @@
 #         return n + x
 #     return add
 
-<<<<<<< HEAD
+
 
 # print(add_n(4)(7))
 
@@ -1798,6 +1798,7 @@ class Book(LibraryItem):
 # print(dict1)
 
 
+<<<<<<< HEAD
 student= {}
 
 def add_user():
@@ -1812,6 +1813,16 @@ while True:
 
     if more != "y":
         break
+=======
+# print(add_n(4)(7))
+
+a = 5
+b = 6
+sum = a + b
+print(sum)
+print("Sum, ", sum)
+
+>>>>>>> 6fd4266cd54441168f997514ecda5563cc76dd68
 
 
 def average():
