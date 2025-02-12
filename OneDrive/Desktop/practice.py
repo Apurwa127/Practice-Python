@@ -1378,6 +1378,7 @@
 #         return n + x
 #     return add
 
+<<<<<<< HEAD
 
 # print(add_n(4)(7))
 
@@ -1629,55 +1630,208 @@
 # obj4 = Intern("Henry", 444, 55000, 2)
 # obj4.intern_bonus()
 
+# items_available = []
+# books = ("Harry Potter", "The Power of Now", "Money Mind", "Start with a Why?", "Quantum Physics", "Chemistry")
+# item_available = items_available.extend(books)
 # class LibraryItem:
 #     def __init__(self, title, author, item_id, available):
-#         self.title = title
+#         self. title = title
 #         self.author = author
 #         self.item_id = item_id
 #         self.available = available
 
 #     def borrow(self):
 #         if self.title in items_available:
-#             print(self.title, "is Available")
+#             print(self.title, " is Available")
 #         else:
 #             print(self.title, "is not Available")
 
 
-# class Book(LibraryItem):
-#     def __init__(self, title, author, item_id, available, num_pages):
-#         super().__init__(title, author, item_id, available)
-#         self.num_pages = num_pages
+class Book(LibraryItem):
+    def __init__(self, title, author, item_id, available, num_pages):
+        super().__init__(title, author, item_id, available)
+        self.num_pages = num_pages
 
 #     def get_summary(self):
-#         if self.title in items_available:
-#             print("Title:", self.title, "Author:", self.author, "Item ID:", self.item_id, "Available:", self.available)
-
+#         if books in items_available:
+#             print("title: ", self.title, "Author: ", self.author, "item_id", self.item_id, "available", self.available)
 
 # class DVD(LibraryItem):
 #     def __init__(self, title, author, item_id, available, duration, region_code):
-#         super().__init__(title, author, item_id, available)
+#         super().__init__(title, author, item_id, available, duration)
 #         self.duration = duration
 #         self.region_code = region_code
 
 #     def get_summary(self):
-#         print("Title:", self.title, "Author:", self.author, "Duration:", self.duration)
+#         print("Title", self.title, "Author", self.author, "Duration", self.duration)
 
-
-# class SpecialCollection(Book, DVD):
-#     def __init__(self, title, author, item_id, available, num_pages, duration, region_code, old):
-#         Book.__init__(self, title, author, item_id, available, num_pages)  # Initialize Book part
-#         DVD.__init__(self, title, author, item_id, available, duration, region_code)  # Initialize DVD part
-#         self.old = old
+# class E_Book(LibraryItem):
+#     def __init__(self, title, author, item_id, available, file_size):
+#         super().__init__(title, author, item_id, available)
+#         self.file_size = file_size
 
 #     def borrow(self):
-#         print("Please check at the front desk")
+#         return("You have borrowed", self.title, " of file size", self.file_size)
+
+# class SpecialCollection(Book, DVD):
+#         def __init__(self, title, author, item_id, available, num_pages, duration, region_code, old):
+#             Book. __init__(self, title, author, item_id, available, num_pages)
+#             DVD.__init__(self, title, author, item_id, available, duration, region_code)
+#             self.old = old
+    
+#         def borrow(self):
+#                 print("Please check at the front desk")
 
 
-# # Test
-# obj2 = SpecialCollection("Chemistry", "Mike", 235, True, 58, 120, 5, 8)
+# obj1 = Book("Biology", "JK ROWLING", 123, True, 25)
+# obj1. borrow()
+
+# obj2 = SpecialCollection("Chemistry", "mike", 235, True, 58, 5, 5 ,8)
 # obj2.borrow()
 
+# class Wallet:
+#     def __init__(self, balance, pin):
+#         self.balance = balance
+#         self.pin = pin
+
+#     def deposit(self, amount):
+#         self.balance += amount
+#         print("you have deposited ", amount, " .Your total balance is " , self.balance)
+
+#     def Withdraw(self, withdraw_amount):
+#        if withdraw_amount > self.balance:
+#          print("Please enter a valid number")
+#        else:
+#         self.balance -= withdraw_amount
+#         print("Your balance after withdrawing", withdraw_amount, " is", self.balance) 
+
+#     def check_balance(self):
+#         print("Your balance is ", self.balance)
+
+# obj1 = Wallet(102000, 5120)
+# obj1.deposit(5000)
+# obj1.Withdraw(10000)
+# obj1.check_balance()
+        
+# class Person:
+#     def __init__(self, name, age):
+#         self._name = name
+#         self._age = age
+
+#     @property
+#     def name(self):
+#         return self._name
 
 
+#     @property
+#     def age(self):
+#         return self._age
+
+#     @age.setter
+#     def age (self, value):
+#         if value < 0:
+#             raise ValueError("not a valid age")
+#         self._age = value
+
+# p = Person("Apu", 27)
+# p.age = -5
+# print(p.age)
+
+# class Car:
+#     def __init__(self, fuwl_level, engine_status):
+#         self._fuwl_level = fuwl_level
+#         self._engine_status = engine_status
+
+#     @property
+#     def fuwl_level(self):
+#         return self._fuwl_level
+
+#     @fuwl_level.setter
+#     def fuwl_level(self, value):
+#         if value > 50:
+#             raise ValueError("Error")
+#         else:
+#             self.fuwl_level = value
+
+#     @property
+#     def engine_status(self):
+#         return "On" if self._engine_status else "Off"
+
+#     @engine_status.setter
+#     def engine_sytatus(self, state):
+#         if state not in [True, False]:
+#             raise ValueError("Error") 
+#         else:
+#             self._engine_status = state
+
+# ob = Car(51, True)
+# print(Car.fuwl_level)
+# print(Car.engine_status)
+
+
+# student = {
+#     "name" : "John Doe",
+#     "age" : 21,
+#     "major" : "Computer Science"
+# }
+
+# student["GPA"] = 3.8
+# student["age"] = 22
+# if "GPA" in student:
+#     print("Exist")
+# else:
+#     print("don't exist")
+
+# print(student)
+
+# dict1 = {"name":"Alice", "age":25}
+# dict2 = {"gpa":3.8, "major":"cs"}
+
+# merge = dict1.update(dict2)
+# print(dict1)
+
+# dict1 = []
+# dict2 = ["a", "b", "c"]
+
+# dict1.extend(dict2)
+
+# print(dict1)
+
+
+student= {}
+
+def add_user():
+    name = input("Please enter your name: ")
+    grade = float(input("Please enter your grade: "))
+    student[name] = grade
+    print(name, " has been added") 
+
+while True:
+    add_user()
+    more = input("Do you want to add more. Press (y/n)". strip().lower())
+
+    if more != "y":
+        break
+
+
+def average():
+    name = input("Please enter the name to calculate the average: ")
+    if name not in student:
+        print("name is not available")
+    else:
+        average1 = sum(student.values())/len(student)
+        print(average1)
+
+def display_all():
+    name = input("Please enter the name of the person you want to check: ")
+    if name in student:
+        print(name, "found" in student[:1])
+    else:
+        print("not in the system")
+
+
+# average()
+# print(student)
+display_all()
 
         
