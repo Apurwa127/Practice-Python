@@ -1379,7 +1379,6 @@
 #     return add
 
 
-
 # print(add_n(4)(7))
 
 
@@ -1646,11 +1645,10 @@
 #         else:
 #             print(self.title, "is not Available")
 
-
-class Book(LibraryItem):
-    def __init__(self, title, author, item_id, available, num_pages):
-        super().__init__(title, author, item_id, available)
-        self.num_pages = num_pages
+# class Book(LibraryItem):
+#     def __init__(self, title, author, item_id, available, num_pages):
+#         super().__init__(title, author, item_id, available)
+#         self.num_pages = num_pages
 
 #     def get_summary(self):
 #         if books in items_available:
@@ -1798,51 +1796,43 @@ class Book(LibraryItem):
 # print(dict1)
 
 
-<<<<<<< HEAD
-student= {}
+# student= {}
 
-def add_user():
-    name = input("Please enter your name: ")
-    grade = float(input("Please enter your grade: "))
-    student[name] = grade
-    print(name, " has been added") 
+# def add_user():
+#     name = input("Please enter your name: ")
+#     grade = float(input("Please enter your grade: "))
+#     student[name] = grade
+#     print(name, " has been added") 
 
-while True:
-    add_user()
-    more = input("Do you want to add more. Press (y/n)". strip().lower())
+# while True:
+#     add_user()
+#     more = input("Do you want to add more. Press (y/n)". strip().lower())
 
-    if more != "y":
-        break
-=======
-# print(add_n(4)(7))
-
-a = 5
-b = 6
-sum = a + b
-print(sum)
-print("Sum, ", sum)
-
->>>>>>> 6fd4266cd54441168f997514ecda5563cc76dd68
+#     if more != "y":
+#         break
 
 
-def average():
-    name = input("Please enter the name to calculate the average: ")
-    if name not in student:
-        print("name is not available")
-    else:
-        average1 = sum(student.values())/len(student)
-        print(average1)
+# def average():
+#     name = input("Please enter the name to calculate the average: ")
+#     if name not in student:
+#         print("name is not available")
+#     else:
+#         average1 = sum(student.values())/len(student)
+#         print(average1)
 
-def display_all():
-    name = input("Please enter the name of the person you want to check: ")
-    if name in student:
-        print(name, "found" in student[:1])
-    else:
-        print("not in the system")
+# def display_all():
+#     name = input("Please enter the name of the person you want to check: ")
+#     if name in student:
+#         print(name, "found" in student[name])
+#     else:
+#         print("not in the system")
 
 
 # average()
 # print(student)
-display_all()
+# display_all()
 
-        
+a = 5
+b = 4
+multiply = a * b
+print(multiply)
