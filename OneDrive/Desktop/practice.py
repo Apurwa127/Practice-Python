@@ -1832,30 +1832,66 @@
 # print(student)
 # display_all()
 
-class Animal:
-    def __init__(self, name, age, sound):
-        self.name = name
-        self.age = age
-        self.sound = sound
+# class Animal:
+#     def __init__(self, name, age, sound):
+#         self.name = name
+#         self.age = age
+#         self.sound = sound
 
-def make_sound(self):
-    print(self.sound)
+# def make_sound(self):
+#     print(self.sound)
 
-class Dog(Animal):
-    def __init__(self, name, age, sound, breed):
-        super().__init__(name, age, sound)
-        self.breed = breed
+# class Dog(Animal):
+#     def __init__(self, name, age, sound, breed):
+#         super().__init__(name, age, sound)
+#         self.breed = breed
 
-    def make_sound(self):
-        print("Woof Woof")
+#     def make_sound(self):
+#         print("Woof Woof")
 
-class Cat(Animal):
-    def __init__(self, name, age, sound, color):
-        super().__init__(name, age, sound)
-        self.color = color
+# class Cat(Animal):
+#     def __init__(self, name, age, sound, color):
+#         super().__init__(name, age, sound)
+#         self.color = color
 
-    def make_sound(self):
-        print("Meow Meow")
+#     def make_sound(self):
+#         print("Meow Meow")
 
-obj1 = Dog("kasie", 5, "meow", "brown")
-obj1.make_sound()
+# obj1 = Dog("kasie", 5, "meow", "brown")
+# obj1.make_sound()
+
+class BankAccount:
+    def __init__(self, balance):
+        self.balance = balance
+        self.transaction_history = []
+
+    def deposit(self, amount):
+        total = amount + self.balance
+        print(total)
+        print("deposited")
+
+    def withdraw(self, amount):
+        if amount < self.balance:
+            self.balance -= amount
+            print("Amount withdrawn")
+        elif amount > self.balance:
+            print("withdraw amount cannot be greater than balance")
+
+    def get_balance(self):
+        return self.balance
+    
+    def get_transactionHistory(self):
+        return self.transaction_history
+
+
+obj1 = BankAccount(100000)
+obj1.deposit(25000)
+obj1.withdraw(500)
+
+
+for transaction in obj1.get_transactionHistory():
+    print(transaction)
+
+
+
+
