@@ -1860,38 +1860,65 @@
 # obj1 = Dog("kasie", 5, "meow", "brown")
 # obj1.make_sound()
 
-class BankAccount:
-    def __init__(self, balance):
-        self.balance = balance
-        self.transaction_history = []
+# class BankAccount:
+#     def __init__(self, balance):
+#         self.balance = balance
+#         self.transaction_history = []
 
-    def deposit(self, amount):
-        total = amount + self.balance
-        print(total)
-        print("deposited")
+#     def deposit(self, amount):
+#         total = amount + self.balance
+#         print(total)
+#         print("deposited")
 
-    def withdraw(self, amount):
-        if amount < self.balance:
-            self.balance -= amount
-            print("Amount withdrawn")
-        elif amount > self.balance:
-            print("withdraw amount cannot be greater than balance")
+#     def withdraw(self, amount):
+#         if amount < self.balance:
+#             self.balance -= amount
+#             print("Amount withdrawn")
+#         elif amount > self.balance:
+#             print("withdraw amount cannot be greater than balance")
 
-    def get_balance(self):
-        return self.balance
+#     def get_balance(self):
+#         return self.balance
     
-    def get_transactionHistory(self):
-        return self.transaction_history
+#     def get_transactionHistory(self):
+#         return self.transaction_history
 
 
-obj1 = BankAccount(100000)
-obj1.deposit(25000)
-obj1.withdraw(500)
+# obj1 = BankAccount(100000)
+# obj1.deposit(25000)
+# obj1.withdraw(500)
 
 
-for transaction in obj1.get_transactionHistory():
-    print(transaction)
+# for transaction in obj1.get_transactionHistory():
+#     print(transaction)
 
+# i = 0
+# numbers = [1,2,3,4,5]
+# for sum in numbers:
+#     i += sum
+# print(i)
 
+# numbers = [10,15,22,30,45,61,72]
+# even_count = 0
+# odd_count = 0
 
+# for num in numbers:
+#     if num % 2 == 0:
+#         even_count += 1
+#     else:
+#         odd_count +=1
+# print("Even", even_count)
+# print("Odd", odd_count)
 
+# numbers = [12,35,7,99,2,44]
+# max_num = max(numbers)
+# min_num = min(numbers)
+
+# print(max_num)
+# print(min_num)
+
+n = 5
+factorial = 1
+for i in range(1, n+1):
+    factorial *=i
+print(factorial)
