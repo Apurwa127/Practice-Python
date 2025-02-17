@@ -1917,8 +1917,69 @@
 # print(max_num)
 # print(min_num)
 
-n = 5
-factorial = 1
-for i in range(1, n+1):
-    factorial *=i
-print(factorial)
+# n = 5
+# factorial = 1
+# for i in range(1, n+1):
+#     factorial *=i
+# print(factorial)
+
+# even_num = 0
+# numbers = [10,15,20,25,30,35,40,45]
+# for num in numbers:
+#     if num % 2 == 0:
+#         even_num += 1
+#         print(num)
+
+# numbers = [10,15,20,25,30,35,40,45]
+# for num in numbers:
+#     print(num)
+
+# n = 5
+# i = 0
+# for num in range(1, n+1):
+#     i += num
+# print(i)
+
+# n = 3
+# y = 10
+# for num in range (1, y+1):
+#     multiplication = 3 * num
+#     print(n, "X", num ,"=", multiplication)
+
+# word = 'racecar'
+# reverse_word = ""
+
+# for char in word:
+#     reverse_word =char + reverse_word
+
+# if word == reverse_word:
+#     print(word, "The word is palindrome")
+# else:
+#     print(word, "the word is not palindrome")
+
+# numbers = [10,20,4,45,99]
+# second_largest = None
+# max_num = max(numbers)
+# min_num = min(numbers)
+
+# for check in numbers:
+#     if check != max_num:
+#         if second_largest is None or check > second_largest:
+#             second_largest = check
+
+# print(second_largest)
+
+even_number = 0
+odd_number = 0    
+number = [2,4,6,8,10,12,14,16,20, 21, 25]
+
+for check in number:
+    if check % 2 == 0:
+        even_number += 1
+print(even_number)
+   
+
+
+
+
+
