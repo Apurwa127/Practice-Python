@@ -1832,7 +1832,30 @@
 # print(student)
 # display_all()
 
-a = 5
-b = 4
-multiply = a * b
-print(multiply)
+class Animal:
+    def __init__(self, name, age, sound):
+        self.name = name
+        self.age = age
+        self.sound = sound
+
+def make_sound(self):
+    print(self.sound)
+
+class Dog(Animal):
+    def __init__(self, name, age, sound, breed):
+        super().__init__(name, age, sound)
+        self.breed = breed
+
+    def make_sound(self):
+        print("Woof Woof")
+
+class Cat(Animal):
+    def __init__(self, name, age, sound, color):
+        super().__init__(name, age, sound)
+        self.color = color
+
+    def make_sound(self):
+        print("Meow Meow")
+
+obj1 = Dog("kasie", 5, "meow", "brown")
+obj1.make_sound()
