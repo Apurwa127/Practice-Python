@@ -1987,13 +1987,37 @@
 #     print("The number you entered is ", user_input)
 
 
-while True:
-    user_Input = int(input("Please enter the number between 1 to 100 "))
-    if user_Input < 0:
-        print("number in negative. Try again!")
-        continue
-    elif user_Input > 100:
-        print("Number cannot be greater than 100")
-        break
-    else:
-        print("Number you entered is ", user_Input)
+# while True:
+#     user_Input = int(input("Please enter the number between 1 to 100 "))
+#     if user_Input < 0:
+#         print("number in negative. Try again!")
+#         continue
+#     elif user_Input > 100:
+#         print("Number cannot be greater than 100")
+#         break
+#     else:
+#         print("Number you entered is ", user_Input)
+
+# for num in range(1, 51):
+#     if num % 8 == 0:
+#         continue
+#     elif num % 2 == 0:
+#         print(num)
+#         continue
+#     elif num > 40:
+#         break
+element = 5
+occurence = 0
+number = [1,2,3,5,5,4,6,7,8,9]
+for i in number:
+    if i == element:
+        occurence += 1
+print(occurence)
+# number.append(10)
+# number.remove(1)
+# number.sort()
+# print(number)
+
+# tup = tuple(number)
+# index = tup.index(5)
+# print(tup, index)
