@@ -1969,17 +1969,12 @@
 
 # print(second_largest)
 
-even_number = 0
-odd_number = 0    
-number = [2,4,6,8,10,12,14,16,20, 21, 25]
+# even_number = 0
+# odd_number = 0    
+# number = [2,4,6,8,10,12,14,16,20, 21, 25]
 
-for check in number:
-    if check % 2 == 0:
-        even_number += 1
-print(even_number)
-   
-
-
-
-
-
+# for check in number:
+#     if check % 2 == 0:
+#         even_number += 1
+# print(even_number)
+print("Hello World")
