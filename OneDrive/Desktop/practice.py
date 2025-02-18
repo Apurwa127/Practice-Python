@@ -1,2011 +1,2000 @@
-# name = int(input("Please enter your age: "))
+name = int(input("Please enter your age: "))
 
-# if(name < 13):
-#    print("you are a child")
-# elif(name>=13 and name<=19):
-#     print("you area a teenager")
-# else:
-#     print("you are an adult")
+if(name < 13):
+   print("you are a child")
+elif(name>=13 and name<=19):
+    print("you area a teenager")
+else:
+    print("you are an adult")
 
-# number = int(input("Please enter your number: "))
-# if(number % 2 == 0):
-#     print("The number is even")
-# else:
-#     print("the number is odd")
+number = int(input("Please enter your number: "))
+if(number % 2 == 0):
+    print("The number is even")
+else:
+    print("the number is odd")
 
-# grades = int(input("Please enter your grade: "))
-# if(grades>=90 and grades<=100):
-#     print("A")
-# elif(grades>=80 and grades<=89):
-#     print("B")
-# elif(grades>=70 and grades<=79):
-#     print("C")
-# elif(grades>=60 and grades<=69):
-#     print("D")
-# else:
-#     print("F")
+grades = int(input("Please enter your grade: "))
+if(grades>=90 and grades<=100):
+    print("A")
+elif(grades>=80 and grades<=89):
+    print("B")
+elif(grades>=70 and grades<=79):
+    print("C")
+elif(grades>=60 and grades<=69):
+    print("D")
+else:
+    print("F")
 
-# day = int(input("Please enter your number "))
-# if day>0:
-#     print("Positive")
-# elif day<0:
-#     print("Negative")
-# else:
-#     print("Zero")
+day = int(input("Please enter your number "))
+if day>0:
+    print("Positive")
+elif day<0:
+    print("Negative")
+else:
+    print("Zero")
 
-# year = int(input("Please enter the year: "))
-# if year % 2 == 0 and year % 100 != 0 or year % 400 == 0:
-#     print("leap year")
-# else:
-#     print("Not leap year")
+year = int(input("Please enter the year: "))
+if year % 2 == 0 and year % 100 != 0 or year % 400 == 0:
+    print("leap year")
+else:
+    print("Not leap year")
 
-# inputUser = input("Please enter the password: ")
-# password = "python123"
+inputUser = input("Please enter the password: ")
+password = "python123"
 
-# if inputUser == password:
-#     print("access granted")
-# else:
-#     print("access denied")
+if inputUser == password:
+    print("access granted")
+else:
+    print("access denied")
 
-# inputUser = input("Enter your input: ")
-# print("First Character", inputUser[0])
-# print("Last Character", inputUser[-1])
+inputUser = input("Enter your input: ")
+print("First Character", inputUser[0])
+print("Last Character", inputUser[-1])
 
-# inputUser = input("Enter your input ")
-# print("first three characters ", inputUser[0:3])
-# print("last three character ", inputUser[-3:])
-# print("all characters except the first and last ", inputUser[1:-1])
+inputUser = input("Enter your input ")
+print("first three characters ", inputUser[0:3])
+print("last three character ", inputUser[-3:])
+print("all characters except the first and last ", inputUser[1:-1])
 
-# num1 = input("number 1: ")
+num1 = input("number 1: ")
 
 
-# print(num1.replace("a", "b"))
-# print(num1.find("a"))
+print(num1.replace("a", "b"))
+print(num1.find("a"))
 
-# days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 
-# print([days])
-# print(days[-1])
-# print(days[-3])
+print([days])
+print(days[-1])
+print(days[-3])
 
-# inputUser = input("Please enter your input ")
+inputUser = input("Please enter your input ")
 
-# charToFind = input("Please enter the character to find: ")
+charToFind = input("Please enter the character to find: ")
 
-# find = inputUser.find(charToFind)
+find = inputUser.find(charToFind)
 
-# if(find != -1):
-#     print("found")
-# else:
-#     print("not found")
+if(find != -1):
+    print("found")
+else:
+    print("not found")
 
-# number = [1,2,3,4,5,6,7,8,9,10]
+number = [1,2,3,4,5,6,7,8,9,10]
 
-# print(number[0:5])
+print(number[0:5])
 
-# print(number[1::2])
+print(number[1::2])
 
-# number.reverse()
-# print(number)
+number.reverse()
+print(number)
 
-# wordMeanings ={
-#     "table" : ("a piece of furniture", "list of facts & figures"),
-#     "cat" : "a small animal"
+wordMeanings ={
+    "table" : ("a piece of furniture", "list of facts & figures"),
+    "cat" : "a small animal"
 
-# }
+}
 
-# print(wordMeanings)
+print(wordMeanings)
 
-# classes= {
-#     "Python", "Java", "C++", "Python", "Javascript", "Java", "Python", "Java", "C++", "C"
-# }
+classes= {
+    "Python", "Java", "C++", "Python", "Javascript", "Java", "Python", "Java", "C++", "C"
+}
 
-# print(classes)
-# print(len(classes))
+print(classes)
+print(len(classes))
 
 
 
-# empyDict = {}
+empyDict = {}
 
-# x = int(input("Phy: "))
-# empyDict.update({"phy": x})
+x = int(input("Phy: "))
+empyDict.update({"phy": x})
 
-# x = int(input("Chem: "))
-# empyDict.update({"chem": x})
+x = int(input("Chem: "))
+empyDict.update({"chem": x})
 
-# x = int(input("Bio: "))
-# empyDict.update({"Bio": x})
+x = int(input("Bio: "))
+empyDict.update({"Bio": x})
 
-# print(empyDict)
+print(empyDict)
 
 
-# val = {9, '9.0'}
+val = {9, '9.0'}
 
-# print(val)
+print(val)
 
-# dict = {
-#     "name" : "Alice",
-#     "Age" : 28,
-#     "city" : "New York"
-# }
+dict = {
+    "name" : "Alice",
+    "Age" : 28,
+    "city" : "New York"
+}
 
-# dict.update({"name": "Apu"})
-# dict.update({"age": 27})
+dict.update({"name": "Apu"})
+dict.update({"age": 27})
 
-# print(dict)
+print(dict)
 
 
-# language = {"hello": "hola", 
-#             "world": "mundo",
-#             "thank you": "gracias",
-#             "please": "por favor"}
+language = {"hello": "hola", 
+            "world": "mundo",
+            "thank you": "gracias",
+            "please": "por favor"}
 
-# userInput = input("Please enter your Input: ")
+userInput = input("Please enter your Input: ")
 
-# if userInput in language:
-#     print("the tanslation is:", language[userInput] )
-# else:
-#     print("None")
+if userInput in language:
+    print("the tanslation is:", language[userInput] )
+else:
+    print("None")
 
-# dict = {
-#     "Harry" : 95,
-#     "Mandy" : 85,
-#     "Joseph" : 78,
-#     "Steven" : 89,
-#     "Kendra" : 87
-# }
+dict = {
+    "Harry" : 95,
+    "Mandy" : 85,
+    "Joseph" : 78,
+    "Steven" : 89,
+    "Kendra" : 87
+}
 
-# dict.update({"Jamal": 58})
-# dict.update({"Henry": 79})
+dict.update({"Jamal": 58})
+dict.update({"Henry": 79})
 
-# print(dict)
+print(dict)
 
 
 
-# fruits = [
-#     "apple" ,
-#     "Banana" ,
-#     "Kiwi" ,
-#     "Grapes" 
-# ]
-# defa = 50
-# print(dict.fromkeys(fruits, defa))
-# print(fruits)
+fruits = [
+    "apple" ,
+    "Banana" ,
+    "Kiwi" ,
+    "Grapes" 
+]
+defa = 50
+print(dict.fromkeys(fruits, defa))
+print(fruits)
 
-# set1 = [1,2,3,4,5,6,6,1,2]
-# print(set1)
+set1 = [1,2,3,4,5,6,6,1,2]
+print(set1)
 
-# er = set1.copy()
-# print(set(er))
+er = set1.copy()
+print(set(er))
 
 
-# count = 1
-# while count<5:
-#     print("hello")
-#     count +=1
+count = 1
+while count<5:
+    print("hello")
+    count +=1
 
-# i = 1
-# while i<=100:
-#     print(i)
-#     i+=1
+i = 1
+while i<=100:
+    print(i)
+    i+=1
 
-# i = 100
-# while i>=1:
-#     print(i)
-#     i-=1
+i = 100
+while i>=1:
+    print(i)
+    i-=1
 
-# userInput = int(input("Pleaase enter your number: "))
+userInput = int(input("Pleaase enter your number: "))
 
-# i = 1
-# while i <=10:
-#     print( userInput, "x ",i , "= ", i * userInput)
-#     i += 1
+i = 1
+while i <=10:
+    print( userInput, "x ",i , "= ", i * userInput)
+    i += 1
 
-# userList = [1,4,9,16,25,36,49,64,81,100]
+userList = [1,4,9,16,25,36,49,64,81,100]
 
-# idx = 0
-# while idx< len(userList):
-#     print(userList[idx])
-#     idx += 1
+idx = 0
+while idx< len(userList):
+    print(userList[idx])
+    idx += 1
 
-# tup = (1,4,9,16,25,36,49,64,81,100)
+tup = (1,4,9,16,25,36,49,64,81,100)
 
-# x = 34
+x = 34
 
-# i = 0
+i = 0
 
-# while(i<=len(tup)):
-#     if(x == tup[i]):
-#         print("found1", i)
-#     else:
-#         print("finding")
-#         i+=1
+while(i<=len(tup)):
+    if(x == tup[i]):
+        print("found1", i)
+    else:
+        print("finding")
+        i+=1
 
 
-# i = 1
+i = 1
 
-# while i <= 5:
-#     if(i % 2 == 0):
-#         i += 1
-#         print(i)
-#         continue
-#     print(i)
-#     i+= 1
+while i <= 5:
+    if(i % 2 == 0):
+        i += 1
+        print(i)
+        continue
+    print(i)
+    i+= 1
 
-# nums = [1,2,3,4,5,6]
-# for val in nums:
-#     print(val)
+nums = [1,2,3,4,5,6]
+for val in nums:
+    print(val)
 
-# nums = (1,4,9,16,25,36,49,64,81,100, 101)
-# search = int(input("Please enter the number you would like to find: "))
+nums = (1,4,9,16,25,36,49,64,81,100, 101)
+search = int(input("Please enter the number you would like to find: "))
 
-# for val in nums:
-#     if(search == val):
-#         print(search," number found: ")
-#         break
-#     else:
-#         print(val)
+for val in nums:
+    if(search == val):
+        print(search," number found: ")
+        break
+    else:
+        print(val)
 
 
-# numb = int(input("enter the number: "))
-# i = 0
-# sum = 0
-# while i<= numb:
-#     sum += i
-#     i+=1
-# print(sum)
+numb = int(input("enter the number: "))
+i = 0
+sum = 0
+while i<= numb:
+    sum += i
+    i+=1
+print(sum)
 
-# i =10
-# while(i>=1):
-#     i-=1
-#     print(i)
+i =10
+while(i>=1):
+    i-=1
+    print(i)
 
-# i = 1
-# while(i<=20):
-#     if(i%2 == 1):
-#      i+=1    
-#      continue
-#     print(i)
-#     i+=1
+i = 1
+while(i<=20):
+    if(i%2 == 1):
+     i+=1    
+     continue
+    print(i)
+    i+=1
 
 
-# i = 1 
-# while(i<=10):
-#     multiplication = 3 * i
-#     print("3", "X", i, "=", multiplication)
-#     i+=1
+i = 1 
+while(i<=10):
+    multiplication = 3 * i
+    print("3", "X", i, "=", multiplication)
+    i+=1
 
-# userInput = int(input("Please enter your number: "))
-# i=userInput
-# while(0<=i):
-#     print(i)
-#     i-=1
+userInput = int(input("Please enter your number: "))
+i=userInput
+while(0<=i):
+    print(i)
+    i-=1
 
-# for i in range(1,11):
-#  print(i)
+for i in range(1,11):
+ print(i)
 
-# userInput = int(input("Please enter your number: "))
-# x = 0
-# for i in range(1, userInput+1):
-#     x+=i
-# print(x)
+userInput = int(input("Please enter your number: "))
+x = 0
+for i in range(1, userInput+1):
+    x+=i
+print(x)
 
-# string1 = "I love Programming"
-# vowels = "aeiouAEIOU"
-# i =1
-# vlist = []
-# for char in string1:
-#     if char in vowels:
-#         i += 1
-#         vlist.append(char)
-# print(vlist)
+string1 = "I love Programming"
+vowels = "aeiouAEIOU"
+i =1
+vlist = []
+for char in string1:
+    if char in vowels:
+        i += 1
+        vlist.append(char)
+print(vlist)
 
-# numbers= [23, 56, 12, 89, 45, 67]
-# x = numbers[0]
-# for i in numbers:
-#   if i > x:
-#     x = i  
-# print(x)
+numbers= [23, 56, 12, 89, 45, 67]
+x = numbers[0]
+for i in numbers:
+  if i > x:
+    x = i  
+print(x)
 
 
-# string1 = "hello"
-# rev = []
-# for str in reversed(string1):
-#     rev.append(str)
-# print(rev)
+string1 = "hello"
+rev = []
+for str in reversed(string1):
+    rev.append(str)
+print(rev)
 
 
-# string1 = ["apple", "banana", "orange", "banana", "apple", "banana"]
-# lst = input("Enter the fruit: ")
-# count = 0
-# for fruit in string1:
-#     if fruit == lst:
-#         count +=1
-#         print(count)
+string1 = ["apple", "banana", "orange", "banana", "apple", "banana"]
+lst = input("Enter the fruit: ")
+count = 0
+for fruit in string1:
+    if fruit == lst:
+        count +=1
+        print(count)
 
-# numbers = [23, 56, 12, 89, 45 , 67]
-# x = numbers[0]
-# for largest in numbers:
-#     if largest > x:
-#         x = largest
-# print(x)
+numbers = [23, 56, 12, 89, 45 , 67]
+x = numbers[0]
+for largest in numbers:
+    if largest > x:
+        x = largest
+print(x)
 
-# nums = [1,2,3,4,5,6]
-# for val in nums:
-#     print(val)
+nums = [1,2,3,4,5,6]
+for val in nums:
+    print(val)
 
 
-# lst = [1,4,9,16,25,36,49,64,81,100]
-# num = int(input("Enter your number: "))
-# idx = 0
-# for val in lst:
-#     if(num == val):
-#         print("Found ", val)
-#     idx += 1
+lst = [1,4,9,16,25,36,49,64,81,100]
+num = int(input("Enter your number: "))
+idx = 0
+for val in lst:
+    if(num == val):
+        print("Found ", val)
+    idx += 1
 
 
-# for i in range(2,100,50):
-#     print(i)
+for i in range(2,100,50):
+    print(i)
 
-# for val in range(100, 0, -1):
-#     print(val)
+for val in range(100, 0, -1):
+    print(val)
 
-# userInput = int(input("Please enter your number: "))
-# X = 0
-# for val in range(1,11):
-#     X = userInput * val
-#     print("5 X ", val, "= ", X)
+userInput = int(input("Please enter your number: "))
+X = 0
+for val in range(1,11):
+    X = userInput * val
+    print("5 X ", val, "= ", X)
 
 
-# i = 1
-# factorial = 1
-# n  = int(input("Enter your number: "))
-# while(i<=n):
-#     factorial *= i 
-#     i+=1
-# print("factorial", factorial)
+i = 1
+factorial = 1
+n  = int(input("Enter your number: "))
+while(i<=n):
+    factorial *= i 
+    i+=1
+print("factorial", factorial)
 
-# i = 1
-# n = int(input("Please enter your number: "))
-# for factorial in range (1, n + 1):
-#     i*= factorial
-# print(i) 
+i = 1
+n = int(input("Please enter your number: "))
+for factorial in range (1, n + 1):
+    i*= factorial
+print(i) 
 
-# info = {
-#     "name": "Apurwa Bhattarai",
-#     "age": 21,
-#     "major": "Computer Science"
-# }
+info = {
+    "name": "Apurwa Bhattarai",
+    "age": 21,
+    "major": "Computer Science"
+}
 
-# info["grade"] = "A"
-# info["gpa"] = 3.8
+info["grade"] = "A"
+info["gpa"] = 3.8
 
-# info.update({"age": 35})
-# print(info)
+info.update({"age": 35})
+print(info)
 
-# del info["age"]
+del info["age"]
 
-# print(info)
+print(info)
 
-# info = {
-#     "name": "Apurwa Bhattarai",
-#     "age": 21,
-#     "major": "Computer Science"
-# }
+info = {
+    "name": "Apurwa Bhattarai",
+    "age": 21,
+    "major": "Computer Science"
+}
 
-# if("major" in info):
-#     print("Exists")
-# else:
-#     print("Don't Exist")
+if("major" in info):
+    print("Exists")
+else:
+    print("Don't Exist")
 
-# contacts = {
-#     "John": "1234",
-#     "Alice": "5678",
-#     "Bob": "91011"
-# }
-# for output in contacts.items():
-#     print(output)
+contacts = {
+    "John": "1234",
+    "Alice": "5678",
+    "Bob": "91011"
+}
+for output in contacts.items():
+    print(output)
 
-# fruits = {"apple", "banana", "orange", "apple", "grape"}
+fruits = {"apple", "banana", "orange", "apple", "grape"}
 
-# if "orange" in fruits:
-#     print("exists")
-# else:
-#     print("don't exists")
-# print(fruits)
+if "orange" in fruits:
+    print("exists")
+else:
+    print("don't exists")
+print(fruits)
 
-# set1 = {1,2,3,4}
-# set2 = {3,4,5,6,}
+set1 = {1,2,3,4}
+set2 = {3,4,5,6,}
 
-# print(set2.difference(set1))
+print(set2.difference(set1))
 
-# colors = {"red", "blue", "green", "yellow"}
-# for results in colors:
-#     print(results)
+colors = {"red", "blue", "green", "yellow"}
+for results in colors:
+    print(results)
 
-# fruits = {"apple", "banana", "orange", "apple", "grape"}
-# unique_items = len(fruits)
-# print(unique_items)
+fruits = {"apple", "banana", "orange", "apple", "grape"}
+unique_items = len(fruits)
+print(unique_items)
 
-# empDict = {}
-# x = int(input("Phy "))
-# empDict.update({"phy" : x})
-# y = int(input("Chem "))
-# empDict.update({"Chem" : y})
-# z = int(input("Bio "))
-# empDict.update({"Bio" : z})
+empDict = {}
+x = int(input("Phy "))
+empDict.update({"phy" : x})
+y = int(input("Chem "))
+empDict.update({"Chem" : y})
+z = int(input("Bio "))
+empDict.update({"Bio" : z})
 
-# print(empDict)
+print(empDict)
 
-# student_courses = {
-#     "John": {"Math", "English", "History"},
-#     "Alice": {"Math", "Science", "History"},
-#     "Bob": {"English", "Art"}
-# }
+student_courses = {
+    "John": {"Math", "English", "History"},
+    "Alice": {"Math", "Science", "History"},
+    "Bob": {"English", "Art"}
+}
 
-# student_courses["Bob"].add("Physics")
+student_courses["Bob"].add("Physics")
 
-# inter = student_courses["John"].intersection(student_courses["Alice"])
-# unique = student_courses["Bob"].union (student_courses["Alice"], student_courses["John"])
+inter = student_courses["John"].intersection(student_courses["Alice"])
+unique = student_courses["Bob"].union (student_courses["Alice"], student_courses["John"])
 
-# print(unique)
+print(unique)
 
-# lst = [1,2,3,4,5,6,7,8,9,10]
-# print(lst)
+lst = [1,2,3,4,5,6,7,8,9,10]
+print(lst)
 
-# print(lst[1])
-# print(lst[3])
+print(lst[1])
+print(lst[3])
 
-# fruits = ["apple", "banana", "cherry"]
-# fruits[1] = "blueberry"
-# print(fruits)
+fruits = ["apple", "banana", "cherry"]
+fruits[1] = "blueberry"
+print(fruits)
 
-# numbers = [1,3,2,7]
-# numbers.append(15)
-# numbers[1] = 2
-# numbers.sort(reverse=True)
-# numbers.pop(1)
-# numbers.reverse
-# numbers.remove(2)
-# print(numbers)
+numbers = [1,3,2,7]
+numbers.append(15)
+numbers[1] = 2
+numbers.sort(reverse=True)
+numbers.pop(1)
+numbers.reverse
+numbers.remove(2)
+print(numbers)
 
-# numbers.insert(2,9)
-# print(numbers)
+numbers.insert(2,9)
+print(numbers)
 
 
-# numbers1 = [10,20,30,40,50,60]
-# numbers2 = [70,80,90,100]
-# concatenate = numbers1 + numbers2
-# print(concatenate)
+numbers1 = [10,20,30,40,50,60]
+numbers2 = [70,80,90,100]
+concatenate = numbers1 + numbers2
+print(concatenate)
 
 
-# square= [x**2 for x in range(1,6)]
-# print(square)
+square= [x**2 for x in range(1,6)]
+print(square)
 
-# userInput = input("Please enter your fruit's name: ")
+userInput = input("Please enter your fruit's name: ")
 
-# fruits = ['apple', 'banana', 'cherry', 'banana', 'apple']
-# if (userInput in fruits):
-#     print("Exists")
-# else:
-#     print("Don't Exist")
+fruits = ['apple', 'banana', 'cherry', 'banana', 'apple']
+if (userInput in fruits):
+    print("Exists")
+else:
+    print("Don't Exist")
 
-# nested = [[1,2],[3,4],[5,6]]
-# print(nested[1][1])
+nested = [[1,2],[3,4],[5,6]]
+print(nested[1][1])
 
-# numbers = [1,2,3]
-# result = [x * 3 for x in numbers]
-# print(result)
+numbers = [1,2,3]
+result = [x * 3 for x in numbers]
+print(result)
 
-# numbers = tuple(range(10, 20))
-# print(numbers)
+numbers = tuple(range(10, 20))
+print(numbers)
 
-# fruits1 = ('apple', 'banana', 'cherry')
+fruits1 = ('apple', 'banana', 'cherry')
 
-# print(len(fruits1))
+print(len(fruits1))
 
-# userInput = input("Please enter the name of animal: ")
-# animals = ('dog', 'cat', 'rabbit')
-# if userInput in animals:
-#     print("exist")
-# else:
-#     print("don't exist")
+userInput = input("Please enter the name of animal: ")
+animals = ('dog', 'cat', 'rabbit')
+if userInput in animals:
+    print("exist")
+else:
+    print("don't exist")
 
-# coordinates = (4,5)
-# x, y = coordinates
+coordinates = (4,5)
+x, y = coordinates
 
-# print("x", x)
-# print("y" , y)
+print("x", x)
+print("y" , y)
 
-# nested = ((1,2), (3,4), (5,6))
-# print(nested[1][0])
+nested = ((1,2), (3,4), (5,6))
+print(nested[1][0])
 
-# nested = (1,2,3,2,1,2)
+nested = (1,2,3,2,1,2)
 
-# print(nested.count(2))
+print(nested.count(2))
 
-# alphabet = ('a', 'b', 'c', 'd', 'e')
-# change = list[alphabet]
+alphabet = ('a', 'b', 'c', 'd', 'e')
+change = list[alphabet]
 
-# alphabet = ('a', 'b', 'c', 'd', 'e')
-# print(alphabet[1:3])
+alphabet = ('a', 'b', 'c', 'd', 'e')
+print(alphabet[1:3])
 
 
-# tuple = "Hello"
+tuple = "Hello"
 
-# multiply = [x * 3 for x in tuple]
-# print(multiply)
+multiply = [x * 3 for x in tuple]
+print(multiply)
 
-# t1 = (1,2,3)
-# t2 = (3,2,1)
+t1 = (1,2,3)
+t2 = (3,2,1)
 
-# if(t1 == t2):
-#     print("Equal")
-# else:
-#     print("Not Equal")
+if(t1 == t2):
+    print("Equal")
+else:
+    print("Not Equal")
 
 
-#     Swap Elements: Swap the first and last elements of the list my_list = [1, 2, 3, 4].
+def cal_sum(a ,b):
+    sum = a +b
+    return sum
 
-# Convert List to Tuple: Convert a given list my_list = ['apple', 'banana', 'cherry'] into a tuple.
+result = cal_sum(5,10)
+print(result)
 
-# Create a Tuple with List Elements: Given a list numbers = [10, 20, 30], create a tuple where each element of the list is a separate element of the tuple.
 
-# Filter Even Numbers from List: Given the list numbers = [1, 2, 3, 4, 5, 6], use a list comprehension to create a new list with only even numbers.
+def average(a,b,c):
+    return (a + b+ c) /3
 
-# List and Tuple Comparison: Given a list my_list = [1, 2, 3] and a tuple my_tuple = (1, 2, 3), compare them. Do they have the same values?
+ave = average(5,7,9)
+print(ave)
 
 
-# def cal_sum(a ,b):
-#     sum = a +b
-#     return sum
+def len_list():
+    numbers = [1,2,3,4,5,6,7,8,9]
+    return len(numbers)
 
-# result = cal_sum(5,10)
-# print(result)
+print(len_list())
 
 
-# def average(a,b,c):
-#     return (a + b+ c) /3
+lst1 = [1,2,3,4,5]
+def element_list(list):
+    for item in list:
+        print(item, end = "")
 
-# ave = average(5,7,9)
-# print(ave)
-
-
-# def len_list():
-#     numbers = [1,2,3,4,5,6,7,8,9]
-#     return len(numbers)
-
-# print(len_list())
-
-
-# lst1 = [1,2,3,4,5]
-# def element_list(list):
-#     for item in list:
-#         print(item, end = "")
-
-# print(element_list(lst1))
+print(element_list(lst1))
   
 
-# def fac1():
-#     fac = 1
-#     userInput  = int (input("please enter your number: "))
-#     for i in range(1, userInput + 1):
-#         fac *= i 
+def fac1():
+    fac = 1
+    userInput  = int (input("please enter your number: "))
+    for i in range(1, userInput + 1):
+        fac *= i 
     
-#     return fac
-# print(fac1())
+    return fac
+print(fac1())
 
 
-# def rev():
-#     userInput = input("Please enter your word: ")
-#     var = list(userInput)
+def rev():
+    userInput = input("Please enter your word: ")
+    var = list(userInput)
 
-#     var.reverse()
-#     return ''.join(var)
-
-
-# print(rev())
+    var.reverse()
+    return ''.join(var)
 
 
-# def factorial():
-#     userInput = (int(input("Please enter your number: ")))
-#     fact =1
-#     for items in range(1, userInput +1):
-#         fact *= items
-#     return fact
-
-# print(factorial())
+print(rev())
 
 
-# def converter(usd):
-#     inr = usd * 83
-#     print(inr)
+def factorial():
+    userInput = (int(input("Please enter your number: ")))
+    fact =1
+    for items in range(1, userInput +1):
+        fact *= items
+    return fact
 
-# converter("h")
-
-# def userOutput(userInput):
-#     if userInput % 2 == 1:
-#         print("your number is odd")
-#     else:
-#         print("your number is even")
-
-# userInput = int(input("Please enter your number: "))
-# userOutput(userInput)
+print(factorial())
 
 
-# def for_loop(userInput):
-#     for i in range( userInput, 0, -1):
-#         i-=1
-#         print(i)
+def converter(usd):
+    inr = usd * 83
+    print(inr)
 
-# userInput = int(input("enter your number: "))
-# for_loop(userInput)
+converter("h")
+
+def userOutput(userInput):
+    if userInput % 2 == 1:
+        print("your number is odd")
+    else:
+        print("your number is even")
+
+userInput = int(input("Please enter your number: "))
+userOutput(userInput)
 
 
-# def calc_sum(n):
-#     if(n==0):
-#         return 0
-#     return calc_sum(n-1) + n
+def for_loop(userInput):
+    for i in range( userInput, 0, -1):
+        i-=1
+        print(i)
 
-# sum = calc_sum(10)
-# print(sum)
+userInput = int(input("enter your number: "))
+for_loop(userInput)
 
-# def show(n):
-#     if(n==0):
-#         return
-#     print(n)
-#     print(n-1)
-#     print("END")
 
-# show(5)
+def calc_sum(n):
+    if(n==0):
+        return 0
+    return calc_sum(n-1) + n
 
-# numbers = [1,2,2,3,4,4,5]
+sum = calc_sum(10)
+print(sum)
 
-# squared = [x ** 2 for x in numbers]
+def show(n):
+    if(n==0):
+        return
+    print(n)
+    print(n-1)
+    print("END")
+
+show(5)
+
+numbers = [1,2,2,3,4,4,5]
+
+squared = [x ** 2 for x in numbers]
  
-# print(squared)
+print(squared)
 
-# set1 = {1,2,3}
-# set2 = {2,3}
+set1 = {1,2,3}
+set2 = {2,3}
 
-# print(set1.issubset(set2))
-# print(set1.issuperset(set2))
+print(set1.issubset(set2))
+print(set1.issuperset(set2))
 
 
-# for i in range(1,20 +1):
-#     if(i % 2 == 0):
-#         print(i ,"even")
-#     else:
-#         print(i, "odd")
+for i in range(1,20 +1):
+    if(i % 2 == 0):
+        print(i ,"even")
+    else:
+        print(i, "odd")
     
-# number = [1,2,3,4,5,6]
+number = [1,2,3,4,5,6]
 
-# for i in number:
-#     square = i ** 2
-#     print(square)
+for i in number:
+    square = i ** 2
+    print(square)
 
 
-# number = [10,5,30,15,25]
+number = [10,5,30,15,25]
 
-# max_num = number[0]
+max_num = number[0]
 
-# for num in number:
-#     if num>max_num:
-#         max_num=num
-# print(max_num)
+for num in number:
+    if num>max_num:
+        max_num=num
+print(max_num)
 
-# word = "education"
+word = "education"
 
-# for i in word:
-#     if i in "aeiou":
-#      print(i, "vowel")
-#     else:
-#         print(i, "not vowel")
+for i in word:
+    if i in "aeiou":
+     print(i, "vowel")
+    else:
+        print(i, "not vowel")
     
 
-# word = "hello"
-# for i in reversed(word):
-#    print(i)
+word = "hello"
+for i in reversed(word):
+   print(i)
 
-# word = "banana"
-# letter_count = {}  # Dictionary to store letter counts
+word = "banana"
+letter_count = {}  # Dictionary to store letter counts
 
-# # Iterate through each letter in the word
-# for letter in word:
-#     if letter in letter_count:
-#         letter_count[letter] += 1  # Increment count if the letter is already in the dictionary
-#     else:
-#         letter_count[letter] = 1  # Initialize count to 1 if the letter is not in the dictionary
-
-# Print the results
-# for letter, count in letter_count.items():
-#     print(f"{letter} is repeated {count} times")
+# Iterate through each letter in the word
+for letter in word:
+    if letter in letter_count:
+        letter_count[letter] += 1  # Increment count if the letter is already in the dictionary
+    else:
+        letter_count[letter] = 1  # Initialize count to 1 if the letter is not in the dictionary
 
 
-# word = "banana"
-# vowel = {}
+for letter, count in letter_count.items():
+    print(f"{letter} is repeated {count} times")
 
-# for i in word:
-#     if i in 'aeiou':
-#         print(i, " is vowel")
-#     else:
-#         print(i, " not vowel")
 
-# f = open("demo.txt", "a")
-# f = open("sample.txt", "w")
-# f.close()
+word = "banana"
+vowel = {}
 
-# data = f.write("This is a test2")
+for i in word:
+    if i in 'aeiou':
+        print(i, " is vowel")
+    else:
+        print(i, " not vowel")
+
+f = open("demo.txt", "a")
+f = open("sample.txt", "w")
+f.close()
+
+data = f.write("This is a test2")
  
-# print(data)
-# print(type(data))
-# f.close()
+print(data)
+print(type(data))
+f.close()
 
 
 
-# def file_no():
-#     word = "learning"
-#     data = True
-#     line_no =1
-#     with open("file.txt", "r") as f:
-#      while data:
-#         data = f.readline()
-#         if word in data:
-#            print(line_no)
+def file_no():
+    word = "learning"
+    data = True
+    line_no =1
+    with open("file.txt", "r") as f:
+     while data:
+        data = f.readline()
+        if word in data:
+           print(line_no)
            
-#         line_no += 1
+        line_no += 1
 
-#     return -1
+    return -1
 
-# print(file_no())
+print(file_no())
 
-# with open("file.txt", "w") as f:
-#     print(f.write("Hello! my name is Apurwa Bhattarai \n I am awesome. \n I live in Dallas"))
+with open("file.txt", "w") as f:
+    print(f.write("Hello! my name is Apurwa Bhattarai \n I am awesome. \n I live in Dallas"))
 
-# with open("file.txt", "r") as f:
-#     content = f.read()
+with open("file.txt", "r") as f:
+    content = f.read()
 
-#     find = content.find("name")
+    find = content.find("name")
 
-#     print(find)
+    print(find)
     
-#     word = "name"
-#     line_no = 1
-#     for word1 in f:
-#         if word in word1:
-#             print(line_no)
-#         line_no += 1
+    word = "name"
+    line_no = 1
+    for word1 in f:
+        if word in word1:
+            print(line_no)
+        line_no += 1
 
  
-# import os
+import os
 
-# word = "Dallas"
-# line_no = 1
+word = "Dallas"
+line_no = 1
 
-# with open("abc.txt", "r") as f:
-#     for wrd in f:
-#         wrd = wrd.replace("\\n", "\n")
-#         if word in wrd: 
-#             print("Dallas foun in line ", line_no)
-#         line_no+=1
+with open("abc.txt", "r") as f:
+    for wrd in f:
+        wrd = wrd.replace("\\n", "\n")
+        if word in wrd: 
+            print("Dallas foun in line ", line_no)
+        line_no+=1
     
 
-# word = "awesome"
-# line = 1
+word = "awesome"
+line = 1
 
-# with open("file2.txt", "r") as source_file:
-#    for wrd in source_file:
-#       if word in wrd:
-#          print("found ", line)
-#       line +=1
+with open("file2.txt", "r") as source_file:
+   for wrd in source_file:
+      if word in wrd:
+         print("found ", line)
+      line +=1
       
-# count = 0
-# with open("file2.txt", "r") as count_line:
-#     for cou in count_line:
-#         count+=1
-# print(count)
+count = 0
+with open("file2.txt", "r") as count_line:
+    for cou in count_line:
+        count+=1
+print(count)
 
-# with open("file2.txt", "r") as count_line1:
-#     with open("file.txt", "w") as count_line2:
+with open("file2.txt", "r") as count_line1:
+    with open("file.txt", "w") as count_line2:
 
-#         data = count_line1.read()
-#         count_line2.write(data)
-# print("success")  
+        data = count_line1.read()
+        count_line2.write(data)
+print("success")  
 
 
-# class student():
-#     def __init__(self, name):
-#         self.name = name
+class student():
+    def __init__(self, name):
+        self.name = name
 
-#     def hello(self):
-#         print("Hi", self.name)
+    def hello(self):
+        print("Hi", self.name)
 
-# s1 = student("apu")
+s1 = student("apu")
 
-# s1.hello()
+s1.hello()
 
-# class student():
-#     def __init__(self, name, marks):
-#         self.name = name
-#         self.marks = marks
+class student():
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
 
-#     def methCall(self):
-#         total = 0
-#         for mark in self.marks:
-#             total += mark
+    def methCall(self):
+        total = 0
+        for mark in self.marks:
+            total += mark
         
-#         print("Hi ", self.name, "your marks is ", total/3)
+        print("Hi ", self.name, "your marks is ", total/3)
 
-# student1 = student("Apurwa", [8,9,10]) 
+student1 = student("Apurwa", [8,9,10]) 
 
-# student1.methCall()
+student1.methCall()
 
-# class Account:
-#     def __init__(self, bal, acc):
-#         self.balance = bal
-#         self.account = acc
+class Account:
+    def __init__(self, bal, acc):
+        self.balance = bal
+        self.account = acc
 
-#     def debit(self, amount):
-#         self.balance -= amount
-#         print(amount, " is") 
+    def debit(self, amount):
+        self.balance -= amount
+        print(amount, " is") 
 
-# bal1 = Account(1000, 1234)
-# print(bal1.account, bal1.balance)
+bal1 = Account(1000, 1234)
+print(bal1.account, bal1.balance)
 
-# bal1.debit(5000)
-
-
-# class Student():
-#     def __init__(self, name, grades):
-#         self.name = name
-#         self.grades = grades
-
-#     def stu_Info(self):
-#         i =0
-#         for mark in self.grades:
-#             i += mark
-#         print("result", i/3)
-
-# s1 = Student("Apu", [98, 99, 100])
-# s1.stu_Info()
+bal1.debit(5000)
 
 
-# class A:
-#     print("Welcome to A")
+class Student():
+    def __init__(self, name, grades):
+        self.name = name
+        self.grades = grades
 
-# class B:
-#     print("Welcome to B")
+    def stu_Info(self):
+        i =0
+        for mark in self.grades:
+            i += mark
+        print("result", i/3)
 
-# class C(A,B):
-#     print("Welcome to C")
-
-# C1 = A()
-
-# print(C1)
-
-# class Person():
-#     def __init__(self, name = "", age=0):
-#         self.name = name
-#         self.age = age
-
-#     def set_name(self, name):
-#         self._name = name
-
-#     def set_age(self, age):
-#         self._age = age
-
-#     def get_name(self):
-#         return self._name
-
-#     def get_age(self):
-#         return self._age
+s1 = Student("Apu", [98, 99, 100])
+s1.stu_Info()
 
 
-# s1 = Person()
+class A:
+    print("Welcome to A")
 
-# s1.set_name("apu")
-# s1.set_age(27)
+class B:
+    print("Welcome to B")
 
-# print(s1.get_name())
-# print(s1.get_age())
+class C(A,B):
+    print("Welcome to C")
 
+C1 = A()
 
-# class Circle():
-#     def __init__(self, radius):
-#         self.radius = radius
+print(C1)
 
-#     def area(self):
-#         return  22/7 * self.radius ** 2
+class Person():
+    def __init__(self, name = "", age=0):
+        self.name = name
+        self.age = age
 
-#     def perimeter(self):
-#         return  2 * 22/7 * self.radius 
+    def set_name(self, name):
+        self._name = name
 
-# c1 = Circle(21)
-# print(c1.area())
-# print(c1.perimeter())
+    def set_age(self, age):
+        self._age = age
 
-# class Employee():
-#     def __init__(self, role, dept, salary):
-#         self.role = role
-#         self.dept = dept
-#         self.salary = salary
+    def get_name(self):
+        return self._name
 
-#     def showDetails(self):
-#         print("role = ", self.role)
-#         print("dept = ", self.dept)
-#         print("salary = ", self.salary)
+    def get_age(self):
+        return self._age
 
 
-# emp = Employee("account", "Finance", "80000")
-# emp.showDetails()
+s1 = Person()
 
-# class vehicle():
-#     def __init__(self, make, model, year):
-#         self.make = make
-#         self.model = model
-#         self.year = year
+s1.set_name("apu")
+s1.set_age(27)
 
-#     def display_info(self):
-#         print("make ", self.make)
-#         print("model ", self.model)
-#         print("year ", self.year)
-
-# class Car(vehicle):
-#     def start_engine(self):
-#         print("Engine started")
+print(s1.get_name())
+print(s1.get_age())
 
 
-# car1 = Car("Toyota", "Camry", "2022")
-# car1.display_info()
-# car1.start_engine()
+class Circle():
+    def __init__(self, radius):
+        self.radius = radius
 
-# class Person():
-#     def __init__(self, name, age):
-#         self.name = name
-#         self.age = age
+    def area(self):
+        return  22/7 * self.radius ** 2
 
-# class Student(Person):
-#     def new_attribute(self, student_id):
-#         self.student_id = student_id
-#         print("name ",self.name, "age ", self.age, "student_id ", self.student_id  )
+    def perimeter(self):
+        return  2 * 22/7 * self.radius 
 
-# per1 = Student("apu", "27")
+c1 = Circle(21)
+print(c1.area())
+print(c1.perimeter())
 
-# per1.new_attribute("11393917")
+class Employee():
+    def __init__(self, role, dept, salary):
+        self.role = role
+        self.dept = dept
+        self.salary = salary
 
-# class Person():
-#     def __init__(self, name, age):
-#         self.name = name
-#         self.age = age
-
-
-# class Student(Person):
-#     def __init__(self, name, age, student_Id):
-#         super().__init__( name, age)
-#         self.student_Id = student_Id
-
-#     def output(self):
-#         print("name ", self.name, "age ", self.age, "student id ", self.student_Id)
-
-# per1 = Student("Apu", "27", "11393917")
-# per1.output()
+    def showDetails(self):
+        print("role = ", self.role)
+        print("dept = ", self.dept)
+        print("salary = ", self.salary)
 
 
-# class Animal():
-#     def speak(self):
-#         print("Animal makes a sound")
+emp = Employee("account", "Finance", "80000")
+emp.showDetails()
 
-# class Dog(Animal):
-#     def speak(self):
-#         print("Bark")
+class vehicle():
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
 
-# animal1 = Dog()
-# animal1.speak()
+    def display_info(self):
+        print("make ", self.make)
+        print("model ", self.model)
+        print("year ", self.year)
+
+class Car(vehicle):
+    def start_engine(self):
+        print("Engine started")
 
 
-# class Person():
-#     def __init__(self, name, age, address):
-#         self.name = name
-#         self.age = age
-#         self.address = address
+car1 = Car("Toyota", "Camry", "2022")
+car1.display_info()
+car1.start_engine()
+
+class Person():
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+class Student(Person):
+    def new_attribute(self, student_id):
+        self.student_id = student_id
+        print("name ",self.name, "age ", self.age, "student_id ", self.student_id  )
+
+per1 = Student("apu", "27")
+
+per1.new_attribute("11393917")
+
+class Person():
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+
+class Student(Person):
+    def __init__(self, name, age, student_Id):
+        super().__init__( name, age)
+        self.student_Id = student_Id
+
+    def output(self):
+        print("name ", self.name, "age ", self.age, "student id ", self.student_Id)
+
+per1 = Student("Apu", "27", "11393917")
+per1.output()
+
+
+class Animal():
+    def speak(self):
+        print("Animal makes a sound")
+
+class Dog(Animal):
+    def speak(self):
+        print("Bark")
+
+animal1 = Dog()
+animal1.speak()
+
+
+class Person():
+    def __init__(self, name, age, address):
+        self.name = name
+        self.age = age
+        self.address = address
     
-#     def greet(self):
-#         print("Hello, my name is ", self.name)
-#         print("your age and address is ", self.age,", ", self.address, "respectively.")
+    def greet(self):
+        print("Hello, my name is ", self.name)
+        print("your age and address is ", self.age,", ", self.address, "respectively.")
     
-# class Student(Person):
-#     def __init__(self, name, age, address, student_id):
-#         super(). __init__(name, age, address)
-#         self.student_id = student_id
+class Student(Person):
+    def __init__(self, name, age, address, student_id):
+        super(). __init__(name, age, address)
+        self.student_id = student_id
 
-#     def study(self):
-#         print("I am studying")
+    def study(self):
+        print("I am studying")
 
-# person1 = Student("Apurwa", "27", "Denton", "11393917")
+person1 = Student("Apurwa", "27", "Denton", "11393917")
 
-# person1.greet()
-# person1.study()
+person1.greet()
+person1.study()
 
 
-# class Animal():
-#     def __init__(self, name, species):
-#         self.name = name
-#         self.species = species
+class Animal():
+    def __init__(self, name, species):
+        self.name = name
+        self.species = species
 
-# class Dog(Animal):
-#     def __init__(self, name, species, breed):
-#         super().__init__(name, species)
-#         self.breed = breed
+class Dog(Animal):
+    def __init__(self, name, species, breed):
+        super().__init__(name, species)
+        self.breed = breed
 
-# d1 = Dog("bunny", "canine", "chihuahua")
+d1 = Dog("bunny", "canine", "chihuahua")
 
-# print("name: ", d1.name, "--species: ", d1.species, "--breed: ", d1.breed)
+print("name: ", d1.name, "--species: ", d1.species, "--breed: ", d1.breed)
 
-# class Vehicle():
-#     def start_engine(self):
-#         print("engine started")
+class Vehicle():
+    def start_engine(self):
+        print("engine started")
 
-# class Car(Vehicle):
-#     def start_engine(self):
-#         print("Car engine started")
+class Car(Vehicle):
+    def start_engine(self):
+        print("Car engine started")
 
-# car1 = Car()
-# car1.start_engine()
+car1 = Car()
+car1.start_engine()
     
-# class Person():
-#     def __init__(self, name, age):
-#         self.name = name
-#         self.age = age
+class Person():
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
-# class Teacher(Person):
-#     def __init__(self, name, age, subject):
-#         super().__init__(name, age)
-#         self.subject = subject
+class Teacher(Person):
+    def __init__(self, name, age, subject):
+        super().__init__(name, age)
+        self.subject = subject
 
-#     def teach(self):
-#         print(self.name, " is teaching", self.subject)
+    def teach(self):
+        print(self.name, " is teaching", self.subject)
 
-# class Student(Person):
-#     def __init__(self, name, age, student_id):
-#         super().__init__(name, age)
-#         self.student_ID = student_id
+class Student(Person):
+    def __init__(self, name, age, student_id):
+        super().__init__(name, age)
+        self.student_ID = student_id
 
-#     def study(self):
-#         print(self.student_ID, " is studying class taught by ", self.name)
+    def study(self):
+        print(self.student_ID, " is studying class taught by ", self.name)
 
-# class TeachingAssistant(Teacher, Student):
-#     def __init__(self, name, age, subject, student_id):
-#         Teacher.__init__(self, name, age, subject)
-#         Student.__init__(self, name, age, student_id)
+class TeachingAssistant(Teacher, Student):
+    def __init__(self, name, age, subject, student_id):
+        Teacher.__init__(self, name, age, subject)
+        Student.__init__(self, name, age, student_id)
 
 
-#     def help_student(self):
-#         print("Helping the student")
+    def help_student(self):
+        print("Helping the student")
 
 
-# c1 = TeachingAssistant("apu", 27,"Phy", "11393917")
-# c1.help_student()
+c1 = TeachingAssistant("apu", 27,"Phy", "11393917")
+c1.help_student()
 
 
-# f = open("demo.txt", "a+")
+f = open("demo.txt", "a+")
 
-# data = f.write("this1234")
-# print(data)
+data = f.write("this1234")
+print(data)
 
 
-# f.close()
+f.close()
 
 
-# with open("demo1.txt", "r") as f:
-#     data = f.read()
-#     new_line = data.splitlines()
-#     result = len(new_line)
-#     result2 = len(data.split())
-#     result3 = len(data) 
+with open("demo1.txt", "r") as f:
+    data = f.read()
+    new_line = data.splitlines()
+    result = len(new_line)
+    result2 = len(data.split())
+    result3 = len(data) 
 
-# print("line: ", result)
-# print("word", result2)
-# print("character: ", result3)
+print("line: ", result)
+print("word", result2)
+print("character: ", result3)
 
 
-# info = {
-#     "Name" : "Alice",
-#     "Age" : 25,
-#     "Country" : "USA"
-# }
+info = {
+    "Name" : "Alice",
+    "Age" : 25,
+    "Country" : "USA"
+}
 
-# print(info)
-# print(info["Name"])
-# print(info["Age"])
-# print(info["Country"])
+print(info)
+print(info["Name"])
+print(info["Age"])
+print(info["Country"])
 
-# book = {
-#     "Title" : "The Great Gatsby",
-#     "Author" :  "F.Scott Fitzgerald",
-#     "Year" : 1925
-# }
+book = {
+    "Title" : "The Great Gatsby",
+    "Author" :  "F.Scott Fitzgerald",
+    "Year" : 1925
+}
 
-# book["ISBN"] = 1234
+book["ISBN"] = 1234
 
-# print(book["Author"])
-# print(book)
+print(book["Author"])
+print(book)
 
 
-# travel = {
-#     "city" : "Paris",
-#     "population" : 2148000,
-#     "country" : "France"
-# }
+travel = {
+    "city" : "Paris",
+    "population" : 2148000,
+    "country" : "France"
+}
 
-# print(travel["population"])
+print(travel["population"])
 
 
-# person = {
-#     "name" : "Sarah",
-#     "age" : 30,
-#     "city" : "New York"
-# }
+person = {
+    "name" : "Sarah",
+    "age" : 30,
+    "city" : "New York"
+}
 
-# person["age"] = 31
-# person["job"] = "Engineer"
+person["age"] = 31
+person["job"] = "Engineer"
 
-# print(person)
+print(person)
 
 
-# car = {
-#     "make" : "Toyota",
-#     "model" : "Corolla",
-#     "year" : 2020
-# }
-
-# print(car["model"],", ", car["year"])
-
-# grades = {
-#     "Math" : 90,
-#     "English" : 85,
-#     "History" : 88
-# }
-
-# grades["subject"] = 90
-# print(grades["English"])
-# print(grades)
-
-# person={
-#     "first_name" : "Emma",
-#     "last_name" : "Brown",
-#     "age" : 27
-# }
-
-# del person["age"]
-
-# print(person)
-
-# contacts = {
-#     "name" : "Jake", 
-#     "phone" : "555-1234",
-#     "email" : "jake@example.com"
-# }
-
-# if "email" in contacts:
-#     print("Exist")
-# else:
-#     print("don't exist")
-
-# product = {
-#     "name" : "Laptop",
-#     "price" : 800,
-#     "stock" : 25
-# }
+car = {
+    "make" : "Toyota",
+    "model" : "Corolla",
+    "year" : 2020
+}
+
+print(car["model"],", ", car["year"])
+
+grades = {
+    "Math" : 90,
+    "English" : 85,
+    "History" : 88
+}
+
+grades["subject"] = 90
+print(grades["English"])
+print(grades)
+
+person={
+    "first_name" : "Emma",
+    "last_name" : "Brown",
+    "age" : 27
+}
+
+del person["age"]
+
+print(person)
+
+contacts = {
+    "name" : "Jake", 
+    "phone" : "555-1234",
+    "email" : "jake@example.com"
+}
+
+if "email" in contacts:
+    print("Exist")
+else:
+    print("don't exist")
+
+product = {
+    "name" : "Laptop",
+    "price" : 800,
+    "stock" : 25
+}
 
-# product["stock"] = 30
-# product["price"] = 750
+product["stock"] = 30
+product["price"] = 750
 
-# print(product)
+print(product)
 
-# students_grades = {
-#     "Alice" : [88,92,79],
-#     "Bob" : [75,85,90],
-#     "Charlie" : [95, 100, 98]
-# }
+students_grades = {
+    "Alice" : [88,92,79],
+    "Bob" : [75,85,90],
+    "Charlie" : [95, 100, 98]
+}
 
-# def average_grade():
-#     name = input("please enter student's name: ")
-#     if name in students_grades:
-#         scores1 = students_grades[name]
-#         average = sum(scores1)/ len(scores1)
-#         print(average)
+def average_grade():
+    name = input("please enter student's name: ")
+    if name in students_grades:
+        scores1 = students_grades[name]
+        average = sum(scores1)/ len(scores1)
+        print(average)
 
-# average_grade()
+average_grade()
 
-# inventory = {
-#     "apple" : (30, 1.2),
-#     "banana" : (45, 0.5),
-#     "orange" : (20, 0.8)
-# }
+inventory = {
+    "apple" : (30, 1.2),
+    "banana" : (45, 0.5),
+    "orange" : (20, 0.8)
+}
 
 
-# def total_value():
-#     val = input("Please enter your value: "). lower()
-#     if val in inventory:
-#         quantity, price = inventory[val]
-#         result = quantity * price
-#         print(result)
+def total_value():
+    val = input("Please enter your value: "). lower()
+    if val in inventory:
+        quantity, price = inventory[val]
+        result = quantity * price
+        print(result)
 
 
-# total_value()
+total_value()
 
-# student = {
-#     "name" : "Alex",
-#     "age" : 21,
-#     "grade" : "A"
-# }
+student = {
+    "name" : "Alex",
+    "age" : 21,
+    "grade" : "A"
+}
 
-# print(student)
+print(student)
 
-# car = {
-#     "brand" : "Tesla",
-#     "model" : "Model 3",
-#     "year" : 2022
-# }
+car = {
+    "brand" : "Tesla",
+    "model" : "Model 3",
+    "year" : 2022
+}
 
-# car["color"] = "red"
-# car["year"] = 2023
+car["color"] = "red"
+car["year"] = 2023
 
-# del car["brand"]
-# print(car)
-# print(car["model"])
+del car["brand"]
+print(car)
+print(car["model"])
 
 
-# fruits = {
-#     "apple" : 5,
-#     "banana" : 3,
-#     "orange" : 2
-# }
+fruits = {
+    "apple" : 5,
+    "banana" : 3,
+    "orange" : 2
+}
 
-# for ele in fruits:
-#     print({ele}, ":", {fruits[ele]})
+for ele in fruits:
+    print({ele}, ":", {fruits[ele]})
 
-# if "banana" in fruits:
-#     print("Exist")
-# else:
-#     print("Don't Exist")
+if "banana" in fruits:
+    print("Exist")
+else:
+    print("Don't Exist")
 
-# value = fruits.get("banana", 0)
-# print(value)
+value = fruits.get("banana", 0)
+print(value)
 
-# colors = ["red", "blue", "red", "green", "blue", "blue"]
-# store = {}
+colors = ["red", "blue", "red", "green", "blue", "blue"]
+store = {}
 
-# for frequency in colors:
-#     if frequency in store:
-#      store[frequency] +=1
-# else:
-#     store[frequency] = 1
+for frequency in colors:
+    if frequency in store:
+     store[frequency] +=1
+else:
+    store[frequency] = 1
 
-# print(store)    
+print(store)    
 
-# classroom = {
-#     "John" : {"math": 85, "science":92},
-#     "Emily" : {"math": 78, "science":88},
-#     "Michael" : {"math": 90, "science":85}
+classroom = {
+    "John" : {"math": 85, "science":92},
+    "Emily" : {"math": 78, "science":88},
+    "Michael" : {"math": 90, "science":85}
 
-# }
-# classroom["Sarah"] = {"math" : 95, "science" : 89}
+}
+classroom["Sarah"] = {"math" : 95, "science" : 89}
 
-# print(classroom)
+print(classroom)
 
-# print(classroom["Emily"])
+print(classroom["Emily"])
 
-# numbers = {1,2,3,4,5}
-# store = {}
+numbers = {1,2,3,4,5}
+store = {}
 
-# for squ in numbers:
-#     val = squ ** 2
-#     store[squ] = val
+for squ in numbers:
+    val = squ ** 2
+    store[squ] = val
 
-#     print(store[squ])
-# print(store)
+    print(store[squ])
+print(store)
 
-# grades = {
-#     "John" : 85,
-#     "Emily" : 92,
-#     "Michael" : 78,
-#     "Sarah"  :89
-# }
+grades = {
+    "John" : 85,
+    "Emily" : 92,
+    "Michael" : 78,
+    "Sarah"  :89
+}
 
-# sort = dict(sorted(grades.items(), key = lambda ite: ite[1], reverse = True))
-# print(sort)
+sort = dict(sorted(grades.items(), key = lambda ite: ite[1], reverse = True))
+print(sort)
 
 
-# def greet():
-#     name = input("Please enter your name: ")
-#     print("Hello,", name)
+def greet():
+    name = input("Please enter your name: ")
+    print("Hello,", name)
 
-# greet()
+greet()
 
-# def square():
-#     userInput = int(input("Please enter your number: "))
-#     result = userInput ** 2
-#     print("the square of your number is: ", result)
+def square():
+    userInput = int(input("Please enter your number: "))
+    result = userInput ** 2
+    print("the square of your number is: ", result)
 
-# square() 
+square() 
 
 
-# def sum_of_numbers(a, b):
+def sum_of_numbers(a, b):
 
-#     sum = a+b
-#     print(sum)
+    sum = a+b
+    print(sum)
 
-# sum_of_numbers(5,9)
+sum_of_numbers(5,9)
 
 
-# def personal_info(name, age, city):
-#     print("Name: ", name, "Age:", age, "City: ", city)
+def personal_info(name, age, city):
+    print("Name: ", name, "Age:", age, "City: ", city)
 
-# personal_info("apu", 27, "Dallas")
+personal_info("apu", 27, "Dallas")
 
-# def multiplt(a, b=1):
-#     multiply_number = a * b
-#     return multiply_number
+def multiplt(a, b=1):
+    multiply_number = a * b
+    return multiply_number
 
-# print(multiplt(2))
+print(multiplt(2))
 
-# def average_number(*args):
-#  if args == 0:
-#     return 0
-#  return sum(args) / len(args)
+def average_number(*args):
+ if args == 0:
+    return 0
+ return sum(args) / len(args)
     
 
-# print(average_number(8))
+print(average_number(8))
 
-# numbers = [1,2,3,4,5]
-# squared = map(lambda x: x **2, numbers)
-# print(list(squared))
+numbers = [1,2,3,4,5]
+squared = map(lambda x: x **2, numbers)
+print(list(squared))
 
-# multiplt = lambda a, b: a *b
+multiplt = lambda a, b: a *b
 
-# print(multiplt(4,5))
+print(multiplt(4,5))
 
-# def outer():
-#     def inner():
-#         print("This is inner function. ")
-#     inner()
+def outer():
+    def inner():
+        print("This is inner function. ")
+    inner()
 
-# outer()
+outer()
 
-# def add_n(n):
-#     def add(x):
-#         return n + x
-#     return add
-
-
-# print(add_n(4)(7))
+def add_n(n):
+    def add(x):
+        return n + x
+    return add
 
 
-# class Book:
-#     def __init__(self, title, author, price):
-#         self.title = title
-#         self.author = author
-#         self.price = price
-
-#     def display_info(self):
-#         print("Title", self.title)
-#         print("Author", self.author)
-#         print("Price", self.price)
+print(add_n(4)(7))
 
 
-# book1 =Book("The Great Gatsby", "Mark", "29.99")
-# book1.display_info() 
+class Book:
+    def __init__(self, title, author, price):
+        self.title = title
+        self.author = author
+        self.price = price
 
-# class Car:
-#     def __init__(self, make, model, year):
-#         self.make = make
-#         self.model = model
-#         self.year = year
+    def display_info(self):
+        print("Title", self.title)
+        print("Author", self.author)
+        print("Price", self.price)
 
-#     def car_details(self):
-#         print("Make: ", self.make)
-#         print("Model: ", self.model)
-#         print("year: ", self.year)
 
-# car1 = Car("Toyota", "Camry", "2022")
-# car1.car_details()
+book1 =Book("The Great Gatsby", "Mark", "29.99")
+book1.display_info() 
 
-# class Rectangle:
-#     def __init__(self, length, width):
-#         self.length = length
-#         self.width = width
+class Car:
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
 
-#     def area(self):
-#         answer =self.length * self.width
-#         print(answer)
+    def car_details(self):
+        print("Make: ", self.make)
+        print("Model: ", self.model)
+        print("year: ", self.year)
 
-#     def perimeter(self):
-#         per= 2 * (self.length + self.width)
-#         print(per)
+car1 = Car("Toyota", "Camry", "2022")
+car1.car_details()
 
-# ob1 = Rectangle(5, 6)
-# ob1.area()
-# ob1.perimeter()
+class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
 
-# class Vehicle:
-#     def __init__(self, brand, model, year):
-#         self.brand = brand
-#         self.model = model
-#         self.year = year
+    def area(self):
+        answer =self.length * self.width
+        print(answer)
 
-#     def vehicle_info(self):
-#         print("Brand", self.brand)
-#         print("Model", self.model)
-#         print("year", self.year)
+    def perimeter(self):
+        per= 2 * (self.length + self.width)
+        print(per)
 
-# class Car(Vehicle):
-#     def __init__(self, brand, model, year, fuel_type):
-#         super().__init__(brand, model, year)
-#         self.fuel_type = fuel_type
+ob1 = Rectangle(5, 6)
+ob1.area()
+ob1.perimeter()
+
+class Vehicle:
+    def __init__(self, brand, model, year):
+        self.brand = brand
+        self.model = model
+        self.year = year
+
+    def vehicle_info(self):
+        print("Brand", self.brand)
+        print("Model", self.model)
+        print("year", self.year)
+
+class Car(Vehicle):
+    def __init__(self, brand, model, year, fuel_type):
+        super().__init__(brand, model, year)
+        self.fuel_type = fuel_type
     
-#     def car_info(self):
-#         print("Fuel_type", self.fuel_type)
+    def car_info(self):
+        print("Fuel_type", self.fuel_type)
 
-# Car1 = Vehicle("Toyota", "Camry", "2022")
-# Car1.vehicle_info()
-# Car2 = Car("Toyota", "Camry", "2022","Highlander")
-# Car2.car_info()
+Car1 = Vehicle("Toyota", "Camry", "2022")
+Car1.vehicle_info()
+Car2 = Car("Toyota", "Camry", "2022","Highlander")
+Car2.car_info()
 
-# class Employee:
-#     def __init__(self, name, emp_id, salary):
-#         self.name = name
-#         self.emp_id = emp_id
-#         self.salary = salary
+class Employee:
+    def __init__(self, name, emp_id, salary):
+        self.name = name
+        self.emp_id = emp_id
+        self.salary = salary
     
-#     def show_details1(self):
-#         print("name", self.name)
-#         print("emp_id", self.emp_id)
-#         print("salary", self.salary)
+    def show_details1(self):
+        print("name", self.name)
+        print("emp_id", self.emp_id)
+        print("salary", self.salary)
 
-# class Manager(Employee):
-#     def __init__(self, name, emp_id, salary, management):
-#         super().__init__(name, emp_id, salary)
-#         self.management = management
+class Manager(Employee):
+    def __init__(self, name, emp_id, salary, management):
+        super().__init__(name, emp_id, salary)
+        self.management = management
 
-#     def show_details(self):
-#         super().show_details1()
-#         print("management", self.management)
+    def show_details(self):
+        super().show_details1()
+        print("management", self.management)
 
-# s1 = Manager("Apurwa", "11230", "165000", "Manager")
+s1 = Manager("Apurwa", "11230", "165000", "Manager")
 
-# s1.show_details()
+s1.show_details()
 
-# class A:
-#     def show(self):
-#         print("Class A")
+class A:
+    def show(self):
+        print("Class A")
 
-# class B:
-#     def show(self):
-#         print("Class B")
+class B:
+    def show(self):
+        print("Class B")
 
-# class C(A,B):
-#     def show(self):
-#         print("Class C")
+class C(A,B):
+    def show(self):
+        print("Class C")
 
-# OBJ1 = C()
-# OBJ1.show()
-
-
-# store = []
-# class Animal:
-#     def __init__(self, name):
-#         self.name = name
-
-#     def sound(self):
-#         pass
-
-# class Dog(Animal):
-#     def __init__(self, name):
-#         super().__init__(name)
-
-#     def sound(self):
-#         return "bark"
-
-# class Cat(Animal):
-#     def __init__(self, name):
-#         super().__init__(name)
-
-#     def sound(self):
-#         return "meow"
-
-# Animal = [Dog("Honey"), Cat("Minny"), Dog("Husky"), Cat("sandra")]
-
-# for animals in Animal:
-#     print([animals.name], [animals.sound()])
+OBJ1 = C()
+OBJ1.show()
 
 
+store = []
+class Animal:
+    def __init__(self, name):
+        self.name = name
 
-# class User:
-#     def __init__(self, name):
-#         self.name = name
-#         self.borrowed_books = []
+    def sound(self):
+        pass
+
+class Dog(Animal):
+    def __init__(self, name):
+        super().__init__(name)
+
+    def sound(self):
+        return "bark"
+
+class Cat(Animal):
+    def __init__(self, name):
+        super().__init__(name)
+
+    def sound(self):
+        return "meow"
+
+Animal = [Dog("Honey"), Cat("Minny"), Dog("Husky"), Cat("sandra")]
+
+for animals in Animal:
+    print([animals.name], [animals.sound()])
+
+
+
+class User:
+    def __init__(self, name):
+        self.name = name
+        self.borrowed_books = []
     
-#     def borrow_books(self, book_name):
-#         if len(self.borrowed_books)< self.borrowing_limit:
-#             print(self.name, "has borrowed ", book_name)
-#         else:
-#             print(self.name, "hasn't borrowed anything ")
+    def borrow_books(self, book_name):
+        if len(self.borrowed_books)< self.borrowing_limit:
+            print(self.name, "has borrowed ", book_name)
+        else:
+            print(self.name, "hasn't borrowed anything ")
     
-#     def return_book(self, book_name):
-#         if book_name in self.borrowed_books:
-#             print(self.name, "has returned ", book_name)
-#         else:
-#             print(self.name, "hasn't returned anything yet")
+    def return_book(self, book_name):
+        if book_name in self.borrowed_books:
+            print(self.name, "has returned ", book_name)
+        else:
+            print(self.name, "hasn't returned anything yet")
     
-#     def display_book(self):
-#         if self.borrow_books:
-#             print(self.name, "has checked out these books".join(self.borrowed_books) )
-#         else:
-#             print("nothing is checked out")
+    def display_book(self):
+        if self.borrow_books:
+            print(self.name, "has checked out these books".join(self.borrowed_books) )
+        else:
+            print("nothing is checked out")
     
-#     def regularuser(User):
-#         def __init__(self, name):
-#             super().__init__(name)
-#             self.borrowing_limit = 3
+    def regularuser(User):
+        def __init__(self, name):
+            super().__init__(name)
+            self.borrowing_limit = 3
 
-#     def Premiumuser(User):
-#         def __init__(self, name):
-#             super().__init__(name)
-#             self.borrowing_limit = 5
+    def Premiumuser(User):
+        def __init__(self, name):
+            super().__init__(name)
+            self.borrowing_limit = 5
 
-#     books_list = ["book1", "book2", "book3", "book4", "book5", "book6"]
-#     regularUser = regularuser("Alice")
-#     premium_user = Premiumuser("Mike")
+    books_list = ["book1", "book2", "book3", "book4", "book5", "book6"]
+    regularUser = regularuser("Alice")
+    premium_user = Premiumuser("Mike")
 
-#     for book in books_list:
-#         regularUser.borrow_books(book)
+    for book in books_list:
+        regularUser.borrow_books(book)
 
-#     regularUser.display_books()
-#     print("Hello")
+    regularUser.display_books()
+    print("Hello")
             
 
-# class Employee:
-#     def __init__(self, name, employee_id, salary):
-#         self.name = name
-#         self.employee_id = employee_id
-#         self.salary = salary
+class Employee:
+    def __init__(self, name, employee_id, salary):
+        self.name = name
+        self.employee_id = employee_id
+        self.salary = salary
 
-#     def calculate_bonus(self):
-#         bonus = (10/100) * self.salary
-#         total = bonus + self.salary
-#         print("Your salary is increased by 10% " , bonus, "Your total salary is ", total)
+    def calculate_bonus(self):
+        bonus = (10/100) * self.salary
+        total = bonus + self.salary
+        print("Your salary is increased by 10% " , bonus, "Your total salary is ", total)
 
-#     def display_info(self):
-#         print("name", self.name, " employee_id" ,self.employee_id," salary", self.salary)
+    def display_info(self):
+        print("name", self.name, " employee_id" ,self.employee_id," salary", self.salary)
 
-# class Manager(Employee):
-#         def __init__(self, name, employee_id, salary, team_size):
-#             super().__init__( name, employee_id, salary)
-#             self.team_size = team_size
+class Manager(Employee):
+        def __init__(self, name, employee_id, salary, team_size):
+            super().__init__( name, employee_id, salary)
+            self.team_size = team_size
             
-#         def manager_bonus(self):    
-#             if self.team_size > 10:
-#                 bonus = (15 /100) * self.salary
-#             else:
-#                 self.team_size < 10
-#                 bonus = (10 / 100) * self.salary
-#             total = self.salary + bonus
-#             print("Your bonus is " , bonus, "your total is", total)
+        def manager_bonus(self):    
+            if self.team_size > 10:
+                bonus = (15 /100) * self.salary
+            else:
+                self.team_size < 10
+                bonus = (10 / 100) * self.salary
+            total = self.salary + bonus
+            print("Your bonus is " , bonus, "your total is", total)
 
-# class Developer(Employee):
-#         def __init__(self, name, employee_id, salary, programming_language):
-#             super().__init__( name, employee_id, salary)
-#             self.programming_language = programming_language
+class Developer(Employee):
+        def __init__(self, name, employee_id, salary, programming_language):
+            super().__init__( name, employee_id, salary)
+            self.programming_language = programming_language
             
-#         def developer_bonus(self):    
-#             bonus = (12/100) * self.salary
-#             total = bonus + self.salary
-#             print("Your salary is increased by 12% " , bonus, "Your total salary is ", total)
+        def developer_bonus(self):    
+            bonus = (12/100) * self.salary
+            total = bonus + self.salary
+            print("Your salary is increased by 12% " , bonus, "Your total salary is ", total)
 
-# class Intern(Employee):
-#         def __init__(self, name, employee_id, salary, duration):
-#             super().__init__( name, employee_id, salary)
-#             self.duration = duration
+class Intern(Employee):
+        def __init__(self, name, employee_id, salary, duration):
+            super().__init__( name, employee_id, salary)
+            self.duration = duration
             
-#         def intern_bonus(self):    
-#             if self.duration > 3:
-#               bonus = (5/100) * self.salary
-#               print("Bonus awarded", bonus)
-#             else:
-#              print("No bonus")
+        def intern_bonus(self):    
+            if self.duration > 3:
+              bonus = (5/100) * self.salary
+              print("Bonus awarded", bonus)
+            else:
+             print("No bonus")
 
 
-# obj1 = Employee("Apu", 1111, 102000)
-# obj1.display_info()
-# obj1.calculate_bonus()
+obj1 = Employee("Apu", 1111, 102000)
+obj1.display_info()
+obj1.calculate_bonus()
 
-# obj2 = Manager("mike", 2222, 105000, 9)
-# obj2.manager_bonus()
+obj2 = Manager("mike", 2222, 105000, 9)
+obj2.manager_bonus()
 
-# obj3 = Developer("Ashley", 333, 120000, "Python")
-# obj3.developer_bonus()
+obj3 = Developer("Ashley", 333, 120000, "Python")
+obj3.developer_bonus()
 
-# obj4 = Intern("Henry", 444, 55000, 2)
-# obj4.intern_bonus()
+obj4 = Intern("Henry", 444, 55000, 2)
+obj4.intern_bonus()
 
-# items_available = []
-# books = ("Harry Potter", "The Power of Now", "Money Mind", "Start with a Why?", "Quantum Physics", "Chemistry")
-# item_available = items_available.extend(books)
-# class LibraryItem:
-#     def __init__(self, title, author, item_id, available):
-#         self. title = title
-#         self.author = author
-#         self.item_id = item_id
-#         self.available = available
+items_available = []
+books = ("Harry Potter", "The Power of Now", "Money Mind", "Start with a Why?", "Quantum Physics", "Chemistry")
+item_available = items_available.extend(books)
+class LibraryItem:
+    def __init__(self, title, author, item_id, available):
+        self. title = title
+        self.author = author
+        self.item_id = item_id
+        self.available = available
 
-#     def borrow(self):
-#         if self.title in items_available:
-#             print(self.title, " is Available")
-#         else:
-#             print(self.title, "is not Available")
+    def borrow(self):
+        if self.title in items_available:
+            print(self.title, " is Available")
+        else:
+            print(self.title, "is not Available")
 
-# class Book(LibraryItem):
-#     def __init__(self, title, author, item_id, available, num_pages):
-#         super().__init__(title, author, item_id, available)
-#         self.num_pages = num_pages
+class Book(LibraryItem):
+    def __init__(self, title, author, item_id, available, num_pages):
+        super().__init__(title, author, item_id, available)
+        self.num_pages = num_pages
 
-#     def get_summary(self):
-#         if books in items_available:
-#             print("title: ", self.title, "Author: ", self.author, "item_id", self.item_id, "available", self.available)
+    def get_summary(self):
+        if books in items_available:
+            print("title: ", self.title, "Author: ", self.author, "item_id", self.item_id, "available", self.available)
 
-# class DVD(LibraryItem):
-#     def __init__(self, title, author, item_id, available, duration, region_code):
-#         super().__init__(title, author, item_id, available, duration)
-#         self.duration = duration
-#         self.region_code = region_code
+class DVD(LibraryItem):
+    def __init__(self, title, author, item_id, available, duration, region_code):
+        super().__init__(title, author, item_id, available, duration)
+        self.duration = duration
+        self.region_code = region_code
 
-#     def get_summary(self):
-#         print("Title", self.title, "Author", self.author, "Duration", self.duration)
+    def get_summary(self):
+        print("Title", self.title, "Author", self.author, "Duration", self.duration)
 
-# class E_Book(LibraryItem):
-#     def __init__(self, title, author, item_id, available, file_size):
-#         super().__init__(title, author, item_id, available)
-#         self.file_size = file_size
+class E_Book(LibraryItem):
+    def __init__(self, title, author, item_id, available, file_size):
+        super().__init__(title, author, item_id, available)
+        self.file_size = file_size
 
-#     def borrow(self):
-#         return("You have borrowed", self.title, " of file size", self.file_size)
+    def borrow(self):
+        return("You have borrowed", self.title, " of file size", self.file_size)
 
-# class SpecialCollection(Book, DVD):
-#         def __init__(self, title, author, item_id, available, num_pages, duration, region_code, old):
-#             Book. __init__(self, title, author, item_id, available, num_pages)
-#             DVD.__init__(self, title, author, item_id, available, duration, region_code)
-#             self.old = old
+class SpecialCollection(Book, DVD):
+        def __init__(self, title, author, item_id, available, num_pages, duration, region_code, old):
+            Book. __init__(self, title, author, item_id, available, num_pages)
+            DVD.__init__(self, title, author, item_id, available, duration, region_code)
+            self.old = old
     
-#         def borrow(self):
-#                 print("Please check at the front desk")
+        def borrow(self):
+                print("Please check at the front desk")
 
 
-# obj1 = Book("Biology", "JK ROWLING", 123, True, 25)
-# obj1. borrow()
+obj1 = Book("Biology", "JK ROWLING", 123, True, 25)
+obj1. borrow()
 
-# obj2 = SpecialCollection("Chemistry", "mike", 235, True, 58, 5, 5 ,8)
-# obj2.borrow()
+obj2 = SpecialCollection("Chemistry", "mike", 235, True, 58, 5, 5 ,8)
+obj2.borrow()
 
-# class Wallet:
-#     def __init__(self, balance, pin):
-#         self.balance = balance
-#         self.pin = pin
+class Wallet:
+    def __init__(self, balance, pin):
+        self.balance = balance
+        self.pin = pin
 
-#     def deposit(self, amount):
-#         self.balance += amount
-#         print("you have deposited ", amount, " .Your total balance is " , self.balance)
+    def deposit(self, amount):
+        self.balance += amount
+        print("you have deposited ", amount, " .Your total balance is " , self.balance)
 
-#     def Withdraw(self, withdraw_amount):
-#        if withdraw_amount > self.balance:
-#          print("Please enter a valid number")
-#        else:
-#         self.balance -= withdraw_amount
-#         print("Your balance after withdrawing", withdraw_amount, " is", self.balance) 
+    def Withdraw(self, withdraw_amount):
+       if withdraw_amount > self.balance:
+         print("Please enter a valid number")
+       else:
+        self.balance -= withdraw_amount
+        print("Your balance after withdrawing", withdraw_amount, " is", self.balance) 
 
-#     def check_balance(self):
-#         print("Your balance is ", self.balance)
+    def check_balance(self):
+        print("Your balance is ", self.balance)
 
-# obj1 = Wallet(102000, 5120)
-# obj1.deposit(5000)
-# obj1.Withdraw(10000)
-# obj1.check_balance()
+obj1 = Wallet(102000, 5120)
+obj1.deposit(5000)
+obj1.Withdraw(10000)
+obj1.check_balance()
         
-# class Person:
-#     def __init__(self, name, age):
-#         self._name = name
-#         self._age = age
+class Person:
+    def __init__(self, name, age):
+        self._name = name
+        self._age = age
 
-#     @property
-#     def name(self):
-#         return self._name
-
-
-#     @property
-#     def age(self):
-#         return self._age
-
-#     @age.setter
-#     def age (self, value):
-#         if value < 0:
-#             raise ValueError("not a valid age")
-#         self._age = value
-
-# p = Person("Apu", 27)
-# p.age = -5
-# print(p.age)
-
-# class Car:
-#     def __init__(self, fuwl_level, engine_status):
-#         self._fuwl_level = fuwl_level
-#         self._engine_status = engine_status
-
-#     @property
-#     def fuwl_level(self):
-#         return self._fuwl_level
-
-#     @fuwl_level.setter
-#     def fuwl_level(self, value):
-#         if value > 50:
-#             raise ValueError("Error")
-#         else:
-#             self.fuwl_level = value
-
-#     @property
-#     def engine_status(self):
-#         return "On" if self._engine_status else "Off"
-
-#     @engine_status.setter
-#     def engine_sytatus(self, state):
-#         if state not in [True, False]:
-#             raise ValueError("Error") 
-#         else:
-#             self._engine_status = state
-
-# ob = Car(51, True)
-# print(Car.fuwl_level)
-# print(Car.engine_status)
+    @property
+    def name(self):
+        return self._name
 
 
-# student = {
-#     "name" : "John Doe",
-#     "age" : 21,
-#     "major" : "Computer Science"
-# }
+    @property
+    def age(self):
+        return self._age
 
-# student["GPA"] = 3.8
-# student["age"] = 22
-# if "GPA" in student:
-#     print("Exist")
-# else:
-#     print("don't exist")
+    @age.setter
+    def age (self, value):
+        if value < 0:
+            raise ValueError("not a valid age")
+        self._age = value
 
-# print(student)
+p = Person("Apu", 27)
+p.age = -5
+print(p.age)
 
-# dict1 = {"name":"Alice", "age":25}
-# dict2 = {"gpa":3.8, "major":"cs"}
+class Car:
+    def __init__(self, fuwl_level, engine_status):
+        self._fuwl_level = fuwl_level
+        self._engine_status = engine_status
 
-# merge = dict1.update(dict2)
-# print(dict1)
+    @property
+    def fuwl_level(self):
+        return self._fuwl_level
 
-# dict1 = []
-# dict2 = ["a", "b", "c"]
+    @fuwl_level.setter
+    def fuwl_level(self, value):
+        if value > 50:
+            raise ValueError("Error")
+        else:
+            self.fuwl_level = value
 
-# dict1.extend(dict2)
+    @property
+    def engine_status(self):
+        return "On" if self._engine_status else "Off"
 
-# print(dict1)
+    @engine_status.setter
+    def engine_sytatus(self, state):
+        if state not in [True, False]:
+            raise ValueError("Error") 
+        else:
+            self._engine_status = state
 
-
-# student= {}
-
-# def add_user():
-#     name = input("Please enter your name: ")
-#     grade = float(input("Please enter your grade: "))
-#     student[name] = grade
-#     print(name, " has been added") 
-
-# while True:
-#     add_user()
-#     more = input("Do you want to add more. Press (y/n)". strip().lower())
-
-#     if more != "y":
-#         break
-
-
-# def average():
-#     name = input("Please enter the name to calculate the average: ")
-#     if name not in student:
-#         print("name is not available")
-#     else:
-#         average1 = sum(student.values())/len(student)
-#         print(average1)
-
-# def display_all():
-#     name = input("Please enter the name of the person you want to check: ")
-#     if name in student:
-#         print(name, "found" in student[name])
-#     else:
-#         print("not in the system")
+ob = Car(51, True)
+print(Car.fuwl_level)
+print(Car.engine_status)
 
 
-# average()
-# print(student)
-# display_all()
+student = {
+    "name" : "John Doe",
+    "age" : 21,
+    "major" : "Computer Science"
+}
 
-# class Animal:
-#     def __init__(self, name, age, sound):
-#         self.name = name
-#         self.age = age
-#         self.sound = sound
+student["GPA"] = 3.8
+student["age"] = 22
+if "GPA" in student:
+    print("Exist")
+else:
+    print("don't exist")
 
-# def make_sound(self):
-#     print(self.sound)
+print(student)
 
-# class Dog(Animal):
-#     def __init__(self, name, age, sound, breed):
-#         super().__init__(name, age, sound)
-#         self.breed = breed
+dict1 = {"name":"Alice", "age":25}
+dict2 = {"gpa":3.8, "major":"cs"}
 
-#     def make_sound(self):
-#         print("Woof Woof")
+merge = dict1.update(dict2)
+print(dict1)
 
-# class Cat(Animal):
-#     def __init__(self, name, age, sound, color):
-#         super().__init__(name, age, sound)
-#         self.color = color
+dict1 = []
+dict2 = ["a", "b", "c"]
 
-#     def make_sound(self):
-#         print("Meow Meow")
+dict1.extend(dict2)
 
-# obj1 = Dog("kasie", 5, "meow", "brown")
-# obj1.make_sound()
+print(dict1)
 
-# class BankAccount:
-#     def __init__(self, balance):
-#         self.balance = balance
-#         self.transaction_history = []
 
-#     def deposit(self, amount):
-#         total = amount + self.balance
-#         print(total)
-#         print("deposited")
+student= {}
 
-#     def withdraw(self, amount):
-#         if amount < self.balance:
-#             self.balance -= amount
-#             print("Amount withdrawn")
-#         elif amount > self.balance:
-#             print("withdraw amount cannot be greater than balance")
+def add_user():
+    name = input("Please enter your name: ")
+    grade = float(input("Please enter your grade: "))
+    student[name] = grade
+    print(name, " has been added") 
 
-#     def get_balance(self):
-#         return self.balance
+while True:
+    add_user()
+    more = input("Do you want to add more. Press (y/n)". strip().lower())
+
+    if more != "y":
+        break
+
+
+def average():
+    name = input("Please enter the name to calculate the average: ")
+    if name not in student:
+        print("name is not available")
+    else:
+        average1 = sum(student.values())/len(student)
+        print(average1)
+
+def display_all():
+    name = input("Please enter the name of the person you want to check: ")
+    if name in student:
+        print(name, "found" in student[name])
+    else:
+        print("not in the system")
+
+
+average()
+print(student)
+display_all()
+
+class Animal:
+    def __init__(self, name, age, sound):
+        self.name = name
+        self.age = age
+        self.sound = sound
+
+def make_sound(self):
+    print(self.sound)
+
+class Dog(Animal):
+    def __init__(self, name, age, sound, breed):
+        super().__init__(name, age, sound)
+        self.breed = breed
+
+    def make_sound(self):
+        print("Woof Woof")
+
+class Cat(Animal):
+    def __init__(self, name, age, sound, color):
+        super().__init__(name, age, sound)
+        self.color = color
+
+    def make_sound(self):
+        print("Meow Meow")
+
+obj1 = Dog("kasie", 5, "meow", "brown")
+obj1.make_sound()
+
+class BankAccount:
+    def __init__(self, balance):
+        self.balance = balance
+        self.transaction_history = []
+
+    def deposit(self, amount):
+        total = amount + self.balance
+        print(total)
+        print("deposited")
+
+    def withdraw(self, amount):
+        if amount < self.balance:
+            self.balance -= amount
+            print("Amount withdrawn")
+        elif amount > self.balance:
+            print("withdraw amount cannot be greater than balance")
+
+    def get_balance(self):
+        return self.balance
     
-#     def get_transactionHistory(self):
-#         return self.transaction_history
+    def get_transactionHistory(self):
+        return self.transaction_history
 
 
-# obj1 = BankAccount(100000)
-# obj1.deposit(25000)
-# obj1.withdraw(500)
+obj1 = BankAccount(100000)
+obj1.deposit(25000)
+obj1.withdraw(500)
 
 
-# for transaction in obj1.get_transactionHistory():
-#     print(transaction)
+for transaction in obj1.get_transactionHistory():
+    print(transaction)
 
-# i = 0
-# numbers = [1,2,3,4,5]
-# for sum in numbers:
-#     i += sum
-# print(i)
+i = 0
+numbers = [1,2,3,4,5]
+for sum in numbers:
+    i += sum
+print(i)
 
-# numbers = [10,15,22,30,45,61,72]
-# even_count = 0
-# odd_count = 0
+numbers = [10,15,22,30,45,61,72]
+even_count = 0
+odd_count = 0
 
-# for num in numbers:
-#     if num % 2 == 0:
-#         even_count += 1
-#     else:
-#         odd_count +=1
-# print("Even", even_count)
-# print("Odd", odd_count)
+for num in numbers:
+    if num % 2 == 0:
+        even_count += 1
+    else:
+        odd_count +=1
+print("Even", even_count)
+print("Odd", odd_count)
 
-# numbers = [12,35,7,99,2,44]
-# max_num = max(numbers)
-# min_num = min(numbers)
+numbers = [12,35,7,99,2,44]
+max_num = max(numbers)
+min_num = min(numbers)
 
-# print(max_num)
-# print(min_num)
+print(max_num)
+print(min_num)
 
-# n = 5
-# factorial = 1
-# for i in range(1, n+1):
-#     factorial *=i
-# print(factorial)
+n = 5
+factorial = 1
+for i in range(1, n+1):
+    factorial *=i
+print(factorial)
 
-# even_num = 0
-# numbers = [10,15,20,25,30,35,40,45]
-# for num in numbers:
-#     if num % 2 == 0:
-#         even_num += 1
-#         print(num)
+even_num = 0
+numbers = [10,15,20,25,30,35,40,45]
+for num in numbers:
+    if num % 2 == 0:
+        even_num += 1
+        print(num)
 
-# numbers = [10,15,20,25,30,35,40,45]
-# for num in numbers:
-#     print(num)
+numbers = [10,15,20,25,30,35,40,45]
+for num in numbers:
+    print(num)
 
-# n = 5
-# i = 0
-# for num in range(1, n+1):
-#     i += num
-# print(i)
+n = 5
+i = 0
+for num in range(1, n+1):
+    i += num
+print(i)
 
-# n = 3
-# y = 10
-# for num in range (1, y+1):
-#     multiplication = 3 * num
-#     print(n, "X", num ,"=", multiplication)
+n = 3
+y = 10
+for num in range (1, y+1):
+    multiplication = 3 * num
+    print(n, "X", num ,"=", multiplication)
 
-# word = 'racecar'
-# reverse_word = ""
+word = 'racecar'
+reverse_word = ""
 
-# for char in word:
-#     reverse_word =char + reverse_word
+for char in word:
+    reverse_word =char + reverse_word
 
-# if word == reverse_word:
-#     print(word, "The word is palindrome")
-# else:
-#     print(word, "the word is not palindrome")
+if word == reverse_word:
+    print(word, "The word is palindrome")
+else:
+    print(word, "the word is not palindrome")
 
-# numbers = [10,20,4,45,99]
-# second_largest = None
-# max_num = max(numbers)
-# min_num = min(numbers)
+numbers = [10,20,4,45,99]
+second_largest = None
+max_num = max(numbers)
+min_num = min(numbers)
 
-# for check in numbers:
-#     if check != max_num:
-#         if second_largest is None or check > second_largest:
-#             second_largest = check
+for check in numbers:
+    if check != max_num:
+        if second_largest is None or check > second_largest:
+            second_largest = check
 
-# print(second_largest)
+print(second_largest)
 
-# even_number = 0
-# odd_number = 0    
-# number = [2,4,6,8,10,12,14,16,20, 21, 25]
+even_number = 0
+odd_number = 0    
+number = [2,4,6,8,10,12,14,16,20, 21, 25]
 
-# for check in number:
-#     if check % 2 == 0:
-#         even_number += 1
-# print(even_number)
+for check in number:
+    if check % 2 == 0:
+        even_number += 1
+print(even_number)
 
-# user_input = int(input("Please enter the number between 1 and 100: "))
-# if user_input < 0:
-#     print("Please enter the valid number and try again")
-# elif user_input > 100:
-#     print("the number cannot be greater than 100")
-# else:
-#     print("The number you entered is ", user_input)
+user_input = int(input("Please enter the number between 1 and 100: "))
+if user_input < 0:
+    print("Please enter the valid number and try again")
+elif user_input > 100:
+    print("the number cannot be greater than 100")
+else:
+    print("The number you entered is ", user_input)
 
 
-# while True:
-#     user_Input = int(input("Please enter the number between 1 to 100 "))
-#     if user_Input < 0:
-#         print("number in negative. Try again!")
-#         continue
-#     elif user_Input > 100:
-#         print("Number cannot be greater than 100")
-#         break
-#     else:
-#         print("Number you entered is ", user_Input)
+while True:
+    user_Input = int(input("Please enter the number between 1 to 100 "))
+    if user_Input < 0:
+        print("number in negative. Try again!")
+        continue
+    elif user_Input > 100:
+        print("Number cannot be greater than 100")
+        break
+    else:
+        print("Number you entered is ", user_Input)
 
-# for num in range(1, 51):
-#     if num % 8 == 0:
-#         continue
-#     elif num % 2 == 0:
-#         print(num)
-#         continue
-#     elif num > 40:
-#         break
+for num in range(1, 51):
+    if num % 8 == 0:
+        continue
+    elif num % 2 == 0:
+        print(num)
+        continue
+    elif num > 40:
+        break
 element = 5
 occurence = 0
 number = [1,2,3,5,5,4,6,7,8,9]
@@ -2013,11 +2002,11 @@ for i in number:
     if i == element:
         occurence += 1
 print(occurence)
-# number.append(10)
-# number.remove(1)
-# number.sort()
-# print(number)
+number.append(10)
+number.remove(1)
+number.sort()
+print(number)
 
-# tup = tuple(number)
-# index = tup.index(5)
-# print(tup, index)
+tup = tuple(number)
+index = tup.index(5)
+print(tup, index)
