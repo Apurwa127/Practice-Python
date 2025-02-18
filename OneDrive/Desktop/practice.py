@@ -1977,4 +1977,23 @@
 #     if check % 2 == 0:
 #         even_number += 1
 # print(even_number)
-print("Hello World")
+
+# user_input = int(input("Please enter the number between 1 and 100: "))
+# if user_input < 0:
+#     print("Please enter the valid number and try again")
+# elif user_input > 100:
+#     print("the number cannot be greater than 100")
+# else:
+#     print("The number you entered is ", user_input)
+
+
+while True:
+    user_Input = int(input("Please enter the number between 1 to 100 "))
+    if user_Input < 0:
+        print("number in negative. Try again!")
+        continue
+    elif user_Input > 100:
+        print("Number cannot be greater than 100")
+        break
+    else:
+        print("Number you entered is ", user_Input)
