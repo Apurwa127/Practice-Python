@@ -2091,8 +2091,32 @@
 #     sum += i
 # print(sum)
 
-string = "python"
-reversed_string = ""
-for char in string:
-    reversed_string = char + reversed_string
-print(reversed_string)
+# string = "python"
+# reversed_string = ""
+# for char in string:
+#     reversed_string = char + reversed_string
+# print(reversed_string)
+
+# student = {"name":"Apurwa", "age":28, "location":"denton"}
+# for key, value in student.items():
+#     print(key, ":", value)
+
+# number = [10,20,30,40,50]
+# for i in number:
+#     print(i)
+
+# numbers = [10,20,30]
+# print(sum(numbers))
+# print(max(numbers))
+# print(min(numbers))
+
+# my_list = [10,20,30,40,50]
+# num = 35
+# if num in my_list:
+#     print("exists")
+# else:
+#     print("don't exists")
+
+my_list = [10,20,30,40,50]
+my_list.reverse()
+print(my_list)
