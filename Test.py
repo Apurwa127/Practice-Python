@@ -20,8 +20,50 @@ import re
 # output = re.findall(pattern, chat1)
 # print(output)
 
-text = 'Gates in 2024 Born William Henry Gates IIIOctober 28, 1955 (age 69) Seattle, Washington, U.S.'
+# text = 'Gates in 2024 Born William Henry Gates IIIOctober 28, 1955 (age 69) Seattle, Washington, U.S.'
 
-pattern = r'age (\d+)'
-output = re.findall(pattern, text)
-print(output)
+# pattern = r'age (\d+)'
+# output = re.findall(pattern, text)
+# print(output)
+
+text = """Born	Shahrukh Khan
+2 November 1965 (age 59)
+New Delhi, India
+Alma mater	Hansraj College (BA)
+Occupations	
+Actorfilm producertelevision personalitybusinessman
+Years active	1988–present
+Organisation(s)	Red Chillies Entertainment
+Knight Riders Group
+Works	Full list
+Spouse	Gauri Khan ​(m. 1991)​
+Children	3, including Aryan and Suhana
+Awards	Full list
+Honours	Padma Shri (2005)
+Order of Arts and Letters (2007)
+Legion of Honour (2014)
+Signature"""
+
+pattern = r'Born([A-Za-z\s]+)\d'
+pattern2 = r'Born.*\n(.*)\(age'
+pattern3 = r'Born.*\n.*\n(.*)'
+
+# output = re.findall(pattern, text)
+# output1 = re.findall(pattern2, text)
+# output2 = re.findall(pattern3, text)
+
+
+# output[0].strip()
+# print(output)
+# print(output1)
+# print(output2)
+
+def get_pattern_match(pattern, text):
+    matches = re.findall(pattern, text)
+    if matches:
+        return matches[0]
+    else:
+        return None
+    
+birth = get_pattern_match(pattern3, text)
+print(birth)
